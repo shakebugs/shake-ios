@@ -53,4 +53,10 @@ NS_SWIFT_NAME(ShakeFile)
 
 @end
 
+@interface SHKShakeFile (Equatable)
+
+- (BOOL)fileIsEqual:(SHKShakeFile*)file;
+
+@end
+
 NS_ASSUME_NONNULL_END
