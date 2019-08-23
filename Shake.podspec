@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Shake'
-  s.version      = '7.0.13'
+  s.version      = '7.0.14'
   s.summary      = 'Simple, powerful bug reporting'
   s.description  = <<-DESC
 Shake allows simple and powerful bug reporting. Paste 1 line of code into your app and tell testers to just shake their phone to report bugs!
