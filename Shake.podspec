@@ -9,7 +9,7 @@ Shake allows simple and powerful bug reporting. Paste 1 line of code into your a
   s.license      = { :type => 'Commercial', :file => 'LICENSE.md' }
   s.author       = { 'Shake Team' => 'team@shakebugs.com' }
   s.platform     = :ios, '8.0'
-  s.source       = { :git => 'https://github.com/shakebugs/shake-ios.git', :tag => '7.0.13' }
+  s.source       = { :git => 'https://github.com/shakebugs/shake-ios.git', :tag => '7.0.14' }
   s.library      = 'z'
   s.requires_arc = true
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '/Shake/' }
