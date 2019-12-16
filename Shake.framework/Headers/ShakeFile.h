@@ -3,7 +3,7 @@
 //  Shake
 //
 //  Created by Ante Baus on 19/11/2018.
-//  Copyright © 2018 DECODE HQ Ltd. All rights reserved.
+//  Copyright © 2018 Shake Technologies, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

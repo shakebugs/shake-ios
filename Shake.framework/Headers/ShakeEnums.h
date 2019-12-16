@@ -3,7 +3,7 @@
 //  Shake
 //
 //  Created by Hana Sokolović on 01/03/2019.
-//  Copyright © 2019 DECODE HQ Ltd. All rights reserved.
+//  Copyright © 2019 Shake Technologies, Inc. All rights reserved.
 //
 
 #ifndef ShakeEnums_h
