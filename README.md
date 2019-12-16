@@ -1,6 +1,6 @@
 # Shake iOS SDK
 
-[Shake](https://www.shakebugs.com/) is a mobile SDK that allows your testers to easily report bugs.
+[Shake](https://www.shakebugs.com/) is a dedicated bug reporting tool for mobile apps. Whenever a tester notices a bug, they can just shake their device and report it instantly, without ever leaving your app. Each bug report comes supplemented with various data points like location, storage, OS and others. These reports all arrive to your web Dashboard, where they can be organized with tags and found quickly using search. 
 
 # Installation
 ## **Step 1**: Add Shake SDK to your Podfile
