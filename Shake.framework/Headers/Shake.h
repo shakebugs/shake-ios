@@ -31,6 +31,7 @@ NS_SWIFT_NAME(Shake)
 + (void)startWithInvocationEvents:(ShakeInvocationEvent)invocationEvents;
 + (void)manualStart;
 + (SHKShake *)sharedInstance;
++ (NSBundle*) bundle;
 + (void)setBlackBoxEnabled:(BOOL)isBlackBoxEnabled;
 + (void)autoReportWithAttachScreenshot:(BOOL)screenshot description:(NSString *)description;
 + (void)autoReportWithAttachScreenshot:(BOOL)screenshot;
