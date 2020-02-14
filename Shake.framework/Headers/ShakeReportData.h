@@ -21,6 +21,9 @@ NS_SWIFT_NAME(ShakeReportData)
  */
 @property (nonatomic, strong, nullable) NSArray <SHKShakeFile *> *attachedFiles;
 
+/// Timestamp (date) when report was first created.
+@property (nonatomic, strong, nullable) NSString *timestamp;
+
 @end
 
 NS_ASSUME_NONNULL_END

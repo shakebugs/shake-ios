@@ -15,7 +15,8 @@ typedef NS_OPTIONS(NSUInteger, ShakeInvocationEvent) {
     ShakeInvocationEventButton = 1<<1,
     ShakeInvocationEventScreenshot = 1<<2,
     ShakeInvocationEventRightEdgePan = 1<<3,
-    ShakeInvocationEventAutoReport = 1<<4
+    ShakeInvocationEventAutoReport = 1<<4,
+    ShakeInvocationEventManual = 1<<5
 };
 
 #endif /* ShakeEnums_h */
