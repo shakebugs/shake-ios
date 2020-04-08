@@ -33,10 +33,12 @@ NS_SWIFT_NAME(Shake)
 + (SHKShake *)sharedInstance;
 + (NSBundle*) bundle;
 + (void)setBlackBoxEnabled:(BOOL)isBlackBoxEnabled;
-+ (void)autoReportWithAttachScreenshot:(BOOL)screenshot description:(NSString *)description;
-+ (void)autoReportWithAttachScreenshot:(BOOL)screenshot;
-+ (void)autoReportWithDescription:(NSString *)description;
-+ (void)autoReport;
+// TODO: SHK2246
+// Search for the TODO above to find all places in code to reenable the functionality when needed
+//+ (void)autoReportWithAttachScreenshot:(BOOL)screenshot description:(NSString *)description;
+//+ (void)autoReportWithAttachScreenshot:(BOOL)screenshot;
+//+ (void)autoReportWithDescription:(NSString *)description;
+//+ (void)autoReport;
 + (void)stop;
 @end
 
