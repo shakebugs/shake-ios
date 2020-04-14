@@ -18,7 +18,8 @@ typedef NS_OPTIONS(NSUInteger, ShakeInvocationEvent) {
     // Search for the TODO above to find all places in code to reenable the functionality when needed
 //    ShakeInvocationEventRightEdgePan = 1<<3,
 //    ShakeInvocationEventAutoReport = 1<<4,
-    ShakeInvocationEventManual = 1<<5
+    /// TODO: Uncomment for manual invocation
+//    ShakeInvocationEventManual = 1<<5
 };
 
 #endif /* ShakeEnums_h */

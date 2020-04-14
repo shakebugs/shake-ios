@@ -29,7 +29,8 @@ NS_SWIFT_NAME(Shake)
 
 + (void)start;
 + (void)startWithInvocationEvents:(ShakeInvocationEvent)invocationEvents;
-+ (void)manualStart;
+/// TODO: Uncomment for manual invocation
+//+ (void)manualStart;
 + (SHKShake *)sharedInstance;
 + (NSBundle*) bundle;
 + (void)setBlackBoxEnabled:(BOOL)isBlackBoxEnabled;
