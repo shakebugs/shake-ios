@@ -16,8 +16,6 @@ FOUNDATION_EXPORT double ShakeVersionNumber;
 //! Project version string for Shake.
 FOUNDATION_EXPORT const unsigned char ShakeVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Shake/PublicHeader.h>
-
 NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(Shake)
 @interface SHKShake : NSObject
@@ -29,18 +27,11 @@ NS_SWIFT_NAME(Shake)
 
 + (void)start;
 + (void)startWithInvocationEvents:(ShakeInvocationEvent)invocationEvents;
-/// TODO: Uncomment for manual invocation
-//+ (void)manualStart;
 + (SHKShake *)sharedInstance;
 + (NSBundle*) bundle;
 + (void)setBlackBoxEnabled:(BOOL)isBlackBoxEnabled;
-// TODO: SHK2246
-// Search for the TODO above to find all places in code to reenable the functionality when needed
-//+ (void)autoReportWithAttachScreenshot:(BOOL)screenshot description:(NSString *)description;
-//+ (void)autoReportWithAttachScreenshot:(BOOL)screenshot;
-//+ (void)autoReportWithDescription:(NSString *)description;
-//+ (void)autoReport;
 + (void)stop;
+
 @end
 
 NS_ASSUME_NONNULL_END
