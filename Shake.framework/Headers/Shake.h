@@ -31,7 +31,6 @@ NS_SWIFT_NAME(Shake)
 + (NSBundle*) bundle;
 + (void)setBlackBoxEnabled:(BOOL)isBlackBoxEnabled;
 + (void)stop;
-
 @end
 
 NS_ASSUME_NONNULL_END
