@@ -18,14 +18,6 @@ FOUNDATION_EXPORT const unsigned char ShakeVersionString[];
 NS_SWIFT_NAME(Shake)
 @interface SHKShake : NSObject
 
-typedef NS_ENUM(NSUInteger, LogLevel) {
-    LogLevelVerbose,
-    LogLevelDebug,
-    LogLevelInfo,
-    LogLevelWarn,
-    LogLevelError
-};
-
 // MARK: - Properties
 
 ///Shake tracking, invoking and user interaction options
@@ -51,9 +43,6 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
 /// Brings up Shake UI allowing user to send a new bug report
 + (void)show;
 
-/// Adds a notifications log entry to Notifications
-+ (void)handleNotificationWithNotificationTitle:(NSString* __nonnull)notificationTitle notificationDescription:(NSString * __nonnull)notificationDescription;
-
 /// Brings up Shake UI with pre-populated report data (description, attachments etc.) allowing user to send a new bug report
 + (void)showWithReportData:(nonnull SHKShakeReportData *)reportData
 NS_SWIFT_NAME(show(reportData:));
@@ -61,14 +50,6 @@ NS_SWIFT_NAME(show(reportData:));
 /// Send bug report to the server without displaying any user interface to the user. Use this to report certain state of the app.
 + (void)silentReportWithReportData:(nullable SHKShakeReportData *)reportData reportConfiguration:(nonnull SHKShakeReportConfiguration *)reportConfiguration
 NS_SWIFT_NAME(silentReport(reportData:reportConfiguration:));
-
-/// Adds a custom log entry to Activity History
-+ (void)logWithLevel:(LogLevel)level message:(NSString * __nonnull)message
-NS_SWIFT_NAME(log(_:_:));
-
-/// Adds a custom log entry to Activity History with debug level
-+ (void)logWithMessage:(NSString * __nonnull)message
-NS_SWIFT_NAME(log(_:));
 
 // MARK: - Deprecated
 

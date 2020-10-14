@@ -16,9 +16,6 @@ NS_SWIFT_NAME(ShakeConfiguration)
 /// Shake will be automatically invoked when user takes a screenshot
 @property (nonatomic) BOOL isInvokedByScreenshot;
 
-/// Shake will be automatically invoked when user swipes in from the right edge of the screen
-@property (nonatomic) BOOL isInvokedByRightEdgePan;
-
 /// Shake will record certain events on device like CPU, RAM, Orientation to help you easily spot correlations
 @property (nonatomic) BOOL isBlackBoxEnabled;
 
