@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Shake'
-  s.version      = '12.1.0'
+  s.version      = '14.1.0'
   s.summary      = 'Simple, powerful bug reporting'
   s.description  = <<-DESC
 Shake allows simple and powerful bug reporting. Paste 1 line of code into your app and tell testers to just shake their phone to report bugs!
@@ -8,8 +8,8 @@ Shake allows simple and powerful bug reporting. Paste 1 line of code into your a
   s.homepage     = 'http://www.shakebugs.com/'
   s.license      = { :type => 'Commercial', :file => 'LICENSE.md' }
   s.author       = { 'Shake Team' => 'team@shakebugs.com' }
-  s.platform     = :ios, '8.0'
-  s.source       = { :git => 'https://github.com/shakebugs/shake-ios.git', :tag => '12.1.0' }
+  s.platform     = :ios, '11.0'
+  s.source       = { :git => 'https://github.com/shakebugs/shake-ios.git', :tag => '14.1.0' }
   s.library      = 'z'
   s.requires_arc = true
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '$(PODS_ROOT)/Shake/' }
