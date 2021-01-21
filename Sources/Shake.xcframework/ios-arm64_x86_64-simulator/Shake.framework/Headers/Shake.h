@@ -54,7 +54,8 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
 // MARK: - Methods
 
 /// Starts recording BlackBox and Activity History data. Enables invocation. Use '.isPaused' to pause or resume tracking.
-+ (void)start;
++ (void)startWithClientId:(nonnull NSString *)clientId clientSecret:(nonnull NSString *)clientSecret
+NS_SWIFT_NAME(start(clientId:clientSecret:));
 
 /// Brings up Shake UI allowing user to send a new bug report
 + (void)show;
@@ -116,6 +117,10 @@ __attribute__((unavailable("Use 'Shake.onPrepareReportData' instead.")));
 
 + (void)stop
 __attribute__((unavailable("Use 'Shake.isPaused = true' instead.")));
+
+/// Starts recording BlackBox and Activity History data. Enables invocation. Use '.isPaused' to pause or resume tracking.
++ (void)start
+__attribute__((deprecated("Use start(clientId:clientSecret:) instead. Providing API credentials using Info.plist is deprecated.")));
 
 + (void)setMetadataWithKey:(nonnull NSString *)key value:(nullable NSString *)value
 NS_SWIFT_NAME(setMetadata(key:value:));
