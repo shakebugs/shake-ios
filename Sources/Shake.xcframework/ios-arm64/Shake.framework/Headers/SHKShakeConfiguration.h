@@ -42,7 +42,9 @@ NS_SWIFT_NAME(ShakeConfiguration)
 
 // Can Shake capture apps screen and audio and record into movie file
 @property (nonatomic, assign) BOOL isAutoVideoRecordingEnabled;
-@property (nonatomic, assign) int autoVideoRecordingClipDuration;
+
+@property (nonatomic, assign) int autoVideoRecordingClipDuration
+__attribute__((deprecated("Use 'isAutoVideoRecordingEnabled' property only, 'autoVideoRecordingClipDuration' will be removed soon!")));
 
 /// Should email text field appear on Wrap-up screen?
 @property (nonatomic, assign) BOOL isEmailFieldEnabled;
