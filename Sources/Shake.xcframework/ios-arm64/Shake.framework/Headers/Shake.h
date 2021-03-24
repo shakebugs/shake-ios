@@ -10,6 +10,7 @@
 #import "SHKShakeReportData.h"
 #import "SHKNetworkRequestEditor.h"
 #import "SHKNotificationEventEditor.h"
+#import "SHKNetworkRequestBuilder.h"
 
 //! Project version number for Shake.
 FOUNDATION_EXPORT double ShakeVersionNumber;
@@ -34,7 +35,7 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
 @property (nonnull, class, readonly) SHKShakeConfiguration* configuration;
 
 ///Add additional data and files to the report object provided by the block.
-@property (nullable, class, nonatomic) SHKShakeReportData *_Nonnull (^onPrepareReportData)(SHKShakeReportData * _Nonnull reportData);
+@property (nullable, class, nonatomic) NSArray<SHKShakeFile *> *_Nonnull (^onPrepareReportData)(void);
 
 ///Privacy - Network requests filter
 @property (nullable, class) SHKNetworkRequestEditor * _Nullable (^networkRequestsFilter)(SHKNetworkRequestEditor * _Nonnull);
@@ -89,6 +90,10 @@ NS_SWIFT_NAME(log(_:));
 + (void)removePrivateViewController:(nullable id)viewController;
 
 + (void)clearPrivateViews;
+
+//MARK: Network Requst Builder
++ (void)insertNetworkRequest:(nonnull SHKNetworkRequestBuilder *)networkRequestBuilder;
+
 
 // MARK: - Deprecated
 

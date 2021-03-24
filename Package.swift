@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Shake",
-    platforms: [.iOS(SupportedPlatform.IOSVersion.v10)],
+    platforms: [.iOS(SupportedPlatform.IOSVersion.v11)],
     products: [
         .library(
             name: "Shake",

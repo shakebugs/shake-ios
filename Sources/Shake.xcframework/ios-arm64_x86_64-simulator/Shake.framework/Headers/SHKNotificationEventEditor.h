@@ -15,8 +15,10 @@ NS_SWIFT_NAME(NotificationEventEditor)
 
 @property (nonnull) NSString *title;
 @property (nonnull) NSString *description;
+@property (nonnull) NSString *identifier;
+@property (nonnull) NSString *timestamp;
 
--(instancetype)initWithTitle:(nonnull NSString *)title description:(nonnull NSString *)description;
+-(instancetype)initWithTitle:(nonnull NSString *)title description:(nonnull NSString *)description identifier:(NSString *)identifier timestamp:(NSString *)timestamp;
 
 @end
 

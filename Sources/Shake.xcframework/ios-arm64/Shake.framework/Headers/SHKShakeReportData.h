@@ -15,16 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(ShakeReportData)
 @interface SHKShakeReportData : NSObject <NSCoding, NSSecureCoding>
 
-/// Files to be uploaded with the report.
-@property (nonatomic, strong, nullable) NSArray <SHKShakeFile *> *attachedFiles;
-
-/// Description / Title of the bug
-@property (nonatomic, strong, nullable) NSString *bugDescription;
-
-@property (nonatomic, strong, nullable) void (^onDidChangeAttachments)(void);
-
--(instancetype)init;
-
 -(instancetype)initWithBugDescription:(nullable NSString *)bugDescription attachedFiles:(nullable NSArray<SHKShakeFile *> *)attachedFiles;
 
 @end
