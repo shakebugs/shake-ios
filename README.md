@@ -61,31 +61,10 @@ Visit Shake iOS SDK GitHub repo, click the green Clone button and then Download 
 Note:
 By not using a dependency manager like CocoaPods, you won't be able to use the simple `pod update Shake` command to always pull the latest version of Shake SDK into your app. Instead, you will have to repeat the the first step described in the above paragraph.
 
+## **Step 2:** Initialize Shake SDK
+Initialize Shake in the `didFinishLaunchingWithOptions` callback of your *AppDelegate*.
+Replace `your-api-client-id` and `your-api-client-secret` with the actual values you have in [your workspace settings](https://app.shakebugs.com/settings/workspace#general).
 
-## **Step 2:** Grab your API keys
-
-Visit your Shake [dashboard](https://app.shakebugs.com/documentation/ios/installing) and grab the `Client ID` and `Secret` keys.
-
-Open your workspace and in the Project Navigator, right click on Info.plist, and Open as › Source code. Paste this but replace your-api-client-id and your-api-client-secret with the actual values you have in your workspace settings on your Shake web dashboard.
-
-Then, right click on your `Info.plist > Open as > Source code` and paste the keys inside.
-
-```
-<?xml version="1.0" encoding="utf-8" ?>
-<plist version="1.0">
-  <dict>
-      <key>Shake</key>
-      <dict>
-        <key>APIClientID</key>
-        <string>your-api-client-id</string>
-        <key>APIClientSecret</key>
-        <string>your-api-client-secret</string>
-      </dict>
-  </dict>
-</plist>
-```
-
-## **Step 3:** Initialize Shake SDK
 #### Objective-C
 In your `AppDelegate.m`:
 ```objc
@@ -94,8 +73,8 @@ In your `AppDelegate.m`:
 
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  [SHKShake start];
-  return YES;
+    [SHKShake startWithClientId:@"your-api-client-id" clientSecret:@"your-api-client-secret"];
+    return YES;
 }
 @end
 ```
@@ -110,8 +89,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-      Shake.start()
-      return true
+        Shake.start(clientId: "your-api-client-id", clientSecret: "your-api-client-secret")
+        return true
   }
 }
 ```
@@ -119,7 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 Note:
 To avoid a swizzling conflict, call `Shake.start()` before initializing all other frameworks (e.g. Firebase Performance Monitoring SDK). Otherwise, some network requests may not be captured and sent with reports.
 
-## **Step 4:** Build and run
+## **Step 3:** Build and run
 Select _Product > Run_ in the menu bar. This first run will automatically add your app to your [Shake Dashboard](https://app.shakebugs.com/) based on your app bundle ID.
 
 &nbsp;
