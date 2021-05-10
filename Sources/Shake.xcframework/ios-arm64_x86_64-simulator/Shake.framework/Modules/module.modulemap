@@ -4,3 +4,8 @@ framework module Shake {
   export *
   module * { export * }
 }
+
+module Shake.Swift {
+    header "Shake-Swift.h"
+    requires objc
+}

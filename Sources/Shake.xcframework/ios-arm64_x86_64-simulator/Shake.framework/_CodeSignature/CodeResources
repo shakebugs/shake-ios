@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		wF5VTvmFuNwAtMewLfXmOqWXXU8=
+		JwbZPboEieDLUU721R40/2uUOBk=
 		</data>
 		<key>DemangleNodes.def</key>
 		<data>
@@ -28,21 +28,21 @@
 		<data>
 		sqMNZSgpqAPDwiU4LjesY/mfX0k=
 		</data>
-		<key>Headers/SHKNetworkRequestBuilder.h</key>
-		<data>
-		QByX/cKux9Gn2nuhdNtBtCrnlwo=
-		</data>
 		<key>Headers/SHKNetworkRequestEditor.h</key>
 		<data>
-		+KZtWepyJgkIQWepPXpqO1gEWac=
+		56FBJ13cLxVmmqNlKTEjsXbrRCo=
 		</data>
 		<key>Headers/SHKNotificationEventEditor.h</key>
 		<data>
-		vusaWxVE0APZOlTTs5Q2yOgG2wo=
+		XycqEeqPXMdAyKaxJPdiGU6sELU=
+		</data>
+		<key>Headers/SHKSessionAuthenticationProtocol.h</key>
+		<data>
+		Dre8oGJFnFYgQ3btNCsa7A6kbow=
 		</data>
 		<key>Headers/SHKShakeConfiguration.h</key>
 		<data>
-		bqQiGuZdCz2DbhqtEtHa5yj3bro=
+		Dkh7tKtWPeHYv4srRamyAAHlguM=
 		</data>
 		<key>Headers/SHKShakeFile.h</key>
 		<data>
@@ -56,13 +56,17 @@
 		<data>
 		i8kDZjxUqvlCdh7MB8U8amwK9rk=
 		</data>
+		<key>Headers/Shake-Swift.h</key>
+		<data>
+		6y4NMlCqQAI8bMV8s6SCfwDKNk8=
+		</data>
 		<key>Headers/Shake.h</key>
 		<data>
-		zVmolaFUHht+EeYwgRS0hKu6HEU=
+		PW2MYLZEMnRuh7vgCHcAN9CjQFI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FT6o6o/8ETJGXlagEmauqWGsQ1Y=
+		3Xcq1YwaStg9wMDPPTBIu6dPqYA=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -72,9 +76,57 @@
 		<data>
 		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
+		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		Ne0VCYrFNQbg1dEneC3eKhEc73Y=
+		</data>
+		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		gUcNx/zYKL4GH0pHxD1YvilELcc=
+		</data>
+		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		AotX0501yTNOYyfsAe8rZ2rPNE0=
+		</data>
+		<key>Modules/Shake.swiftmodule/arm64.swiftdoc</key>
+		<data>
+		Ne0VCYrFNQbg1dEneC3eKhEc73Y=
+		</data>
+		<key>Modules/Shake.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		gUcNx/zYKL4GH0pHxD1YvilELcc=
+		</data>
+		<key>Modules/Shake.swiftmodule/arm64.swiftmodule</key>
+		<data>
+		AotX0501yTNOYyfsAe8rZ2rPNE0=
+		</data>
+		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		qV8YgC0exLSarHtTHrEfu18Wboc=
+		</data>
+		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		DFF5iixwyMUc75R1JUvKpwwqt1w=
+		</data>
+		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		5/9D3Mr1XvdnG4ao/tAsPzjijek=
+		</data>
+		<key>Modules/Shake.swiftmodule/x86_64.swiftdoc</key>
+		<data>
+		qV8YgC0exLSarHtTHrEfu18Wboc=
+		</data>
+		<key>Modules/Shake.swiftmodule/x86_64.swiftinterface</key>
+		<data>
+		DFF5iixwyMUc75R1JUvKpwwqt1w=
+		</data>
+		<key>Modules/Shake.swiftmodule/x86_64.swiftmodule</key>
+		<data>
+		5/9D3Mr1XvdnG4ao/tAsPzjijek=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Arx4z03AMS3tVWMOIbbc1EV56oU=
+		oZSm+2l3NWU8LUewkaf5fBMrvDI=
 		</data>
 		<key>ReferenceStorage.def</key>
 		<data>
@@ -86,11 +138,11 @@
 		</data>
 		<key>SHKAlertVC.storyboardc/SHKAlertVC.nib</key>
 		<data>
-		PSJZA5GRp6IoTbw8t8UYXITdHzk=
+		JkZo/tvrg71Ju2Wr6FBfo6Nw/88=
 		</data>
 		<key>SHKAlertVC.storyboardc/Sbx-N3-edu-view-CTk-h5-fo7.nib</key>
 		<data>
-		dc4JT4+ZkPdt0uUVSCqg/UgCLB4=
+		KWo/IO17/RmFiojSmVtH+Qdu2g0=
 		</data>
 		<key>SHKInspectBugStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -98,11 +150,11 @@
 		</data>
 		<key>SHKInspectBugStoryboard.storyboardc/SHKInspectBugVC.nib</key>
 		<data>
-		H1hObqqffRMU/xfnA2SX2/NJIls=
+		9l0EKYOmC8VN5aWltV4ok2FD9kE=
 		</data>
 		<key>SHKInspectBugStoryboard.storyboardc/niA-iC-r0S-view-OYS-6A-hUU.nib</key>
 		<data>
-		q2XBb9lFzFH5T5sCJK/aYF7D5lc=
+		NNnTEGGT7jUMhJfCQIzc+xcbtNE=
 		</data>
 		<key>SHKReportComposeStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -110,11 +162,11 @@
 		</data>
 		<key>SHKReportComposeStoryboard.storyboardc/SHKReportComposeViewController.nib</key>
 		<data>
-		421ewmCBOtt65HPZocXhYUx11xw=
+		6J3ASmCbRTHiiS//rYwCTL5j6ug=
 		</data>
 		<key>SHKReportComposeStoryboard.storyboardc/WZs-Rq-UvM-view-dqD-j9-Zwh.nib</key>
 		<data>
-		QPcN5GReLfM9DzyuOIsz4EQ7Spk=
+		NqaCiaUo/zcIh0gP4XdbqilOueU=
 		</data>
 		<key>SHKReportingDisabledPopupVC.storyboardc/Info.plist</key>
 		<data>
@@ -122,11 +174,11 @@
 		</data>
 		<key>SHKReportingDisabledPopupVC.storyboardc/SHKReportingDisabledPopupVC.nib</key>
 		<data>
-		QXYcj4bv2iU9NYWldfgg9sgjjxM=
+		4Lq8Toq4QUUkl8iOmPT7NRbQ/ho=
 		</data>
 		<key>SHKReportingDisabledPopupVC.storyboardc/pu0-b3-3yh-view-rZD-dD-p7d.nib</key>
 		<data>
-		Ij5+Px+pXQ68Oae8BCxcAG0NnsI=
+		eoTetRT+OO41jG4rDjzX+OEGGII=
 		</data>
 		<key>SHKScreenshotVC.storyboardc/Info.plist</key>
 		<data>
@@ -134,11 +186,11 @@
 		</data>
 		<key>SHKScreenshotVC.storyboardc/ScreenshotID.nib</key>
 		<data>
-		zSNY/U86LvBhp4FR5ZVuA0p5rdY=
+		N6xvU89656lm8BkJ2QrzIw4Hpbs=
 		</data>
 		<key>SHKScreenshotVC.storyboardc/x0n-cR-uDu-view-Jlv-bX-B75.nib</key>
 		<data>
-		2nL4Q4v222ejotRULluX1RvUIRU=
+		YZpqTwaYRkSAon127X/w5Ml44J0=
 		</data>
 		<key>Shake.json</key>
 		<data>
@@ -165,7 +217,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3wh9K15PNljWhbW1YZYa3kGTFEA=
+			pk9SQNPvY8L5cbuSKsfGYA/3SRA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -206,6 +258,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>upload-symbols.sh</key>
+		<data>
+		biyJtA5Q71ES1sdieBH6Ul7hRU4=
+		</data>
 		<key>zh-Hans.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -231,7 +287,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZskNHgEoXeyeRrRsNvE/J6XAhkA4y7vkkVODkILxqTw=
+			wED+puPIpI76c+TjVVYgN5xhf+EBLLYhsYlWUk009QY=
 			</data>
 		</dict>
 		<key>DemangleNodes.def</key>
@@ -269,32 +325,32 @@
 			scr+VgK5OZQ3zjJQCZpHrTbVnyMfuJt1FehPoF+2zfA=
 			</data>
 		</dict>
-		<key>Headers/SHKNetworkRequestBuilder.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GnWpHws246Cio29QtEjQz1Ce6juOlDKyI6+c2/RWBPw=
-			</data>
-		</dict>
 		<key>Headers/SHKNetworkRequestEditor.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oqssjQ7bz2ef/0INdtxT22QOluptLBqdrz9wXSnex0=
+			LOGgqNNpyssInjHcf0conE8nKMCBRQRmyaYjwaG8bnw=
 			</data>
 		</dict>
 		<key>Headers/SHKNotificationEventEditor.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g4R2bgIQfEDubRKl5ykE98CYYzo7FaJJbODyc+I7L/g=
+			8WPudGcp6AcxaS13xDJmxJNuk2ZqaF7nWWVaZcJbkMw=
+			</data>
+		</dict>
+		<key>Headers/SHKSessionAuthenticationProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9hbBqUGjpyYdDo9x/aBhnxxpUGOoQtC1CioYa98gxKQ=
 			</data>
 		</dict>
 		<key>Headers/SHKShakeConfiguration.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PWAanDVotQHlOk4cyRQjgdliS7bNajYqFs0g3aVfAZE=
+			SPP2aI0ZC+OITNo5o33X/Rpc6YU3j/gpo7lh1KI87X0=
 			</data>
 		</dict>
 		<key>Headers/SHKShakeFile.h</key>
@@ -318,11 +374,18 @@
 			HTirhjOrWuqsjc/UGAALPsic1ljLPUlSXtorEmG5Okg=
 			</data>
 		</dict>
+		<key>Headers/Shake-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mZKLgAmzWlvDYkLikxrAX5sf68kE57wUMpBy6oYGtTk=
+			</data>
+		</dict>
 		<key>Headers/Shake.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yj/M7RsHOa421WnVzLkTncyktoNNoNgwc3gnI+GhRl0=
+			ITX1YJeeSBNRCjjAu3YCXChmPCGmDVaiGUwKXH0RXjU=
 			</data>
 		</dict>
 		<key>LICENSE</key>
@@ -339,11 +402,95 @@
 			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
 			</data>
 		</dict>
+		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uOMC5h3+ht1J14rUSswhZZgPk8PDEHAd6vN892cCswE=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			j6zEdiaAPrBgqE8ZCkfcytJDB+86zykx8Xo1/2P7zTs=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OK58zGWTMDYJJf494pDsMFbZZNpSYOmpR/DBE79OWB0=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uOMC5h3+ht1J14rUSswhZZgPk8PDEHAd6vN892cCswE=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			j6zEdiaAPrBgqE8ZCkfcytJDB+86zykx8Xo1/2P7zTs=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OK58zGWTMDYJJf494pDsMFbZZNpSYOmpR/DBE79OWB0=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MSgWUuXnDoPvM7WU4c/iFFI1iBrd3+EfWvFtD9EnpjQ=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gNjqd9XOFbnysoHuiuymWjj7xigbr8qpVqfMx8tRB3s=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MoDo/4liweABBDzJ3f675z/6QQG/92ctJTDuocMKHck=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/x86_64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MSgWUuXnDoPvM7WU4c/iFFI1iBrd3+EfWvFtD9EnpjQ=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/x86_64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gNjqd9XOFbnysoHuiuymWjj7xigbr8qpVqfMx8tRB3s=
+			</data>
+		</dict>
+		<key>Modules/Shake.swiftmodule/x86_64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MoDo/4liweABBDzJ3f675z/6QQG/92ctJTDuocMKHck=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cbm9CfyHbOn55o/Q5G2haTN90YhKrZy8GURruFFc2tg=
+			D9lfRJV0WIMhwdeE/3iM8VyRU6pxBrMX2uxyBBKKMos=
 			</data>
 		</dict>
 		<key>ReferenceStorage.def</key>
@@ -364,14 +511,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fE3WlHqhVbXwIX1MSjVxJGLFnQmBRe8iYXkpa4wo8wQ=
+			eBZ5IIUB/ng3ItO3fu6xewLLHOVpUEhpapjZuy6xwOA=
 			</data>
 		</dict>
 		<key>SHKAlertVC.storyboardc/Sbx-N3-edu-view-CTk-h5-fo7.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C8rXqxfTerEFcDpTOJIiEGX16lE1xqLB05YoKSEerFs=
+			GtF4UgDIh2tYyEBqIj1hLZ7Vjj/ngCAhuSiKuhPHpsc=
 			</data>
 		</dict>
 		<key>SHKInspectBugStoryboard.storyboardc/Info.plist</key>
@@ -385,14 +532,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			alOFG/6a4ud0vlu+zxIydrAKWqnl2x+Ah9iciv2Ek0A=
+			vgiqQZa+uiEEzrP83aYODh5HQ5RyMMGW+a3kKifQGoI=
 			</data>
 		</dict>
 		<key>SHKInspectBugStoryboard.storyboardc/niA-iC-r0S-view-OYS-6A-hUU.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a58t9GBhlBtX/1wly+1diit8fGyP+Pe5fra0Iu5G6gk=
+			sYff3mHWXRf+AMOchrfBfFLZ68W+vtx7/Oqt15X4yYs=
 			</data>
 		</dict>
 		<key>SHKReportComposeStoryboard.storyboardc/Info.plist</key>
@@ -406,14 +553,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			owsRrZ7PF7FCcRXTsL5xCMtBxQp8V0t4ftEMco+yFWA=
+			3nTK1rUNLVY5KY0QluzED+TKsEm/IEhHwzg/0R9KlqI=
 			</data>
 		</dict>
 		<key>SHKReportComposeStoryboard.storyboardc/WZs-Rq-UvM-view-dqD-j9-Zwh.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			odpi6Tb0S8fH5qdiyoFhD2yIA7oCW7vE9vHFGtQ7uDo=
+			B2tTdnerrnCH+BI8kDXFxSgfE4eK22kScd2L095BEXo=
 			</data>
 		</dict>
 		<key>SHKReportingDisabledPopupVC.storyboardc/Info.plist</key>
@@ -427,14 +574,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aiOLnA3SWM9GvYqPhw9LOW1ER4RmNrRiNQd93OLwzqE=
+			CgTQj40x74/62xVBW6ItLa/6pNb254SLyH5GI432h/0=
 			</data>
 		</dict>
 		<key>SHKReportingDisabledPopupVC.storyboardc/pu0-b3-3yh-view-rZD-dD-p7d.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QpbjlOJJIgTuoo134QJG6wWCs9b/69R72Of8lITvmxc=
+			DFT5csB8XNfKsNG2an1VyOVPPZeie2ZBqS3TN1plXRw=
 			</data>
 		</dict>
 		<key>SHKScreenshotVC.storyboardc/Info.plist</key>
@@ -448,14 +595,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+pZmWKNctkz3viDOfl7LzEpOT9D5Uww4Vgs1hTj93Og=
+			OuXrX1zebo/6zXDDAduJ7LkMHF1x7huWWd+usoVuD2Y=
 			</data>
 		</dict>
 		<key>SHKScreenshotVC.storyboardc/x0n-cR-uDu-view-Jlv-bX-B75.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TvFJr6oc4gbXZa0vnt5lZI4sCP+NAtjjB5+fIze8E7Q=
+			bTdX9Gh9P3FeU7pMBjd1ybAMBGfEqpBV+HKuh5i8cFA=
 			</data>
 		</dict>
 		<key>Shake.json</key>
@@ -492,7 +639,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LhPAvCB8YjkU7tls/2uiPaE7FS2LwokWSJBREKCFnfo=
+			QdMwlXU+g35z43F0Q4okGZBqG3ymFHjg4Y77tYQBuFE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -532,6 +679,13 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>upload-symbols.sh</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cxIzSmY/1PsdPjG+DIZYhT3ZkfcYERXLOmUARAlmG8c=
+			</data>
 		</dict>
 		<key>zh-Hans.lproj/Localizable.strings</key>
 		<dict>

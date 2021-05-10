@@ -10,7 +10,8 @@
 #import "SHKShakeReportData.h"
 #import "SHKNetworkRequestEditor.h"
 #import "SHKNotificationEventEditor.h"
-#import "SHKNetworkRequestBuilder.h"
+#import "SHKNetworkRequestEditor.h"
+#import "SHKSessionAuthenticationProtocol.h"
 
 //! Project version number for Shake.
 FOUNDATION_EXPORT double ShakeVersionNumber;
@@ -91,9 +92,26 @@ NS_SWIFT_NAME(log(_:));
 
 + (void)clearPrivateViews;
 
-//MARK: Network Requst Builder
-+ (void)insertNetworkRequest:(nonnull SHKNetworkRequestBuilder *)networkRequestBuilder;
+//MARK: Network Request Reporting
 
++ (void)insertNetworkRequest:(nonnull SHKNetworkRequestEditor *)networkRequest
+NS_SWIFT_NAME(insertNetworkRequest(_:));
+
+/**
+ Pass your NSURLSessionConfiguration to this method before  initializing your NSURLSession with the configuration.
+ Later, use the same configuration to initialize the NSURLSession.
+ */
++ (void)registerSessionConfiguration:(nonnull NSURLSessionConfiguration *)configuration
+NS_SWIFT_NAME(registerSessionConfiguration(_:));
+
+/**
+ Shake assumes your  NSURLSession is already initialized with the configuration returned by calling registerSessionConfiguration method.
+ Use this method if your app using any kind of authentication challenges with the server.
+ Shake will pass down authentication challenges to this delegate.
+ Auth delegate is not retained.
+ */
++ (void)registerAuthDelegate:(nonnull id<SHKSessionAuthenticationProtocol>)authDelegate
+NS_SWIFT_NAME(registerAuthDelegate(_:));
 
 // MARK: - Deprecated
 

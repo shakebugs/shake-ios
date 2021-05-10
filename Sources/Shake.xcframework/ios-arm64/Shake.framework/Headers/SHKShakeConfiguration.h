@@ -43,6 +43,12 @@ NS_SWIFT_NAME(ShakeConfiguration)
 // Can Shake capture apps screen and audio and record into movie file
 @property (nonatomic, assign) BOOL isAutoVideoRecordingEnabled;
 
+/// Shake will track crash events
+@property (nonatomic) BOOL isCrashReportingEnabled;
+
+/// It will gives a chance to user to describe the crash
+@property (nonatomic, assign) BOOL isAskForCrashDescriptionEnabled;
+
 @property (nonatomic, assign) int autoVideoRecordingClipDuration
 __attribute__((deprecated("Use 'isAutoVideoRecordingEnabled' property only, 'autoVideoRecordingClipDuration' will be removed soon!")));
 

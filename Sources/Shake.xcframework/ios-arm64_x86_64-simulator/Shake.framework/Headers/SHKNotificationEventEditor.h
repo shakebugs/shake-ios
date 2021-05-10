@@ -3,7 +3,7 @@
 //  Shake
 //
 //  Created by Vedran Ozir on 03/11/2020.
-//  Copyright © 2020 DECODE HQ Ltd. All rights reserved.
+//  Copyright © 2020 Shake Technologies, Inc. All rights reserved. 
 //
 
 #import <Foundation/Foundation.h>
