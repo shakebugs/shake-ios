@@ -1,5 +1,3 @@
-#!/bin/sh
-
 #  upload-symbols.sh
 #  Shake
 #
