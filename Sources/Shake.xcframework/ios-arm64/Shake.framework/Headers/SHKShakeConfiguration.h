@@ -16,6 +16,9 @@ NS_SWIFT_NAME(ShakeConfiguration)
 /// Shake will be automatically invoked when user shakes their device
 @property (nonatomic) BOOL isInvokedByShakeDeviceEvent;
 
+/// You can set how sensitive device should be to the shaking
+@property (nonatomic, assign) float shakingThreshold;
+
 /// Shake will be automatically invoked when user takes a screenshot
 @property (nonatomic) BOOL isInvokedByScreenshot;
 
@@ -48,6 +51,12 @@ NS_SWIFT_NAME(ShakeConfiguration)
 
 /// It will gives a chance to user to describe the crash
 @property (nonatomic, assign) BOOL isAskForCrashDescriptionEnabled;
+
+/**
+ Setting this flag to "false" disables automatic screenshot when invoking Shake.
+ Default value is "true".
+ */
+@property (nonatomic, assign) BOOL isScreenshotIncluded;
 
 @property (nonatomic, assign) int autoVideoRecordingClipDuration
 __attribute__((deprecated("Use 'isAutoVideoRecordingEnabled' property only, 'autoVideoRecordingClipDuration' will be removed soon!")));

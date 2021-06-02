@@ -12,6 +12,7 @@
 #import "SHKNotificationEventEditor.h"
 #import "SHKNetworkRequestEditor.h"
 #import "SHKSessionAuthenticationProtocol.h"
+#import "SHKFeedbackEntry.h"
 
 //! Project version number for Shake.
 FOUNDATION_EXPORT double ShakeVersionNumber;
@@ -92,6 +93,11 @@ NS_SWIFT_NAME(log(_:));
 
 + (void)clearPrivateViews;
 
++ (nonnull NSArray<SHKFeedbackEntry *> *)getFeedbackTypes;
+
++ (void)setFeedbackTypes:(nonnull NSArray<SHKFeedbackEntry *> *)types;
+
+
 //MARK: Network Request Reporting
 
 + (void)insertNetworkRequest:(nonnull SHKNetworkRequestEditor *)networkRequest
@@ -147,5 +153,10 @@ __attribute__((deprecated("Use start(clientId:clientSecret:) instead. Providing 
 
 + (void)setMetadataWithKey:(nonnull NSString *)key value:(nullable NSString *)value
 NS_SWIFT_NAME(setMetadata(key:value:));
+
+/**
+ Silently reports a non fatal error. Cluster ID affects dashboard grouping.
+ */
++ (void)handleError:(nonnull NSError *)error clusterID:(nonnull NSString *)clusterID;
 
 @end
