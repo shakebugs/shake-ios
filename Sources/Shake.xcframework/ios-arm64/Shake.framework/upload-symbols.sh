@@ -4,12 +4,47 @@
 #  Created by Filip Belakon on 09.04.2021..
 #  Copyright © 2021 Shake Technologies Inc. All rights reserved.
 
-client_id="" client_secret=""
-while (( $# > 1 )); do case $1 in
-   --client_id) client_id="$2";;
-   --client_secret) client_secret="$2";;
-   *) break;
- esac; shift 2
+client_id="" client_secret="" endpoint_url="https://api.shakebugs.com"
+
+BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c "print CFBundleVersion" "${SRCROOT}/${INFOPLIST_FILE}")
+BUNDLE_VERSION_STRING=$(/usr/libexec/PlistBuddy -c "print CFBundleShortVersionString" "${SRCROOT}/${INFOPLIST_FILE}")
+
+POSITIONAL=()
+while [[ $# -gt 0 ]]
+do
+key="$1"
+
+case $key in
+    --client_id)
+    client_id="$2"
+    shift # past argument
+    shift # past value
+    ;;
+    --client_secret)
+    client_secret="$2"
+    shift # past argument
+    shift # past value
+    ;;
+    --app_version_name)
+    BUNDLE_VERSION_STRING="$2"
+    shift # past argument
+    shift # past value
+    ;;
+    --app_version_code)
+    BUNDLE_VERSION="$2"
+    shift # past argument
+    shift # past value
+    ;;
+    --endpoint_url)
+    endpoint_url="$2"
+    shift # past argument
+    shift # past value
+    ;;
+    *)    # unknown option
+    POSITIONAL+=("$1") # save it in an array for later
+    shift # past argument
+    ;;
+esac
 done
 
 if [ -z "$client_id" ] || [ -z "$client_secret" ]
@@ -18,14 +53,11 @@ if [ -z "$client_id" ] || [ -z "$client_secret" ]
         exit 0
 fi
 
-BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c "print CFBundleVersion" "${SRCROOT}/${INFOPLIST_FILE}")
-BUNDLE_VERSION_STRING=$(/usr/libexec/PlistBuddy -c "print CFBundleShortVersionString" "${SRCROOT}/${INFOPLIST_FILE}")
-
 echo "CFBundleVersion: ${BUNDLE_VERSION}"
 echo "CFBundleShortVersionString: ${BUNDLE_VERSION_STRING}"
 echo "BundleId: ${PRODUCT_BUNDLE_IDENTIFIER}"
 
-OAUTH_TOKEN_ENDPOINT="https://api.shakebugs.com/auth/oauth2/token"
+OAUTH_TOKEN_ENDPOINT="${endpoint_url}/auth/oauth2/token"
 COMMAND=$(curl --silent -d "grant_type=client_credentials&client_id=${client_id}&client_secret=${client_secret}" $OAUTH_TOKEN_ENDPOINT)
 
 ACCESS_TOKEN=$(echo $COMMAND | tr { '\n' | tr , '\n' | tr } '\n' | grep "access_token" | awk  -F'"' '{print $4}')
@@ -39,7 +71,7 @@ fi
 uploading_dsym_file() {
     FILE=$1
     
-    ENDPOINT="https://api.shakebugs.com/api/1.0/crash_reporting/app_debug_file/${PRODUCT_BUNDLE_IDENTIFIER}"
+    ENDPOINT="${endpoint_url}/api/1.0/crash_reporting/app_debug_file/${PRODUCT_BUNDLE_IDENTIFIER}"
     
     STATUS=$(curl --silent --output /dev/null -H "Authorization: Bearer $ACCESS_TOKEN"\
         -F app_version_name="${BUNDLE_VERSION_STRING}" -F app_version_code="${BUNDLE_VERSION}"\

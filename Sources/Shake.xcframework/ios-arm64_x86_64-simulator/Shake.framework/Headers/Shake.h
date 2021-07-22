@@ -97,8 +97,34 @@ NS_SWIFT_NAME(log(_:));
 
 + (void)setFeedbackTypes:(nonnull NSArray<SHKFeedbackEntry *> *)types;
 
+// MARK: - User
 
-//MARK: Network Request Reporting
+/**
+ Registers the user of your application with Shake.
+ Ideally, passed in userId should uniquely identify the user of your application in your database or system.
+ */
++ (void)registerUserWithUserId:(nonnull NSString *)userId NS_SWIFT_NAME(registerUser(userId:));
+
+/**
+ Update the metadata of previously registered user. Metadata updates are merged (updated key values will overwrite the existing ones) so this method can safely
+ be called with new key value pairs in separate contexts of your application.
+ This method does nothing if there is no registered user.
+ */
++ (void)updateUserMetadata:(nonnull NSDictionary<NSString *, id> *)metadata NS_SWIFT_NAME(updateUserMetadata(_:));
+
+/**
+ This method updates the previously registered user with the new userId. In most cases, this is never used but can be usefull if for example your
+ internal user identifiers are user emails, which can be changed from the settings screen of your application.
+ */
++ (void)updateUserId:(nonnull NSString *)userId NS_SWIFT_NAME(updateUserId(_:));
+
+/**
+ Unregisters the previously registered user from this device.
+ */
++ (void)unregisterUser;
+
+
+//MARK: - Network Request Reporting
 
 + (void)insertNetworkRequest:(nonnull SHKNetworkRequestEditor *)networkRequest
 NS_SWIFT_NAME(insertNetworkRequest(_:));
