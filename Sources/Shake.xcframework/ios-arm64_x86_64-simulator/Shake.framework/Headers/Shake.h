@@ -7,7 +7,6 @@
 #import "SHKShakeFile.h"
 #import "SHKShakeConfiguration.h"
 #import "SHKShakeReportConfiguration.h"
-#import "SHKShakeReportData.h"
 #import "SHKNetworkRequestEditor.h"
 #import "SHKNotificationEventEditor.h"
 #import "SHKNetworkRequestEditor.h"
@@ -31,20 +30,6 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
     LogLevelError
 };
 
-// MARK: - Properties
-
-///Shake tracking, invoking and user interaction options
-@property (nonnull, class, readonly) SHKShakeConfiguration* configuration;
-
-///Add additional data and files to the report object provided by the block.
-@property (nullable, class, nonatomic) NSArray<SHKShakeFile *> *_Nonnull (^onPrepareReportData)(void);
-
-///Privacy - Network requests filter
-@property (nullable, class) SHKNetworkRequestEditor * _Nullable (^networkRequestsFilter)(SHKNetworkRequestEditor * _Nonnull);
-
-///Privacy - Notification event filter
-@property (nullable, class) SHKNotificationEventEditor * _Nullable (^notificationEventsFilter)(SHKNotificationEventEditor * _Nonnull);
-
 ///Shake bundle
 @property (nonnull, class, readonly) NSBundle *bundle;
 
@@ -54,31 +39,77 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
 ///Use this property to pause or resume Shake - ex. temporarely disable invocation and BlackBox/Activity History tracking.
 @property (class) BOOL isPaused;
 
-// MARK: - Methods
 
-/// Starts recording BlackBox and Activity History data. Enables invocation. Use '.isPaused' to pause or resume tracking.
+// MARK: - Configuration
+
+/**
+ Shake configuration object.
+ */
+@property (nonnull, class, readonly) SHKShakeConfiguration* configuration;
+
+/**
+ Starts the Shake with the provided client and secret. Also start the tracking and Shake features specified in the "configuration" object.
+ */
 + (void)startWithClientId:(nonnull NSString *)clientId clientSecret:(nonnull NSString *)clientSecret
 NS_SWIFT_NAME(start(clientId:clientSecret:));
 
-/// Brings up Shake UI allowing user to send a new bug report
+
+/**
+ Assign a callback function to this property to lazily attach additional files to each Shake report. This enables you to construct various
+ files at the time of the report, keeping the data most relevant.
+ */
+@property (nullable, class, nonatomic) NSArray<SHKShakeFile *> *_Nonnull (^onPrepareReportData)(void);
+
+// MARK: - Manual invocation
+
+typedef NS_ENUM(NSUInteger, SHKShowOption) {
+    SHKShowOptionHome = 1,
+    SHKShowOptionNew
+};
+
+/**
+ Triggers the display of Shake UI.
+ */
 + (void)show;
 
-/// Adds a notifications log entry to Notifications
+/**
+ Triggers the display of Shake UI with the provided option.
+ Default option is SHKShowOptionNew.
+ */
++ (void)show:(SHKShowOption)option;
+
+// MARK: Silent Report
+
+/**
+ Constructs a silent report  and sends it silently without presenting any kind of UI to the user of your app.
+ */
++ (void)silentReportWithDescription:(nullable NSString *)description fileAttachBlock:(NSArray<SHKShakeFile *> *_Nonnull (^ __nonnull)(void))fileAttachBlock reportConfiguration:(nonnull SHKShakeReportConfiguration *)reportConfiguration
+NS_SWIFT_NAME(silentReport(description:fileAttachBlock:reportConfiguration:));
+
+
+// MARK: Notifications
+
+/**
+ Assign a filter function to this property and Shake will call the function prior to inserting the notification record in database. This gives you a chance to remove or edit some specific
+ notifications.
+ */
+@property (nullable, class) SHKNotificationEventEditor * _Nullable (^notificationEventsFilter)(SHKNotificationEventEditor * _Nonnull);
+
+/**
+ Manually register the received notification with Shake.
+ */
 + (void)handleNotificationWithNotificationTitle:(NSString* __nonnull)notificationTitle notificationDescription:(NSString * __nonnull)notificationDescription;
 
-/// Brings up Shake UI with pre-populated report data (description, attachments etc.) allowing user to send a new bug report
-+ (void)showWithReportData:(nonnull SHKShakeReportData *)reportData
-NS_SWIFT_NAME(show(reportData:));
+// MARK: Logging
 
-/// Send bug report to the server without displaying any user interface to the user. Use this to report certain state of the app.
-+ (void)silentReportWithReportData:(nullable SHKShakeReportData *)reportData reportConfiguration:(nonnull SHKShakeReportConfiguration *)reportConfiguration
-NS_SWIFT_NAME(silentReport(reportData:reportConfiguration:));
-
-/// Adds a custom log entry to Activity History
+/**
+ Adds a custom log entry to Activity History
+ */
 + (void)logWithLevel:(LogLevel)level message:(NSString * __nonnull)message
 NS_SWIFT_NAME(log(_:_:));
 
-/// Adds a custom log entry to Activity History with debug level
+/** Adds a custom log entry to Activity History with debug level
+ */
 + (void)logWithMessage:(NSString * __nonnull)message
 NS_SWIFT_NAME(log(_:));
 
@@ -92,6 +123,8 @@ NS_SWIFT_NAME(log(_:));
 + (void)removePrivateViewController:(nullable id)viewController;
 
 + (void)clearPrivateViews;
+
+// MARK: - Feedback type
 
 + (nonnull NSArray<SHKFeedbackEntry *> *)getFeedbackTypes;
 
@@ -126,9 +159,6 @@ NS_SWIFT_NAME(log(_:));
 
 //MARK: - Network Request Reporting
 
-+ (void)insertNetworkRequest:(nonnull SHKNetworkRequestEditor *)networkRequest
-NS_SWIFT_NAME(insertNetworkRequest(_:));
-
 /**
  Pass your NSURLSessionConfiguration to this method before  initializing your NSURLSession with the configuration.
  Later, use the same configuration to initialize the NSURLSession.
@@ -145,40 +175,25 @@ NS_SWIFT_NAME(registerSessionConfiguration(_:));
 + (void)registerAuthDelegate:(nonnull id<SHKSessionAuthenticationProtocol>)authDelegate
 NS_SWIFT_NAME(registerAuthDelegate(_:));
 
-// MARK: - Deprecated
+/**
+ A network request filter that is called prior to registering request with Shake. Use this this to target and  remove/edit specific requests.
+ */
+@property (nullable, class) SHKNetworkRequestEditor * _Nullable (^networkRequestsFilter)(SHKNetworkRequestEditor * _Nonnull);
 
-+ (nonnull SHKShake *)sharedInstance
-__attribute__((unavailable("Use 'Shake' class methods/properties instead")));
+/**
+ Manually register the network request with Shake. Use this when the standard setup is not suitable, or when using the
+ custom NSURLProtocol in you application.
+ */
++ (void)insertNetworkRequest:(nonnull SHKNetworkRequestEditor *)networkRequest
+NS_SWIFT_NAME(insertNetworkRequest(_:));
 
-+ (void)setBlackBoxEnabled:(BOOL)isBlackBoxEnabled
-__attribute__((unavailable("Use 'Shake.isBlackBoxEnabled' property instead")));
-
-__attribute__((deprecated("Using ShakeInvocationEvent is deprecated. Use 'Shake.configuration' instead!")))
-typedef NS_OPTIONS(NSUInteger, ShakeInvocationEvent) {
-    ShakeInvocationEventShake = 1<<0,
-    ShakeInvocationEventButton = 1<<1,
-    ShakeInvocationEventScreenshot = 1<<2,
-    ShakeInvocationEventManual = 1<<3
-};
-
-+ (void)startWithInvocationEvents:(ShakeInvocationEvent)invocationEvents
-__attribute__((unavailable("Use 'start' method instead. Use 'Shake.configuration' to change invocation methods.")));
-
-@property (nullable, nonatomic, copy) SHKShakeReportData *_Nonnull (^onPrepareData)(SHKShakeReportData * _Nonnull reportData)
-__attribute__((unavailable("Simply use 'Shake.onPrepareReportData' instead.")));
-
-@property (nullable, class, nonatomic, copy) SHKShakeReportData *_Nonnull (^onPrepareData)(SHKShakeReportData * _Nonnull reportData)
-__attribute__((unavailable("Use 'Shake.onPrepareReportData' instead.")));
-
-+ (void)stop
-__attribute__((unavailable("Use 'Shake.isPaused = true' instead.")));
-
-/// Starts recording BlackBox and Activity History data. Enables invocation. Use '.isPaused' to pause or resume tracking.
-+ (void)start
-__attribute__((deprecated("Use start(clientId:clientSecret:) instead. Providing API credentials using Info.plist is deprecated.")));
+// MARK: - Metadata
 
 + (void)setMetadataWithKey:(nonnull NSString *)key value:(nullable NSString *)value
 NS_SWIFT_NAME(setMetadata(key:value:));
+
+
+// MARK: - Caught Errors
 
 /**
  Silently reports a non fatal error. Cluster ID affects dashboard grouping.

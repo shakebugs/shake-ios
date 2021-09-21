@@ -58,9 +58,6 @@ NS_SWIFT_NAME(ShakeConfiguration)
  */
 @property (nonatomic, assign) BOOL isScreenshotIncluded;
 
-@property (nonatomic, assign) int autoVideoRecordingClipDuration
-__attribute__((deprecated("Use 'isAutoVideoRecordingEnabled' property only, 'autoVideoRecordingClipDuration' will be removed soon!")));
-
 /// Should email text field appear on Wrap-up screen?
 @property (nonatomic, assign) BOOL isEmailFieldEnabled;
 
