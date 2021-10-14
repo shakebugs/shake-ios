@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		68YOcgvGXH3KEUskhryrS6qdivQ=
+		YRYADK/KMYJIlo5Cay8Kf2XUuDU=
 		</data>
 		<key>DemangleNodes.def</key>
 		<data>
@@ -50,13 +50,13 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gbzEqghLBIVZMCiy/dkpvHfYYKs=
+		UYcXKzdnKV9IdOISurWVVNeos6M=
 		</data>
 		<key>LICENSE</key>
 		<data>
 		F6LTl+RBugQ3i5tHJ0u0h632bEQ=
 		</data>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<data>
 		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>SHKScreenshotVC.storyboardc/ScreenshotID.nib</key>
 		<data>
-		QlpoXxgs0CAp9vpb7gdkQUL201k=
+		5Lkggk2unHAS6tjtawWNPrsQT6E=
 		</data>
 		<key>SHKScreenshotVC.storyboardc/x0n-cR-uDu-view-Jlv-bX-B75.nib</key>
 		<data>
-		TtZshEar8IWZDH/Hp3pu7uZKmlU=
+		p+gOw3Rx3yOC8DF93y41yW2Ghj8=
 		</data>
 		<key>Shake.json</key>
 		<data>
@@ -249,7 +249,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BvG5DQICHNC/BM2XgSbWmR5e8QSgiQroz9eUzayyQr8=
+			ZBZnPQ6Vk520WNzdhsKTevjKsCTvyJM3X8M4AbEgHQU=
 			</data>
 		</dict>
 		<key>DemangleNodes.def</key>
@@ -329,7 +329,7 @@
 			Z1GBwD/BMCochVTAD3vpu0IMXbydzCATQzzsFEQT3gM=
 			</data>
 		</dict>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -459,14 +459,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			764A3NSwL2zZrEj+Q4JMlAecmKfyHeCtVW9FY1YUyyM=
+			hu3+x/OLQpBvDM0L9kLzoWu2aiOnLjVbHSm7BUAw8yc=
 			</data>
 		</dict>
 		<key>SHKScreenshotVC.storyboardc/x0n-cR-uDu-view-Jlv-bX-B75.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wz/TKRiQNcClQCyM2zPP6rZval92lIJygnFaGsHQu/Q=
+			+75W4HmLTR5F7szmrrheHWsnJmDgI3V0xk/JUTpxlK8=
 			</data>
 		</dict>
 		<key>Shake.json</key>
