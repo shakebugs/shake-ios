@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		YRYADK/KMYJIlo5Cay8Kf2XUuDU=
+		STylkOs/fOSiX00w4rdwc3p2mPg=
 		</data>
 		<key>DemangleNodes.def</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SHKNetworkRequestEditor.h</key>
 		<data>
-		56FBJ13cLxVmmqNlKTEjsXbrRCo=
+		26loTQ5PGfeH5tk97aMQUG/rvbw=
 		</data>
 		<key>Headers/SHKNotificationEventEditor.h</key>
 		<data>
@@ -50,13 +50,13 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UYcXKzdnKV9IdOISurWVVNeos6M=
+		EwuHup0ugV8+OEzbf7Jc/lwSO70=
 		</data>
 		<key>LICENSE</key>
 		<data>
 		F6LTl+RBugQ3i5tHJ0u0h632bEQ=
 		</data>
-		<key>LICENSE.TXT</key>
+		<key>LICENSE.txt</key>
 		<data>
 		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>SHKScreenshotVC.storyboardc/ScreenshotID.nib</key>
 		<data>
-		5Lkggk2unHAS6tjtawWNPrsQT6E=
+		/vPzOHjXwRLkTSOmamYMjmuE4uc=
 		</data>
 		<key>SHKScreenshotVC.storyboardc/x0n-cR-uDu-view-Jlv-bX-B75.nib</key>
 		<data>
-		p+gOw3Rx3yOC8DF93y41yW2Ghj8=
+		56+OGgfRZ1NG6XEP44jlKmigd+Q=
 		</data>
 		<key>Shake.json</key>
 		<data>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dDegA+7datNEpG3Y7Tjxgc49X2c=
+			mJVxVIk1ciCjQpTZ4rYMAJtpjNk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -161,7 +161,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uMs4snc1K1apMeSZ21oEVmP0Yv0=
+			4VPAgD2rdIcDy3OmZRZXpQ+8quA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -170,7 +170,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yfZ6xOX6q6GtnI2zf+n5EAdAquI=
+			pBfOid30nHYFUfbGRblk+NKiOKs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>et.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VbA4a/JU9hBH4LvVf/QPkHc96fQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -179,7 +188,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			glgs/cPMJUP3Za5ZHnhF+OuynPk=
+			Cxv3EMOihFrS3h2MhK6PNjE9XF0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -188,7 +197,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jn992dlxbL2hcXJ9/xtsRk6jWLQ=
+			q3NFnrUIqDSxBsu+pO7+yc3/szo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			W2ZAuTq/pXH3t0JMwr66/iWc8VE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -197,7 +215,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SvnfrZwwAi3Q/BW7tN5kOEX9S+k=
+			p+XSuTJCP2mmPMT3Grpu7CV5xMw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>lv.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n14VTRFT5PFUxwmVRWtU3oYOOMc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DFxliKBoVUQZXUog1eEgXAZakMU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -206,7 +242,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			79Fx9iRR0Fn+BChaGYGws0Lc7tk=
+			0A99tthWnl8iwqqB3Vw9h5gGMNA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,7 +251,25 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RQo0Y4pKLEQjwGCUHR8yf1VdbUs=
+			0A99tthWnl8iwqqB3Vw9h5gGMNA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CGAkueArusxA03vnJadc1uX5WTU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PTQs5XJTexjXr3cUVLGsXN5vRVQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -228,7 +282,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5uDDUZ6QuEDikkd16ZgooZ276CU=
+			Q70Czbjrz1qHPAgUO90VjoUqCYs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -237,7 +291,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IGYUhO5f50zK9DmeIFbMLczACHU=
+			NtauJ0c8gd+AE77kJ4iuv+1/2jc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -249,7 +303,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZBZnPQ6Vk520WNzdhsKTevjKsCTvyJM3X8M4AbEgHQU=
+			sTdMn7L311tZoydqkeOv3TkmoI+tIDgyYuR/nVg7L3Y=
 			</data>
 		</dict>
 		<key>DemangleNodes.def</key>
@@ -270,7 +324,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LOGgqNNpyssInjHcf0conE8nKMCBRQRmyaYjwaG8bnw=
+			XbR4j4hHRobHthDcWRxzEnSTRV3v26PG00xErcMS1n4=
 			</data>
 		</dict>
 		<key>Headers/SHKNotificationEventEditor.h</key>
@@ -329,7 +383,7 @@
 			Z1GBwD/BMCochVTAD3vpu0IMXbydzCATQzzsFEQT3gM=
 			</data>
 		</dict>
-		<key>LICENSE.TXT</key>
+		<key>LICENSE.txt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -459,14 +513,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hu3+x/OLQpBvDM0L9kLzoWu2aiOnLjVbHSm7BUAw8yc=
+			/a0zFkApNBaRS24vXlnZNjrZjH8fRIMBMAUiHng55Tg=
 			</data>
 		</dict>
 		<key>SHKScreenshotVC.storyboardc/x0n-cR-uDu-view-Jlv-bX-B75.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+75W4HmLTR5F7szmrrheHWsnJmDgI3V0xk/JUTpxlK8=
+			FtnlGsEOpfjXJlw9CaMcVEzG8AMPe2JitirGIp5al9Q=
 			</data>
 		</dict>
 		<key>Shake.json</key>
@@ -494,7 +548,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rR6F+O3rq+1wruHuWJf/JpnYEQwLn0hUl1mhmRGGh+U=
+			8UjHGJeNArsmKC/XjabJYhcz3hM9Sf53+Wl4pVlacIo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -503,7 +557,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vn+B/iL3LbWlFPcBhpKpy/GlfuB2dYT9TyGQQZ4kTHo=
+			gHsBis5wi6rR7QgIU4U6farJL2gz24FFagoa2i3YmF4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -512,7 +566,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vgPovts2R///rwgFlfEA5WdVJTfVnfhoeqT/kEQJoWk=
+			0nYWVj6bIJIRJnVbUdzRxrTAHM3fb7kp2DkNrl4GK2c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>et.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xaMR3Q5Da0As6FRrM+zWunk12wi4mp0L9ZAmgSu/cIQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -521,7 +584,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tpS+n1f5ITUYWvIcxbFaFu8laUAMhcjQ6UdAi2QFpac=
+			JiueQq6Cx0wjpJqyRN4jpsxOPodtp2yl6w4zirUbCNY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -530,7 +593,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/vgS1UPiXNKIrWBQZZS4TomUofbcc5JXCw8/qsZne1U=
+			t8ZSTDAbWoD2vw1uuD7tsbJ3eq0Ml4RAnpaL3FcrVgM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oGb12OG6P4lBKt4vQzfNyUqZDz5nYO7gogDst/GST6U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -539,7 +611,25 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cwXHZl6EXg/NzG9Is+QedhL97hhb5hG1xXPCp4bGcOo=
+			fX9EEjb0Rgu+9pxgfLNXUPlWOwSZmLGUB1p85OF0aAo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>lv.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fE+YSBvpaw5LAISCPioJBdva2PKCOs+vS/ulLnSiw1U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>pl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			liiVa/ZH3CBsS/pVSfUsV2tN5QlZ04Jr344cs+7oT1I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -548,7 +638,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u689aboBMUeNSryrSpNqY8TVYy1oP3BW2y/91w867To=
+			paQADcULPrigLv60grTfc6poRUejau/ft6eMK2HE/CI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -557,7 +647,25 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A7xuK2ti9VVFsE2fuA6w9IrLt8rp4ZCy/c2zDE+GCe8=
+			paQADcULPrigLv60grTfc6poRUejau/ft6eMK2HE/CI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MrMQyrGjoSCKqOgM8IxSrk3TNjnkb5q++4SJIr/77c8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>th.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HDoFlSxK/JdrcZ0md14Fe5jfRxyjba7BZhhi7IJL0ms=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -573,7 +681,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QD/WiFi2tr4XEd8z4/boEejLN6KJhsY5VFNadK8AC00=
+			W9Xpeay0VJW/5XJlcUE+a5C6Ap13RhIIqLdD3CpaWZQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -582,7 +690,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3IDVn7yf3nkXTz1EVRfOrCjELc9Wp9g1SM2mSA/x5cU=
+			73sWjCs8oUIb20I23T1VR3lxLTm9wBeKCNXqh0qtE2M=
 			</data>
 			<key>optional</key>
 			<true/>

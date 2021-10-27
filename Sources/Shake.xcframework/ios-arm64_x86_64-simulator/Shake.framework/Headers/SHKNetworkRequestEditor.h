@@ -15,16 +15,16 @@ NS_SWIFT_NAME(NetworkRequestEditor)
 
 - (instancetype)initWith:(nonnull NSURLRequest *)request response:(nullable NSURLResponse *)response responseData:(nullable NSData *)data error:(nullable NSError *)error timestamp:(NSDate *)timestamp duration:(NSTimeInterval)duration;
 
-@property (nonatomic, strong, nullable) NSString *method;
-@property (nonatomic, strong, nullable) NSString *statusCode;
+@property (nonatomic, strong, nullable, readonly) NSString *method;
+@property (nonatomic, strong, nullable, readonly) NSString *statusCode;
 @property (nonatomic, strong, nonnull) NSURL *url;
 @property (nonatomic, strong, nullable) NSData *requestBody;
 @property (nonatomic, strong, nonnull)  NSMutableDictionary<NSString *,NSString *> *requestHeaders;
 @property (nonatomic, strong, nullable) NSData *responseBody;
 @property (nonatomic, strong, nullable)  NSMutableDictionary<NSString *,NSString *> *responseHeaders;
-@property (nonatomic) NSTimeInterval duration;
-@property (nonatomic, strong, nonnull) NSString *timestamp;
-@property (nonatomic, strong, nullable) NSError *error;
+@property (nonatomic, readonly) NSTimeInterval duration;
+@property (nonatomic, strong, nonnull, readonly) NSString *timestamp;
+@property (nonatomic, strong, nullable, readonly) NSError *error;
 
 @end
 
