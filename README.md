@@ -1,10 +1,25 @@
 # Shake iOS SDK
 
-[Shake](https://www.shakebugs.com/) is a dedicated bug reporting tool for mobile apps. Whenever a tester notices a bug, they can just shake their device and report it instantly, without ever leaving your app. Each bug report comes supplemented with various data points like location, storage, OS and others. These reports all arrive to your web Dashboard, where they can be organized with tags and found quickly using search. 
+Bug and crash reporting SDK for iOS apps. 
 
-## **Step 1**: Install Shake
+## Features 
+
+ |     Feature     | Avaliable |
+|:---------------:|:---------:|
+|  Bug reporting  |     ✅     |
+| Crash reporting |     ✅     |
+|      Users      |     ✅     |
+
+## Requirements 
+
+- iOS 12.0+ 
+
+## Install Shake
 
 ### Cocoapods
+
+[![npm version](https://img.shields.io/cocoapods/v/Shake)](https://cocoapods.org/pods/Shake)
+
 Not using CocoaPods yet? Follow their brief [installation guide](https://guides.cocoapods.org/using/getting-started.html#installation), then run `pod init` in the root of your project.  
 
 Next, add Shake to your `Podfile`.
@@ -61,7 +76,7 @@ Visit Shake iOS SDK GitHub repo, click the green Clone button and then Download 
 Note:
 By not using a dependency manager like CocoaPods, you won't be able to use the simple `pod update Shake` command to always pull the latest version of Shake SDK into your app. Instead, you will have to repeat the the first step described in the above paragraph.
 
-## **Step 2:** Initialize Shake SDK
+## Initialize Shake
 Initialize Shake in the `didFinishLaunchingWithOptions` callback of your *AppDelegate*.
 Replace `your-api-client-id` and `your-api-client-secret` with the actual values you have in [your workspace settings](https://app.shakebugs.com/settings/workspace#general).
 
@@ -98,13 +113,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 Note:
 Some of the Shake features use swizzling, so to avoid any kind of swizzling conflicts, we recommend calling `Shake.start()` before initializing all other frameworks.
 
-## **Step 3:** Build and run
+## Build and run
 Select _Product > Run_ in the menu bar. This first run will automatically add your app to your [Shake Dashboard](https://app.shakebugs.com/) based on your app bundle ID.
 
-&nbsp;
-# Requirements
-- iOS 11.0+
-
-&nbsp;
-# More
-- Visit our official [website](https://www.shakebugs.com/).
+## Resources
+- [Official docs](https://www.shakebugs.com/docs/)
