@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Shake",
-    platforms: [.iOS(SupportedPlatform.IOSVersion.v11)],
+    platforms: [.iOS(SupportedPlatform.IOSVersion.v12)],
     products: [
         .library(
             name: "Shake",
@@ -13,6 +13,6 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "Shake",
-                      path: "./Sources/Shake.xcframework")
+                      path: "Sources/Shake.xcframework"),
     ]
 )

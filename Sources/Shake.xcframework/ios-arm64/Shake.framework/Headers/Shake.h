@@ -12,6 +12,8 @@
 #import "SHKNetworkRequestEditor.h"
 #import "SHKSessionAuthenticationProtocol.h"
 #import "SHKFeedbackEntry.h"
+#import "SHKConstants.h"
+#import <UserNotifications/UserNotifications.h>
 
 //! Project version number for Shake.
 FOUNDATION_EXPORT double ShakeVersionNumber;
@@ -87,7 +89,7 @@ typedef NS_ENUM(NSUInteger, SHKShowOption) {
 NS_SWIFT_NAME(silentReport(description:fileAttachBlock:reportConfiguration:));
 
 
-// MARK: Notifications
+// MARK: Notification intercepting
 
 /**
  Assign a filter function to this property and Shake will call the function prior to inserting the notification record in database. This gives you a chance to remove or edit some specific
@@ -192,6 +194,10 @@ NS_SWIFT_NAME(insertNetworkRequest(_:));
 + (void)setMetadataWithKey:(nonnull NSString *)key value:(nullable NSString *)value
 NS_SWIFT_NAME(setMetadata(key:value:));
 
+/**
+ Clears all previously set global metadata.
+ */
++ (void)clearMetadata;
 
 // MARK: - Caught Errors
 
@@ -199,5 +205,26 @@ NS_SWIFT_NAME(setMetadata(key:value:));
  Silently reports a non fatal error. Cluster ID affects dashboard grouping.
  */
 + (void)handleError:(nonnull NSError *)error clusterID:(nonnull NSString *)clusterID;
+
+
+// MARK: User notifications
+
+NS_ASSUME_NONNULL_BEGIN
+
+/**
+ Call this method from the native delegate method when you want Shake SDK to handle the notification presentation.
+ Shake will process only notifications that were scheduled by Shake, and will call completion with default options  if you accidentally
+ call this method with your own notification.
+ */
++ (void)reportNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler;
+
+/**
+ Call this method from the native delegate method when you want Shake SDK to handle the notification tap or action.
+ If you call this method with non-Shake notification, this methods returns immediately and calls completion handler.
+ */
++ (void)reportNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler;
+
+
+NS_ASSUME_NONNULL_END
 
 @end

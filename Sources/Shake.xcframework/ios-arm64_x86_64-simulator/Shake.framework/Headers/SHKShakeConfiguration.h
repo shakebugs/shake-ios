@@ -3,6 +3,8 @@
 // Copyright © 2020 Shake Technologies, Inc. All rights reserved.
 //
 
+typedef NS_ENUM(NSUInteger, SHKShowOption);
+
 /// Used to enable or disable specific features or invocation methods
 NS_SWIFT_NAME(ShakeConfiguration)
 @interface SHKShakeConfiguration : NSObject
@@ -57,6 +59,9 @@ NS_SWIFT_NAME(ShakeConfiguration)
  Default value is "true".
  */
 @property (nonatomic, assign) BOOL isScreenshotIncluded;
+
+/// Pick the default Shake show option (new or home) upon invocation
+@property (nonatomic, assign) enum SHKShowOption defaultShowOption;
 
 /// Should email text field appear on Wrap-up screen?
 @property (nonatomic, assign) BOOL isEmailFieldEnabled;
