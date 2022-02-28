@@ -13,6 +13,8 @@ iPhoneOS14.0.sdk
 +[SHKCustomLogRecord tableKeys]
 +[SHKCustomLogRecord objectFromDatabaseRecord:]
 -[SHKCustomLogRecord adaptToDatabaseRecord]
+-[SHKCustomLogRecord byteSize]
+-[SHKCustomLogRecord jsonKey]
 -[SHKCustomLogRecord level]
 -[SHKCustomLogRecord setLevel:]
 -[SHKCustomLogRecord message]
@@ -38,6 +40,7 @@ _OBJC_SELECTOR_REFERENCES_.50
 _OBJC_SELECTOR_REFERENCES_.52
 _OBJC_CLASSLIST_REFERENCES_$_.53
 _OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.57
 _OBJC_IVAR_$_SHKCustomLogRecord._level
 _OBJC_IVAR_$_SHKCustomLogRecord._message
 __OBJC_$_CLASS_METHODS_SHKCustomLogRecord
@@ -384,7 +387,6 @@ _OBJC_SELECTOR_REFERENCES_.45
 _OBJC_SELECTOR_REFERENCES_.47
 _OBJC_SELECTOR_REFERENCES_.49
 _OBJC_SELECTOR_REFERENCES_.53
-_OBJC_SELECTOR_REFERENCES_.57
 _OBJC_SELECTOR_REFERENCES_.59
 _OBJC_SELECTOR_REFERENCES_.63
 _OBJC_CLASSLIST_REFERENCES_$_.64
@@ -1016,6 +1018,34 @@ __OBJC_CLASS_RO_$_SHKNetworkRecord
 /Users/vagrant/git/Shake/Shake/Business/BlackBox/Models/SHKNetworkRecord.m
 Shake/Business/BlackBox/Models/SHKNetworkRecord.m
 Shake/Business/BlackBox/Models/SHKNetworkRecord.h
+-[SHKNewTicketAccessoryView init]
+-[SHKNewTicketAccessoryView buttonTapHandler]
+-[SHKNewTicketAccessoryView intrinsicContentSize]
+-[SHKNewTicketAccessoryView setButtonEnabled:]
+-[SHKNewTicketAccessoryView tapHandler]
+-[SHKNewTicketAccessoryView setTapHandler:]
+-[SHKNewTicketAccessoryView submitButton]
+-[SHKNewTicketAccessoryView setSubmitButton:]
+-[SHKNewTicketAccessoryView .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_IVAR_$_SHKNewTicketAccessoryView._tapHandler
+_OBJC_IVAR_$_SHKNewTicketAccessoryView._submitButton
+__OBJC_METACLASS_RO_$_SHKNewTicketAccessoryView
+__OBJC_$_INSTANCE_METHODS_SHKNewTicketAccessoryView
+__OBJC_$_INSTANCE_VARIABLES_SHKNewTicketAccessoryView
+__OBJC_$_PROP_LIST_SHKNewTicketAccessoryView
+__OBJC_CLASS_RO_$_SHKNewTicketAccessoryView
+/Users/vagrant/git/Shake/Shake/UI/NewTicketScreen/SHKNewTicketAccessoryView.m
+Shake/UI/NewTicketScreen/SHKNewTicketAccessoryView.m
+Shake/UI/NewTicketScreen/SHKNewTicketAccessoryView.h
 -[SHKVideoFileCell initWithFrame:]
 -[SHKVideoFileCell prepareForReuse]
 -[SHKVideoFileCell configureViews]
@@ -1026,8 +1056,6 @@ ___38-[SHKVideoFileCell configureWithItem:]_block_invoke.83
 -[SHKVideoFileCell playerView]
 -[SHKVideoFileCell .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.9
-_OBJC_SELECTOR_REFERENCES_.11
-_OBJC_SELECTOR_REFERENCES_.13
 _OBJC_CLASSLIST_REFERENCES_$_.14
 _OBJC_IVAR_$_SHKVideoFileCell._playerView
 _OBJC_SELECTOR_REFERENCES_.51
@@ -1102,10 +1130,6 @@ _SHKReachabilityCallBack
 -[SHKConnection .cxx_destruct]
 _sharedInstance.sharedInstance
 _sharedInstance.onceToken
-_OBJC_CLASSLIST_REFERENCES_$_.7
-_OBJC_SELECTOR_REFERENCES_.9
-_OBJC_SELECTOR_REFERENCES_.19
-_OBJC_SELECTOR_REFERENCES_.23
 _OBJC_CLASSLIST_REFERENCES_$_.49
 _OBJC_CLASSLIST_REFERENCES_$_.54
 _OBJC_CLASSLIST_REFERENCES_$_.77
@@ -1139,9 +1163,6 @@ __31+[SHKConnection sharedInstance]_block_invoke
 -[SHKNavigationTitleView traitCollectionDidChange:]
 -[SHKNavigationTitleView titleLabel]
 -[SHKNavigationTitleView .cxx_destruct]
-_OBJC_SELECTOR_REFERENCES_.15
-_OBJC_SELECTOR_REFERENCES_.21
-_OBJC_SELECTOR_REFERENCES_.25
 _OBJC_CLASSLIST_REFERENCES_$_.28
 _OBJC_IVAR_$_SHKNavigationTitleView._titleLabel
 _OBJC_SELECTOR_REFERENCES_.44
@@ -3242,6 +3263,8 @@ __21+[SHKMetadata shared]_block_invoke
 +[SHKNotificationRecord tableKeys]
 +[SHKNotificationRecord objectFromDatabaseRecord:]
 -[SHKNotificationRecord adaptToDatabaseRecord]
+-[SHKNotificationRecord byteSize]
+-[SHKNotificationRecord jsonKey]
 -[SHKNotificationRecord messageTitle]
 -[SHKNotificationRecord setMessageTitle:]
 -[SHKNotificationRecord messageDescription]
@@ -3278,8 +3301,12 @@ ___32-[SHKDefaultButton setSelected:]_block_invoke
 ___31-[SHKDefaultButton setEnabled:]_block_invoke
 -[SHKDefaultButton titleLabel]
 -[SHKDefaultButton setTitleLabel:]
+-[SHKDefaultButton backgroundView]
+-[SHKDefaultButton setBackgroundView:]
 -[SHKDefaultButton .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.67
 _OBJC_IVAR_$_SHKDefaultButton._titleLabel
+_OBJC_IVAR_$_SHKDefaultButton._backgroundView
 __OBJC_METACLASS_RO_$_SHKDefaultButton
 __OBJC_$_INSTANCE_METHODS_SHKDefaultButton
 __OBJC_$_INSTANCE_VARIABLES_SHKDefaultButton
@@ -4259,29 +4286,6 @@ Shake/Internal/ShakeUtilityClasses/SHKImageLoader.m
 __48-[SHKImageLoader loadImageWithURL:setWithBlock:]_block_invoke_2
 __48-[SHKImageLoader loadImageWithURL:setWithBlock:]_block_invoke.23
 __48-[SHKImageLoader loadImageWithURL:setWithBlock:]_block_invoke
--[SHKNewTicketSubmitCell initWithStyle:reuseIdentifier:]
--[SHKNewTicketSubmitCell configureViews]
--[SHKNewTicketSubmitCell buttonTapHandler]
--[SHKNewTicketSubmitCell configureWithItem:]
-___44-[SHKNewTicketSubmitCell configureWithItem:]_block_invoke
-___44-[SHKNewTicketSubmitCell configureWithItem:]_block_invoke_2
--[SHKNewTicketSubmitCell submitButton]
--[SHKNewTicketSubmitCell setSubmitButton:]
--[SHKNewTicketSubmitCell buttonActionHandler]
--[SHKNewTicketSubmitCell setButtonActionHandler:]
--[SHKNewTicketSubmitCell .cxx_destruct]
-_OBJC_IVAR_$_SHKNewTicketSubmitCell._submitButton
-_OBJC_IVAR_$_SHKNewTicketSubmitCell._buttonActionHandler
-__OBJC_CLASS_PROTOCOLS_$_SHKNewTicketSubmitCell
-__OBJC_METACLASS_RO_$_SHKNewTicketSubmitCell
-__OBJC_$_INSTANCE_METHODS_SHKNewTicketSubmitCell
-__OBJC_$_INSTANCE_VARIABLES_SHKNewTicketSubmitCell
-__OBJC_$_PROP_LIST_SHKNewTicketSubmitCell
-__OBJC_CLASS_RO_$_SHKNewTicketSubmitCell
-/Users/vagrant/git/Shake/Shake/UI/NewTicketScreen/Cells/SHKNewTicketSubmitCell.m
-Shake/UI/NewTicketScreen/Cells/SHKNewTicketSubmitCell.m
-__44-[SHKNewTicketSubmitCell configureWithItem:]_block_invoke_2
-__44-[SHKNewTicketSubmitCell configureWithItem:]_block_invoke
 -[SHKPoweredByShakeView initWithFrame:]
 -[SHKPoweredByShakeView setupLayout]
 __OBJC_METACLASS_RO_$_SHKPoweredByShakeView
@@ -4462,12 +4466,16 @@ Shake/Categories/SHKCubicCurveAlgorithm.m
 -[SHKUser setUserID:]
 -[SHKUser userMetadata]
 -[SHKUser setUserMetadata:]
+-[SHKUser didPerformInitialFetch]
+-[SHKUser setDidPerformInitialFetch:]
 -[SHKUser .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.51
 __OBJC_$_CLASS_METHODS_SHKUser
 __OBJC_CLASS_PROTOCOLS_$_SHKUser
 __OBJC_METACLASS_RO_$_SHKUser
 __OBJC_$_INSTANCE_METHODS_SHKUser
 _OBJC_IVAR_$_SHKUser._synced
+_OBJC_IVAR_$_SHKUser._didPerformInitialFetch
 _OBJC_IVAR_$_SHKUser._internalUserID
 _OBJC_IVAR_$_SHKUser._userID
 _OBJC_IVAR_$_SHKUser._userMetadata
@@ -4751,7 +4759,6 @@ ___62-[SHKNetworkRequestReporter reportRequestCompletedWithRNDict:]_block_invoke
 -[SHKNetworkRequestReporter authDelegate]
 -[SHKNetworkRequestReporter setAuthDelegate:]
 -[SHKNetworkRequestReporter .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.51
 _OBJC_CLASSLIST_REFERENCES_$_.76
 _OBJC_CLASSLIST_REFERENCES_$_.97
 _OBJC_CLASSLIST_REFERENCES_$_.100
@@ -5176,6 +5183,7 @@ Shake/Categories/UIApplication+SceneHelper.m
 -[SHKScreenState init]
 -[SHKScreenState setStateValue:forKey:]
 -[SHKScreenState registerStateListener:]
+-[SHKScreenState currentStateValue]
 -[SHKScreenState stateChangedBlock]
 -[SHKScreenState setStateChangedBlock:]
 -[SHKScreenState stateDictionary]
@@ -5199,6 +5207,8 @@ Shake/UI/NewTicketScreen/SHKScreenState.m
 +[SHKSessionRecord tableKeys]
 +[SHKSessionRecord objectFromDatabaseRecord:]
 -[SHKSessionRecord adaptToDatabaseRecord]
+-[SHKSessionRecord byteSize]
+-[SHKSessionRecord jsonKey]
 -[SHKSessionRecord value]
 -[SHKSessionRecord setValue:]
 -[SHKSessionRecord .cxx_destruct]
@@ -5422,7 +5432,6 @@ ksjson_stringForError
 -[SHKBaseAlertViewController passThroughView]
 -[SHKBaseAlertViewController setPassThroughView:]
 -[SHKBaseAlertViewController .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.67
 _OBJC_IVAR_$_SHKBaseAlertViewController._tapOutSideTouchEnabled
 _OBJC_IVAR_$_SHKBaseAlertViewController._tappedOutsideToDismissHandler
 _OBJC_IVAR_$_SHKBaseAlertViewController._contentContainer
@@ -6926,7 +6935,7 @@ ___46-[SHKShakeReportData constructMainThreadData:]_block_invoke
 -[SHKShakeReportData trimActivityHistoryRecords]
 ___48-[SHKShakeReportData trimActivityHistoryRecords]_block_invoke
 -[SHKShakeReportData trimBlackBoxRecords]
--[SHKShakeReportData setupReporters:]
+-[SHKShakeReportData setActivityHistoryToDict:andValidatedRecords:]
 -[SHKShakeReportData populateWithBlackBoxData:]
 -[SHKShakeReportData extractCrashDiagnosisFromErrorDictionary:]
 -[SHKShakeReportData populateDataDictWithCrashReportValues:]
@@ -7011,42 +7020,40 @@ _OBJC_CLASSLIST_REFERENCES_$_.377
 _OBJC_SELECTOR_REFERENCES_.379
 _OBJC_SELECTOR_REFERENCES_.387
 _OBJC_SELECTOR_REFERENCES_.392
-_OBJC_SELECTOR_REFERENCES_.394
-_OBJC_CLASSLIST_REFERENCES_$_.399
-_OBJC_CLASSLIST_REFERENCES_$_.402
+_OBJC_SELECTOR_REFERENCES_.402
 _OBJC_SELECTOR_REFERENCES_.404
 _OBJC_SELECTOR_REFERENCES_.406
-_OBJC_SELECTOR_REFERENCES_.408
-_OBJC_SELECTOR_REFERENCES_.410
-_OBJC_SELECTOR_REFERENCES_.412
-_OBJC_SELECTOR_REFERENCES_.418
-_OBJC_SELECTOR_REFERENCES_.420
-_OBJC_CLASSLIST_REFERENCES_$_.449
-_OBJC_SELECTOR_REFERENCES_.451
-_OBJC_SELECTOR_REFERENCES_.469
-_OBJC_SELECTOR_REFERENCES_.479
-_OBJC_SELECTOR_REFERENCES_.485
-_OBJC_SELECTOR_REFERENCES_.499
-_OBJC_SELECTOR_REFERENCES_.501
-_OBJC_SELECTOR_REFERENCES_.503
-_OBJC_SELECTOR_REFERENCES_.519
-_OBJC_CLASSLIST_REFERENCES_$_.520
-_OBJC_SELECTOR_REFERENCES_.542
-_OBJC_CLASSLIST_REFERENCES_$_.545
+_OBJC_CLASSLIST_REFERENCES_$_.407
+_OBJC_SELECTOR_REFERENCES_.413
+_OBJC_SELECTOR_REFERENCES_.415
+_OBJC_SELECTOR_REFERENCES_.423
+_OBJC_SELECTOR_REFERENCES_.425
+_OBJC_SELECTOR_REFERENCES_.427
+_OBJC_SELECTOR_REFERENCES_.439
+_OBJC_SELECTOR_REFERENCES_.445
+_OBJC_SELECTOR_REFERENCES_.476
+_OBJC_SELECTOR_REFERENCES_.506
+_OBJC_SELECTOR_REFERENCES_.508
+_OBJC_SELECTOR_REFERENCES_.518
+_OBJC_CLASSLIST_REFERENCES_$_.527
+_OBJC_SELECTOR_REFERENCES_.541
+_OBJC_SELECTOR_REFERENCES_.545
 _OBJC_SELECTOR_REFERENCES_.547
-_OBJC_SELECTOR_REFERENCES_.549
-_OBJC_SELECTOR_REFERENCES_.551
-_OBJC_SELECTOR_REFERENCES_.553
-_OBJC_SELECTOR_REFERENCES_.555
-_OBJC_SELECTOR_REFERENCES_.557
-_OBJC_CLASSLIST_REFERENCES_$_.572
+_OBJC_CLASSLIST_REFERENCES_$_.550
+_OBJC_SELECTOR_REFERENCES_.558
+_OBJC_SELECTOR_REFERENCES_.560
+_OBJC_SELECTOR_REFERENCES_.562
+_OBJC_SELECTOR_REFERENCES_.564
+_OBJC_SELECTOR_REFERENCES_.566
+_OBJC_SELECTOR_REFERENCES_.568
+_OBJC_SELECTOR_REFERENCES_.570
+_OBJC_SELECTOR_REFERENCES_.572
 _OBJC_SELECTOR_REFERENCES_.574
 _OBJC_SELECTOR_REFERENCES_.576
-_OBJC_SELECTOR_REFERENCES_.578
-_OBJC_SELECTOR_REFERENCES_.580
-_OBJC_SELECTOR_REFERENCES_.582
-_OBJC_SELECTOR_REFERENCES_.584
-_OBJC_SELECTOR_REFERENCES_.588
+_OBJC_CLASSLIST_REFERENCES_$_.577
+_OBJC_SELECTOR_REFERENCES_.581
+_OBJC_SELECTOR_REFERENCES_.589
+_OBJC_SELECTOR_REFERENCES_.593
 __OBJC_$_CLASS_METHODS_SHKShakeReportData
 __OBJC_CLASS_PROTOCOLS_$_SHKShakeReportData
 __OBJC_$_CLASS_PROP_LIST_SHKShakeReportData
@@ -7170,11 +7177,10 @@ ___80-[SHKNewTicketVM initWithReportData:feedbackService:feedbackContext:reposit
 -[SHKNewTicketVM constructItems]
 ___32-[SHKNewTicketVM constructItems]_block_invoke
 ___32-[SHKNewTicketVM constructItems]_block_invoke.74
-___32-[SHKNewTicketVM constructItems]_block_invoke_2
 -[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]
 ___67-[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]_block_invoke
 ___67-[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]_block_invoke_2
-___67-[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]_block_invoke.153
+___67-[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]_block_invoke.144
 -[SHKNewTicketVM numberOfRowsInSection:]
 -[SHKNewTicketVM didSelectItemAtIndexPath:]
 -[SHKNewTicketVM itemForIndexPath:]
@@ -7193,8 +7199,10 @@ ___56-[SHKNewTicketVM documentPicker:didPickDocumentsAtURLs:]_block_invoke_2
 -[SHKNewTicketVM registerListeners]
 ___35-[SHKNewTicketVM registerListeners]_block_invoke
 ___35-[SHKNewTicketVM registerListeners]_block_invoke_2
-___35-[SHKNewTicketVM registerListeners]_block_invoke.265
-___35-[SHKNewTicketVM registerListeners]_block_invoke_2.268
+___35-[SHKNewTicketVM registerListeners]_block_invoke.256
+___35-[SHKNewTicketVM registerListeners]_block_invoke_2.259
+-[SHKNewTicketVM setSubmitButtonEnabledSignal:]
+___47-[SHKNewTicketVM setSubmitButtonEnabledSignal:]_block_invoke
 -[SHKNewTicketVM feedbackDescriptionDidChange:]
 ___47-[SHKNewTicketVM feedbackDescriptionDidChange:]_block_invoke
 -[SHKNewTicketVM emailDidChange:]
@@ -7229,6 +7237,7 @@ ___39-[SHKNewTicketVM itemIndexForItemType:]_block_invoke
 -[SHKNewTicketVM setSectionInsertSignal:]
 -[SHKNewTicketVM endEditingSignal]
 -[SHKNewTicketVM setEndEditingSignal:]
+-[SHKNewTicketVM submitButtonEnabledSignal]
 -[SHKNewTicketVM items]
 -[SHKNewTicketVM setItems:]
 -[SHKNewTicketVM attachmentVM]
@@ -7248,15 +7257,20 @@ ___39-[SHKNewTicketVM itemIndexForItemType:]_block_invoke
 -[SHKNewTicketVM screenState]
 -[SHKNewTicketVM setScreenState:]
 -[SHKNewTicketVM .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.132
 ___block_descriptor_40_e8_32w_e15_v16?0"NSURL"8l
-_OBJC_CLASSLIST_REFERENCES_$_.176
-_OBJC_CLASSLIST_REFERENCES_$_.246
-_OBJC_SELECTOR_REFERENCES_.250
-_OBJC_CLASSLIST_REFERENCES_$_.259
+_OBJC_CLASSLIST_REFERENCES_$_.167
+_OBJC_CLASSLIST_REFERENCES_$_.190
+_OBJC_CLASSLIST_REFERENCES_$_.215
+_OBJC_SELECTOR_REFERENCES_.225
+_OBJC_CLASSLIST_REFERENCES_$_.230
+_OBJC_CLASSLIST_REFERENCES_$_.237
+_OBJC_SELECTOR_REFERENCES_.239
 ___block_descriptor_40_e8_32w_e26_v16?0"SHKFeedbackEntry"8l
 ___block_descriptor_40_e8_32w_e22_v16?0"NSDictionary"8l
+___block_literal_global.272
+_OBJC_CLASSLIST_REFERENCES_$_.273
 ___block_descriptor_48_e8_32r_e30_v32?0"<SHKCellItem>"8Q16^B24l
+_OBJC_SELECTOR_REFERENCES_.286
 __OBJC_$_PROTOCOL_REFS_UIDocumentPickerDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIDocumentPickerDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_UIDocumentPickerDelegate
@@ -7284,6 +7298,7 @@ _OBJC_IVAR_$_SHKNewTicketVM._onDidSelectPlayVideo
 _OBJC_IVAR_$_SHKNewTicketVM._rowUpdateSignal
 _OBJC_IVAR_$_SHKNewTicketVM._sectionInsertSignal
 _OBJC_IVAR_$_SHKNewTicketVM._endEditingSignal
+_OBJC_IVAR_$_SHKNewTicketVM._submitButtonEnabledSignal
 _OBJC_IVAR_$_SHKNewTicketVM._items
 _OBJC_IVAR_$_SHKNewTicketVM._attachmentVM
 _OBJC_IVAR_$_SHKNewTicketVM._reportData
@@ -7302,18 +7317,18 @@ Shake/UI/NewTicketScreen/SHKNewTicketVM.h
 __39-[SHKNewTicketVM itemIndexForItemType:]_block_invoke
 __33-[SHKNewTicketVM emailDidChange:]_block_invoke
 __47-[SHKNewTicketVM feedbackDescriptionDidChange:]_block_invoke
-__35-[SHKNewTicketVM registerListeners]_block_invoke_2.268
-__35-[SHKNewTicketVM registerListeners]_block_invoke.265
+__47-[SHKNewTicketVM setSubmitButtonEnabledSignal:]_block_invoke
+__35-[SHKNewTicketVM registerListeners]_block_invoke_2.259
+__35-[SHKNewTicketVM registerListeners]_block_invoke.256
 __35-[SHKNewTicketVM registerListeners]_block_invoke_2
 __35-[SHKNewTicketVM registerListeners]_block_invoke
 __56-[SHKNewTicketVM documentPicker:didPickDocumentsAtURLs:]_block_invoke_2
 __56-[SHKNewTicketVM documentPicker:didPickDocumentsAtURLs:]_block_invoke
 __70-[SHKNewTicketVM imagePickerController:didFinishPickingMediaWithInfo:]_block_invoke_2
 __70-[SHKNewTicketVM imagePickerController:didFinishPickingMediaWithInfo:]_block_invoke
-__67-[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]_block_invoke.153
+__67-[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]_block_invoke.144
 __67-[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]_block_invoke_2
 __67-[SHKNewTicketVM configureAttachmentsCollectionItemWithReportData:]_block_invoke
-__32-[SHKNewTicketVM constructItems]_block_invoke_2
 __32-[SHKNewTicketVM constructItems]_block_invoke.74
 __32-[SHKNewTicketVM constructItems]_block_invoke
 __80-[SHKNewTicketVM initWithReportData:feedbackService:feedbackContext:repository:]_block_invoke
@@ -7512,8 +7527,8 @@ ___34-[SHKChatService startAllSendJobs]_block_invoke
 -[SHKChatService startSendingUnsentMessagesForTicketIDs:]
 ___57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke
 ___57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke_2
-___57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke.206
 ___57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke.208
+___57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke.210
 -[SHKChatService appDidEnterForeground]
 -[SHKChatService markMessagesReadForTicketID:]
 ___46-[SHKChatService markMessagesReadForTicketID:]_block_invoke
@@ -7521,7 +7536,7 @@ ___46-[SHKChatService markMessagesReadForTicketID:]_block_invoke
 ___69-[SHKChatService updateMessagesAndTicketReadStateLocallyForTicketID:]_block_invoke
 -[SHKChatService startMarkMessagesReadOperationForTickets:]
 ___59-[SHKChatService startMarkMessagesReadOperationForTickets:]_block_invoke
-___59-[SHKChatService startMarkMessagesReadOperationForTickets:]_block_invoke.235
+___59-[SHKChatService startMarkMessagesReadOperationForTickets:]_block_invoke.237
 -[SHKChatService hasUnreadMessagesForTicketID:]
 -[SHKChatService constructTicketPublisher]
 -[SHKChatService publishTickets:]
@@ -7535,7 +7550,7 @@ ___46-[SHKChatService publishMessagesForTicketIDs:]_block_invoke
 -[SHKChatService scheduleNotificationsWithNewMessages:]
 ___55-[SHKChatService scheduleNotificationsWithNewMessages:]_block_invoke
 ___55-[SHKChatService scheduleNotificationsWithNewMessages:]_block_invoke_2
-___55-[SHKChatService scheduleNotificationsWithNewMessages:]_block_invoke.329
+___55-[SHKChatService scheduleNotificationsWithNewMessages:]_block_invoke.331
 -[SHKChatService removeDeliveredAndPendingChatNotificaitions]
 ___61-[SHKChatService removeDeliveredAndPendingChatNotificaitions]_block_invoke
 ___61-[SHKChatService removeDeliveredAndPendingChatNotificaitions]_block_invoke_2
@@ -7576,38 +7591,37 @@ ___42-[SHKChatService obtainAuthorizationToken]_block_invoke
 -[SHKChatService .cxx_destruct]
 ___block_descriptor_32_e18_"NSObject"16?08l
 ___block_descriptor_56_e8_32s40s48s_e34_"NSObject"16?0"SHKChatMessage"8l
-___block_literal_global.209
+___block_literal_global.211
 ___block_descriptor_32_e34_"NSObject"16?0"SHKChatMessage"8l
-___block_literal_global.222
+___block_literal_global.224
+_OBJC_CLASSLIST_REFERENCES_$_.233
 ___block_descriptor_48_e8_32s40s_e29_"NSObject"16?0"SHKTicket"8l
-___block_literal_global.236
-_OBJC_CLASSLIST_REFERENCES_$_.269
-_OBJC_CLASSLIST_REFERENCES_$_.282
-_OBJC_SELECTOR_REFERENCES_.286
+___block_literal_global.238
+_OBJC_CLASSLIST_REFERENCES_$_.260
+_OBJC_CLASSLIST_REFERENCES_$_.271
+_OBJC_CLASSLIST_REFERENCES_$_.284
 _OBJC_SELECTOR_REFERENCES_.288
-___block_literal_global.289
-_OBJC_CLASSLIST_REFERENCES_$_.318
-_OBJC_SELECTOR_REFERENCES_.320
+___block_literal_global.291
+_OBJC_CLASSLIST_REFERENCES_$_.305
+_OBJC_CLASSLIST_REFERENCES_$_.320
 _OBJC_SELECTOR_REFERENCES_.322
-_OBJC_CLASSLIST_REFERENCES_$_.323
 ___block_descriptor_48_e8_32s40s_e41_v32?0"NSString"8"NSMutableArray"16^B24l
 ___block_descriptor_32_e41_"NSObject"16?0"UNNotificationRequest"8l
-___block_literal_global.331
+___block_literal_global.333
 ___block_descriptor_32_e17_v16?0"NSArray"8l
-___block_literal_global.341
-___block_descriptor_32_e34_"NSObject"16?0"UNNotification"8l
 ___block_literal_global.343
-_OBJC_SELECTOR_REFERENCES_.345
+___block_descriptor_32_e34_"NSObject"16?0"UNNotification"8l
+___block_literal_global.345
 _OBJC_SELECTOR_REFERENCES_.347
-___block_literal_global.352
-___block_literal_global.353
-_OBJC_SELECTOR_REFERENCES_.372
+___block_literal_global.354
+___block_literal_global.355
+_OBJC_SELECTOR_REFERENCES_.357
+_OBJC_SELECTOR_REFERENCES_.374
 _OBJC_SELECTOR_REFERENCES_.376
-_OBJC_SELECTOR_REFERENCES_.380
 _OBJC_SELECTOR_REFERENCES_.382
 _OBJC_SELECTOR_REFERENCES_.388
+_OBJC_SELECTOR_REFERENCES_.394
 ___block_descriptor_48_e8_32s40r_e18_v16?0"NSString"8l
-_OBJC_SELECTOR_REFERENCES_.395
 __OBJC_$_PROTOCOL_REFS_UNUserNotificationCenterDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UNUserNotificationCenterDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_UNUserNotificationCenterDelegate
@@ -7639,16 +7653,16 @@ __61-[SHKChatService removeDeliveredAndPendingChatNotificaitions]_block_invoke_4
 __61-[SHKChatService removeDeliveredAndPendingChatNotificaitions]_block_invoke_3
 __61-[SHKChatService removeDeliveredAndPendingChatNotificaitions]_block_invoke_2
 __61-[SHKChatService removeDeliveredAndPendingChatNotificaitions]_block_invoke
-__55-[SHKChatService scheduleNotificationsWithNewMessages:]_block_invoke.329
+__55-[SHKChatService scheduleNotificationsWithNewMessages:]_block_invoke.331
 __55-[SHKChatService scheduleNotificationsWithNewMessages:]_block_invoke_2
 __55-[SHKChatService scheduleNotificationsWithNewMessages:]_block_invoke
 __46-[SHKChatService publishMessagesForTicketIDs:]_block_invoke
-__59-[SHKChatService startMarkMessagesReadOperationForTickets:]_block_invoke.235
+__59-[SHKChatService startMarkMessagesReadOperationForTickets:]_block_invoke.237
 __59-[SHKChatService startMarkMessagesReadOperationForTickets:]_block_invoke
 __69-[SHKChatService updateMessagesAndTicketReadStateLocallyForTicketID:]_block_invoke
 __46-[SHKChatService markMessagesReadForTicketID:]_block_invoke
+__57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke.210
 __57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke.208
-__57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke.206
 __57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke_2
 __57-[SHKChatService startSendingUnsentMessagesForTicketIDs:]_block_invoke
 __34-[SHKChatService startAllSendJobs]_block_invoke
@@ -7750,6 +7764,7 @@ ___39-[SHKHomeTicketCell configureWithItem:]_block_invoke_2
 -[SHKHomeTicketCell indicatorImageView]
 -[SHKHomeTicketCell setIndicatorImageView:]
 -[SHKHomeTicketCell .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.132
 ___block_descriptor_40_e8_32w_e20_v20?0"UIImage"8B16l
 _OBJC_IVAR_$_SHKHomeTicketCell._titleLabel
 _OBJC_IVAR_$_SHKHomeTicketCell._subtitleLabel
@@ -8215,7 +8230,7 @@ _OBJC_IVAR_$_SHKScreenshotVC._viewModel
 _OBJC_IVAR_$_SHKScreenshotVC.appRepository
 _OBJC_CLASSLIST_REFERENCES_$_.154
 _OBJC_CLASSLIST_REFERENCES_$_.229
-_OBJC_SELECTOR_REFERENCES_.239
+_OBJC_SELECTOR_REFERENCES_.250
 _OBJC_IVAR_$_SHKScreenshotVC._isBlurEnabled
 _OBJC_CLASSLIST_REFERENCES_$_.264
 _OBJC_IVAR_$_SHKScreenshotVC._scaledViewContainer
@@ -8694,7 +8709,8 @@ ___35-[SHKInspectVM initWithReportData:]_block_invoke
 _OBJC_CLASSLIST_REFERENCES_$_.129
 _OBJC_CLASSLIST_REFERENCES_$_.138
 _OBJC_CLASSLIST_REFERENCES_$_.400
-_OBJC_SELECTOR_REFERENCES_.402
+_OBJC_SELECTOR_REFERENCES_.408
+_OBJC_SELECTOR_REFERENCES_.412
 _OBJC_CLASSLIST_REFERENCES_$_.431
 _OBJC_CLASSLIST_REFERENCES_$_.438
 _OBJC_SELECTOR_REFERENCES_.440
@@ -8796,6 +8812,8 @@ Shake/Business/ActivityHistory/NetworkRequests/NSData+NSInputStream.m
 +[SHKUserEventRecord tableKeys]
 +[SHKUserEventRecord objectFromDatabaseRecord:]
 -[SHKUserEventRecord adaptToDatabaseRecord]
+-[SHKUserEventRecord byteSize]
+-[SHKUserEventRecord jsonKey]
 -[SHKUserEventRecord className]
 -[SHKUserEventRecord setClassName:]
 -[SHKUserEventRecord property]
@@ -9118,6 +9136,8 @@ Shake/ThirdPartyTools/KSCrashReporter/Source/KSCrash/Reporting/Filters/KSCrashRe
 +[SHKNetworkRequestRecord tableKeys]
 +[SHKNetworkRequestRecord objectFromDatabaseRecord:]
 -[SHKNetworkRequestRecord adaptToDatabaseRecord]
+-[SHKNetworkRequestRecord byteSize]
+-[SHKNetworkRequestRecord jsonKey]
 -[SHKNetworkRequestRecord method]
 -[SHKNetworkRequestRecord setMethod:]
 -[SHKNetworkRequestRecord statusCode]
@@ -9336,6 +9356,10 @@ ___35-[SHKUserService performServerSync]_block_invoke
 -[SHKUserService dictionaryByAddingEntriesFromDict:targetDict:]
 -[SHKUserService metadataIsValid:]
 ___34-[SHKUserService metadataIsValid:]_block_invoke
+-[SHKUserService updateUserIntitialFetchStatus:internalUserID:]
+___63-[SHKUserService updateUserIntitialFetchStatus:internalUserID:]_block_invoke
+-[SHKUserService determineActiveStatusWithDatabase:]
+___52-[SHKUserService determineActiveStatusWithDatabase:]_block_invoke
 -[SHKUserService setUser:]
 -[SHKUserService user]
 -[SHKUserService setOnDidRegisterUser:]
@@ -9355,6 +9379,7 @@ ___34-[SHKUserService metadataIsValid:]_block_invoke
 -[SHKUserService .cxx_destruct]
 ___block_descriptor_48_e8_32s40w_e24_v16?0"NSNotification"8l
 ___block_descriptor_40_e8_32r_e15_v32?0816^B24l
+___block_descriptor_49_e8_32s40w_e5_v8?0l
 __OBJC_METACLASS_RO_$_SHKUserService
 __OBJC_$_INSTANCE_METHODS_SHKUserService
 _OBJC_IVAR_$_SHKUserService._onDidUnregisterUser
@@ -9370,6 +9395,8 @@ __OBJC_CLASS_RO_$_SHKUserService
 /Users/vagrant/git/Shake/Shake/Business/UserService/SHKUserService.m
 Shake/Business/UserService/SHKUserService.m
 Shake/Business/UserService/SHKUserService.h
+__52-[SHKUserService determineActiveStatusWithDatabase:]_block_invoke
+__63-[SHKUserService updateUserIntitialFetchStatus:internalUserID:]_block_invoke
 __34-[SHKUserService metadataIsValid:]_block_invoke
 __35-[SHKUserService performServerSync]_block_invoke
 __32-[SHKUserService unregisterUser]_block_invoke
@@ -9493,10 +9520,16 @@ ___31-[SHKNewTicketVC bindViewModel]_block_invoke
 ___31-[SHKNewTicketVC bindViewModel]_block_invoke_2
 ___31-[SHKNewTicketVC bindViewModel]_block_invoke_3
 ___31-[SHKNewTicketVC bindViewModel]_block_invoke_4
-___31-[SHKNewTicketVC bindViewModel]_block_invoke.60
-___31-[SHKNewTicketVC bindViewModel]_block_invoke_2.61
-___31-[SHKNewTicketVC bindViewModel]_block_invoke.67
+___31-[SHKNewTicketVC bindViewModel]_block_invoke.62
+___31-[SHKNewTicketVC bindViewModel]_block_invoke_2.63
+___31-[SHKNewTicketVC bindViewModel]_block_invoke.69
+-[SHKNewTicketVC inputAccessoryView]
+-[SHKNewTicketVC canBecomeFirstResponder]
+-[SHKNewTicketVC constructAccessoryView]
+___40-[SHKNewTicketVC constructAccessoryView]_block_invoke
 -[SHKNewTicketVC viewDidLoad]
+___29-[SHKNewTicketVC viewDidLoad]_block_invoke
+___29-[SHKNewTicketVC viewDidLoad]_block_invoke_2
 -[SHKNewTicketVC backButtonPresed]
 -[SHKNewTicketVC viewWillAppear:]
 -[SHKNewTicketVC viewWillDisappear:]
@@ -9504,7 +9537,8 @@ ___31-[SHKNewTicketVC bindViewModel]_block_invoke.67
 -[SHKNewTicketVC navBarTapHandler:]
 -[SHKNewTicketVC deselectTableViewCells:]
 ___41-[SHKNewTicketVC deselectTableViewCells:]_block_invoke
-___41-[SHKNewTicketVC deselectTableViewCells:]_block_invoke.175
+___41-[SHKNewTicketVC deselectTableViewCells:]_block_invoke.203
+-[SHKNewTicketVC removeInputAccessoryView]
 -[SHKNewTicketVC closeBarButtonAction]
 -[SHKNewTicketVC setupConstraints]
 -[SHKNewTicketVC traitCollectionDidChange:]
@@ -9514,22 +9548,32 @@ ___41-[SHKNewTicketVC deselectTableViewCells:]_block_invoke.175
 -[SHKNewTicketVC tableView:didSelectRowAtIndexPath:]
 -[SHKNewTicketVC tableView:estimatedHeightForRowAtIndexPath:]
 -[SHKNewTicketVC keyboardChangedFrame:]
-___39-[SHKNewTicketVC keyboardChangedFrame:]_block_invoke
+-[SHKNewTicketVC scrollViewDidEndDragging:willDecelerate:]
+-[SHKNewTicketVC isBouncingTop]
+-[SHKNewTicketVC updateTableViewInsetsWithKeyboardEndFrame:beginFrame:]
 -[SHKNewTicketVC tableView]
 -[SHKNewTicketVC setTableView:]
 -[SHKNewTicketVC viewModel]
 -[SHKNewTicketVC setViewModel:]
 -[SHKNewTicketVC navBarTap]
 -[SHKNewTicketVC setNavBarTap:]
+-[SHKNewTicketVC accessoryView]
+-[SHKNewTicketVC setAccessoryView:]
+-[SHKNewTicketVC lastKeyboardOriginY]
+-[SHKNewTicketVC setLastKeyboardOriginY:]
+-[SHKNewTicketVC delayedKeyboardFrame]
+-[SHKNewTicketVC setDelayedKeyboardFrame:]
 -[SHKNewTicketVC .cxx_destruct]
 ___block_descriptor_40_e8_32w_e39_v24?0"NSIndexPath"8"<SHKCellItem>"16l
-_OBJC_CLASSLIST_REFERENCES_$_.115
-_OBJC_CLASSLIST_REFERENCES_$_.163
-_OBJC_SELECTOR_REFERENCES_.225
-___block_descriptor_72_e8_32w_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.119
+_OBJC_CLASSLIST_REFERENCES_$_.191
+_OBJC_CLASSLIST_REFERENCES_$_.276
 _OBJC_IVAR_$_SHKNewTicketVC._tableView
 _OBJC_IVAR_$_SHKNewTicketVC._viewModel
 _OBJC_IVAR_$_SHKNewTicketVC._navBarTap
+_OBJC_IVAR_$_SHKNewTicketVC._accessoryView
+_OBJC_IVAR_$_SHKNewTicketVC._lastKeyboardOriginY
+_OBJC_IVAR_$_SHKNewTicketVC._delayedKeyboardFrame
 __OBJC_CLASS_PROTOCOLS_$_SHKNewTicketVC
 __OBJC_METACLASS_RO_$_SHKNewTicketVC
 __OBJC_$_INSTANCE_METHODS_SHKNewTicketVC
@@ -9538,12 +9582,14 @@ __OBJC_$_PROP_LIST_SHKNewTicketVC
 __OBJC_CLASS_RO_$_SHKNewTicketVC
 /Users/vagrant/git/Shake/Shake/UI/NewTicketScreen/SHKNewTicketVC.m
 Shake/UI/NewTicketScreen/SHKNewTicketVC.m
-__39-[SHKNewTicketVC keyboardChangedFrame:]_block_invoke
-__41-[SHKNewTicketVC deselectTableViewCells:]_block_invoke.175
+__41-[SHKNewTicketVC deselectTableViewCells:]_block_invoke.203
 __41-[SHKNewTicketVC deselectTableViewCells:]_block_invoke
-__31-[SHKNewTicketVC bindViewModel]_block_invoke.67
-__31-[SHKNewTicketVC bindViewModel]_block_invoke_2.61
-__31-[SHKNewTicketVC bindViewModel]_block_invoke.60
+__29-[SHKNewTicketVC viewDidLoad]_block_invoke_2
+__29-[SHKNewTicketVC viewDidLoad]_block_invoke
+__40-[SHKNewTicketVC constructAccessoryView]_block_invoke
+__31-[SHKNewTicketVC bindViewModel]_block_invoke.69
+__31-[SHKNewTicketVC bindViewModel]_block_invoke_2.63
+__31-[SHKNewTicketVC bindViewModel]_block_invoke.62
 __31-[SHKNewTicketVC bindViewModel]_block_invoke_4
 __31-[SHKNewTicketVC bindViewModel]_block_invoke_3
 __31-[SHKNewTicketVC bindViewModel]_block_invoke_2
@@ -9618,11 +9664,12 @@ ___65-[SHKCoordinator configureInspectModuleWithNavigationController:]_block_inv
 ___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke
 ___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_2
 ___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_3
-___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke.334
-___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_2.337
-___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_3.338
 ___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_4
-___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke.358
+___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke.338
+___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_2.341
+___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_3.342
+___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_4.347
+___76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke.363
 -[SHKCoordinator configureEditImageModuleWithNavigationController:shakeFile:reportData:updaterBlock:]
 ___101-[SHKCoordinator configureEditImageModuleWithNavigationController:shakeFile:reportData:updaterBlock:]_block_invoke
 ___101-[SHKCoordinator configureEditImageModuleWithNavigationController:shakeFile:reportData:updaterBlock:]_block_invoke_2
@@ -9634,8 +9681,8 @@ ___51-[SHKCoordinator navigateToChatScreenWithTicketID:]_block_invoke_2
 -[SHKCoordinator navigationController:didShowViewController:animated:]
 -[SHKCoordinator onDidDismissNewTicketScreen]
 -[SHKCoordinator attachInitialScreenshotToReportData:]
-___Block_byref_object_copy_.422
-___Block_byref_object_dispose_.423
+___Block_byref_object_copy_.425
+___Block_byref_object_dispose_.426
 ___54-[SHKCoordinator attachInitialScreenshotToReportData:]_block_invoke
 ___54-[SHKCoordinator attachInitialScreenshotToReportData:]_block_invoke_2
 ___54-[SHKCoordinator attachInitialScreenshotToReportData:]_block_invoke_3
@@ -9686,6 +9733,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.216
 _OBJC_CLASSLIST_REFERENCES_$_.225
 _OBJC_CLASSLIST_REFERENCES_$_.226
 _OBJC_CLASSLIST_REFERENCES_$_.248
+_OBJC_CLASSLIST_REFERENCES_$_.259
 ___block_descriptor_40_e8_32w_e8_v16?0Q8l
 _OBJC_CLASSLIST_REFERENCES_$_.288
 _OBJC_SELECTOR_REFERENCES_.292
@@ -9694,20 +9742,27 @@ ___block_descriptor_48_e8_32w40w_e36_"NSObject"16?0"SHKFeedbackEntry"8l
 _OBJC_CLASSLIST_REFERENCES_$_.308
 _OBJC_SELECTOR_REFERENCES_.310
 _OBJC_CLASSLIST_REFERENCES_$_.311
-_OBJC_CLASSLIST_REFERENCES_$_.343
+_OBJC_SELECTOR_REFERENCES_.318
+_OBJC_CLASSLIST_REFERENCES_$_.321
+_OBJC_SELECTOR_REFERENCES_.340
+_OBJC_CLASSLIST_REFERENCES_$_.348
 ___block_descriptor_56_e8_32s40s48r_e5_v8?0l
-_OBJC_SELECTOR_REFERENCES_.357
-_OBJC_SELECTOR_REFERENCES_.377
+_OBJC_CLASSLIST_REFERENCES_$_.364
+_OBJC_SELECTOR_REFERENCES_.372
+_OBJC_SELECTOR_REFERENCES_.380
 ___block_descriptor_40_e8_32w_e30_"NSData"16?0"SHKShakeFile"8l
-_OBJC_CLASSLIST_REFERENCES_$_.397
-_OBJC_CLASSLIST_REFERENCES_$_.398
-_OBJC_CLASSLIST_REFERENCES_$_.406
-_OBJC_CLASSLIST_REFERENCES_$_.421
+_OBJC_SELECTOR_REFERENCES_.391
+_OBJC_SELECTOR_REFERENCES_.395
+_OBJC_SELECTOR_REFERENCES_.397
+_OBJC_SELECTOR_REFERENCES_.399
+_OBJC_CLASSLIST_REFERENCES_$_.409
 _OBJC_CLASSLIST_REFERENCES_$_.424
-___block_descriptor_56_e8_32s40r48w_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.435
+_OBJC_CLASSLIST_REFERENCES_$_.427
+_OBJC_SELECTOR_REFERENCES_.429
+_OBJC_SELECTOR_REFERENCES_.435
 _OBJC_SELECTOR_REFERENCES_.437
-_OBJC_SELECTOR_REFERENCES_.439
+___block_descriptor_56_e8_32s40r48w_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.442
 __OBJC_$_PROTOCOL_REFS_UINavigationControllerDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UINavigationControllerDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_UINavigationControllerDelegate
@@ -9748,11 +9803,12 @@ __51-[SHKCoordinator navigateToChatScreenWithTicketID:]_block_invoke
 __101-[SHKCoordinator configureEditImageModuleWithNavigationController:shakeFile:reportData:updaterBlock:]_block_invoke_3
 __101-[SHKCoordinator configureEditImageModuleWithNavigationController:shakeFile:reportData:updaterBlock:]_block_invoke_2
 __101-[SHKCoordinator configureEditImageModuleWithNavigationController:shakeFile:reportData:updaterBlock:]_block_invoke
-__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke.358
+__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke.363
+__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_4.347
+__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_3.342
+__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_2.341
+__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke.338
 __76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_4
-__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_3.338
-__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_2.337
-__76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke.334
 __76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_3
 __76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke_2
 __76-[SHKCoordinator configureBottomSheetAttachmentPickerWithVC:pickerDelegate:]_block_invoke
@@ -9867,6 +9923,8 @@ __26-[NSString(Extension) and]_block_invoke
 +[SHKConsoleLogRecord tableKeys]
 +[SHKConsoleLogRecord objectFromDatabaseRecord:]
 -[SHKConsoleLogRecord adaptToDatabaseRecord]
+-[SHKConsoleLogRecord byteSize]
+-[SHKConsoleLogRecord jsonKey]
 -[SHKConsoleLogRecord message]
 -[SHKConsoleLogRecord setMessage:]
 -[SHKConsoleLogRecord .cxx_destruct]
@@ -10394,7 +10452,6 @@ ___58-[SHKShakeFileManager calculatePendingTicketsAndEmitEvent]_block_invoke.188
 -[SHKShakeFileManager setFileManager:]
 -[SHKShakeFileManager .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.113
-_OBJC_CLASSLIST_REFERENCES_$_.119
 _OBJC_CLASSLIST_REFERENCES_$_.120
 _OBJC_CLASSLIST_REFERENCES_$_.131
 ___block_descriptor_40_e8_32r_e29_v32?0"SHKShakeFile"8Q16^B24l
@@ -10450,6 +10507,8 @@ Shake/ThirdPartyTools/KSCrashReporter/Source/KSCrash/Reporting/Tools/NSString+UR
 +[SHKViewControllerRecord tableKeys]
 +[SHKViewControllerRecord objectFromDatabaseRecord:]
 -[SHKViewControllerRecord adaptToDatabaseRecord]
+-[SHKViewControllerRecord byteSize]
+-[SHKViewControllerRecord jsonKey]
 -[SHKViewControllerRecord viewController]
 -[SHKViewControllerRecord setViewController:]
 -[SHKViewControllerRecord method]
@@ -10841,32 +10900,6 @@ __OBJC_CLASS_RO_$_SHKNewTicketDescriptionCell
 /Users/vagrant/git/Shake/Shake/UI/NewTicketScreen/Cells/SHKNewTicketDescriptionCell.m
 Shake/UI/NewTicketScreen/Cells/SHKNewTicketDescriptionCell.m
 __49-[SHKNewTicketDescriptionCell configureWithItem:]_block_invoke
--[SHKNewTicketSubmitItem initWithButtonTitle:action:]
-+[SHKNewTicketSubmitItem cellIdentifier]
--[SHKNewTicketSubmitItem itemType]
--[SHKNewTicketSubmitItem buttonActionHandler]
--[SHKNewTicketSubmitItem buttonTitle]
--[SHKNewTicketSubmitItem buttonEnabled]
--[SHKNewTicketSubmitItem setButtonEnabled:]
--[SHKNewTicketSubmitItem onButtonStateChange]
--[SHKNewTicketSubmitItem setOnButtonStateChange:]
--[SHKNewTicketSubmitItem .cxx_destruct]
-__OBJC_$_CLASS_METHODS_SHKNewTicketSubmitItem
-__OBJC_CLASS_PROTOCOLS_$_SHKNewTicketSubmitItem
-__OBJC_$_CLASS_PROP_LIST_SHKNewTicketSubmitItem
-__OBJC_METACLASS_RO_$_SHKNewTicketSubmitItem
-__OBJC_$_INSTANCE_METHODS_SHKNewTicketSubmitItem
-_OBJC_IVAR_$_SHKNewTicketSubmitItem._buttonEnabled
-_OBJC_IVAR_$_SHKNewTicketSubmitItem.itemType
-_OBJC_IVAR_$_SHKNewTicketSubmitItem._buttonActionHandler
-_OBJC_IVAR_$_SHKNewTicketSubmitItem._buttonTitle
-_OBJC_IVAR_$_SHKNewTicketSubmitItem._onButtonStateChange
-__OBJC_$_INSTANCE_VARIABLES_SHKNewTicketSubmitItem
-__OBJC_$_PROP_LIST_SHKNewTicketSubmitItem
-__OBJC_CLASS_RO_$_SHKNewTicketSubmitItem
-/Users/vagrant/git/Shake/Shake/UI/NewTicketScreen/Items/SHKNewTicketSubmitItem.m
-Shake/UI/NewTicketScreen/Items/SHKNewTicketSubmitItem.m
-Shake/UI/NewTicketScreen/Items/SHKNewTicketSubmitItem.h
 +[KSCrashInstallationStandard sharedInstance]
 ___45+[KSCrashInstallationStandard sharedInstance]_block_invoke
 -[KSCrashInstallationStandard init]
@@ -11132,16 +11165,9 @@ _OBJC_SELECTOR_REFERENCES_.312
 _OBJC_SELECTOR_REFERENCES_.314
 _OBJC_SELECTOR_REFERENCES_.326
 _OBJC_SELECTOR_REFERENCES_.369
-_OBJC_SELECTOR_REFERENCES_.413
-_OBJC_SELECTOR_REFERENCES_.415
-_OBJC_SELECTOR_REFERENCES_.423
-_OBJC_SELECTOR_REFERENCES_.425
-_OBJC_SELECTOR_REFERENCES_.427
-_OBJC_SELECTOR_REFERENCES_.429
-_OBJC_SELECTOR_REFERENCES_.435
 _OBJC_SELECTOR_REFERENCES_.443
-_OBJC_SELECTOR_REFERENCES_.445
 _OBJC_SELECTOR_REFERENCES_.447
+_OBJC_SELECTOR_REFERENCES_.451
 _OBJC_SELECTOR_REFERENCES_.453
 _OBJC_SELECTOR_REFERENCES_.457
 _OBJC_SELECTOR_REFERENCES_.459
@@ -11149,29 +11175,36 @@ _OBJC_SELECTOR_REFERENCES_.461
 _OBJC_SELECTOR_REFERENCES_.463
 _OBJC_SELECTOR_REFERENCES_.465
 _OBJC_SELECTOR_REFERENCES_.467
+_OBJC_SELECTOR_REFERENCES_.469
 _OBJC_SELECTOR_REFERENCES_.471
 _OBJC_SELECTOR_REFERENCES_.473
 _OBJC_SELECTOR_REFERENCES_.475
 _OBJC_SELECTOR_REFERENCES_.477
+_OBJC_SELECTOR_REFERENCES_.479
 _OBJC_SELECTOR_REFERENCES_.481
 _OBJC_SELECTOR_REFERENCES_.483
+_OBJC_SELECTOR_REFERENCES_.485
 _OBJC_SELECTOR_REFERENCES_.487
 _OBJC_SELECTOR_REFERENCES_.489
 _OBJC_SELECTOR_REFERENCES_.491
 _OBJC_SELECTOR_REFERENCES_.493
 _OBJC_SELECTOR_REFERENCES_.495
 _OBJC_SELECTOR_REFERENCES_.497
+_OBJC_SELECTOR_REFERENCES_.499
+_OBJC_SELECTOR_REFERENCES_.501
 ___block_descriptor_48_e8_32r40r_e32_v32?0"SHKUploadedFile"8Q16^B24l
 ___block_descriptor_48_e8_32r40r_e18_B16?0"NSObject"8l
 ___block_descriptor_32_e39_"NSDictionary"16?0"SHKUploadedFile"8l
 _OBJC_SELECTOR_REFERENCES_.514
 _OBJC_SELECTOR_REFERENCES_.516
-_OBJC_SELECTOR_REFERENCES_.518
 _OBJC_SELECTOR_REFERENCES_.520
 ___block_descriptor_32_e39_q24?0"NSDictionary"8"NSDictionary"16l
 ___block_literal_global.538
+_OBJC_SELECTOR_REFERENCES_.542
 _OBJC_SELECTOR_REFERENCES_.544
 _OBJC_CLASSLIST_REFERENCES_$_.551
+_OBJC_SELECTOR_REFERENCES_.553
+_OBJC_SELECTOR_REFERENCES_.555
 __OBJC_$_PROTOCOL_REFS_SHKAPIReportProtocol
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SHKAPIReportProtocol
 __OBJC_$_PROP_LIST_SHKAPIReportProtocol
@@ -11275,6 +11308,12 @@ Shake/UI/Floating Button/Helpers/SHKFloatingContext.h
 -[SHKActivityRecord timestamp]
 -[SHKActivityRecord setTimestamp:]
 -[SHKActivityRecord .cxx_destruct]
+__OBJC_$_PROTOCOL_REFS_SHKByteSizeable
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_SHKByteSizeable
+__OBJC_$_PROTOCOL_METHOD_TYPES_SHKByteSizeable
+__OBJC_PROTOCOL_$_SHKByteSizeable
+__OBJC_LABEL_PROTOCOL_$_SHKByteSizeable
+__OBJC_CLASS_PROTOCOLS_$_SHKActivityRecord
 __OBJC_METACLASS_RO_$_SHKActivityRecord
 __OBJC_$_INSTANCE_METHODS_SHKActivityRecord
 _OBJC_IVAR_$_SHKActivityRecord._timestamp
@@ -15050,6 +15089,7 @@ _$s5Shake16SHKSocketServiceC17userDidUnregisteryyFTo
 _$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tF
 _$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU_
 _$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU0_
+_$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU_Tm
 _$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU1_
 _$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU2_
 _$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU3_
@@ -15070,7 +15110,6 @@ _$s5Shake16SHK_ReachabilityC8queueQoS11targetQueue012notificationG0AC8Dispatch0i
 _$s5Shake16SHKSocketServiceCMU
 _$s5Shake16SHKSocketServiceCMr
 _$s5Shake16SHKSocketServiceC21appDidEnterBackground33_5B156E0D06BB9A5107C2013805DA3B68LLyyFyycfU_TA
-_$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU0_TA
 _$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU4_TA
 _$s5Shake20SHK_SocketAckManagerCMa
 _$s5Shake13SHK_SocketAck33_B4769CFE535895C904763DEC76957959LLVADSHAAWl
@@ -15138,7 +15177,6 @@ __swift_allocate_boxed_opaque_existential_0
 $sSS_yptWOc
 $s5Shake13SHK_SocketAck33_B4769CFE535895C904763DEC76957959LLVADSHAAWl
 $s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU4_TA
-$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU0_TA
 $s5Shake16SHKSocketServiceC21appDidEnterBackground33_5B156E0D06BB9A5107C2013805DA3B68LLyyFyycfU_TA
 $s5Shake16SHKSocketServiceCMr
 $s5Shake16SHKSocketServiceCMU
@@ -15184,7 +15222,6 @@ $s5Shake7shk_log7message4line8function4date4fileySS_SiSS10Foundation4DateVSStFfA
 $s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU3_
 $s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU2_
 $s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU1_
-$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU0_
 $s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tFySayypG_AA0i1_G10AckEmitterCtcfU_
 configureListenersForSocket
 userDidUnregister
