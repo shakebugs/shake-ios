@@ -69,6 +69,12 @@ NS_SWIFT_NAME(ShakeConfiguration)
 /// Default email to appear on Wrap-up screen, if needef
 @property (nonatomic, strong) NSString* emailField;
 
+/**
+If disabled, your app users won't be able to invoke Shake and generate reports.
+ Default is true.
+ */
+@property (nonatomic, assign) BOOL isUserFeedbackEnabled;
+
 - (instancetype)init
 __attribute__((unavailable("Access 'Shake.configuration' directly instead.")));
 

@@ -38,10 +38,6 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
 ///Use this property to check if Shake has been started
 @property (class, readonly) BOOL isStarted;
 
-///Use this property to pause or resume Shake - ex. temporarely disable invocation and BlackBox/Activity History tracking.
-@property (class) BOOL isPaused;
-
-
 // MARK: - Configuration
 
 /**
