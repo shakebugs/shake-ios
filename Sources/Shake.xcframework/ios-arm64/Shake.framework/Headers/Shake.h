@@ -98,6 +98,14 @@ NS_SWIFT_NAME(silentReport(description:fileAttachBlock:reportConfiguration:));
  */
 + (void)handleNotificationWithNotificationTitle:(NSString* __nonnull)notificationTitle notificationDescription:(NSString * __nonnull)notificationDescription;
 
+// MARK: Unread messages
+
+/**
+ Unread messages listener. When set, it reports current number of unread messages, and will call the completion again when
+ the number of unread messages changes.
+ */
+@property (nullable, class) void (^unreadMessagesListener)(NSUInteger);
+
 // MARK: Logging
 
 /**
