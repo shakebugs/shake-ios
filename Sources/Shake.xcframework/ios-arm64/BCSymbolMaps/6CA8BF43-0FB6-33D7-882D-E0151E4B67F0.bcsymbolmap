@@ -4100,6 +4100,23 @@ __OBJC_$_PROP_LIST_SHKFilter
 __OBJC_CLASS_RO_$_SHKFilter
 /Users/vagrant/git/Shake/Shake/Business/ActivityHistory/NetworkRequests/SHKFilter.m
 Shake/Business/ActivityHistory/NetworkRequests/SHKFilter.m
+-[SHKDialogTableView initWithFrame:style:]
+-[SHKDialogTableView layoutSubviews]
+-[SHKDialogTableView configureTableForContentSize:]
+-[SHKDialogTableView viewWillTransition]
+-[SHKDialogTableView tableHeightConstraint]
+-[SHKDialogTableView setTableHeightConstraint:]
+-[SHKDialogTableView .cxx_destruct]
+_OBJC_IVAR_$_SHKDialogTableView._tableHeightConstraint
+__OBJC_METACLASS_RO_$_SHKDialogTableView
+__OBJC_$_INSTANCE_METHODS_SHKDialogTableView
+__OBJC_$_INSTANCE_VARIABLES_SHKDialogTableView
+__OBJC_$_PROP_LIST_SHKDialogTableView
+__OBJC_CLASS_RO_$_SHKDialogTableView
+/Users/vagrant/git/Shake/Shake/UI/BottomDialog/DialogTableView/SHKDialogTableView.m
+Shake/UI/BottomDialog/DialogTableView/SHKDialogTableView.m
+__CGSizeEqualToSize
+/Applications/Xcode-12.5.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 +[SHKChatCellHelper configureMessageContainerViewInContentView:]
 +[SHKChatCellHelper configureBodyLabelInContainerView:]
 +[SHKChatCellHelper configureContainerViewInContentView:]
@@ -4167,7 +4184,6 @@ __OBJC_$_CATEGORY_UIGestureRecognizer_$_UIGestureRecognizerSwizzle
 /Users/vagrant/git/Shake/Shake/Business/ActivityHistory/UserEvents/UIGestureRecognizer+ignoreTouchForEventSwizzle.m
 Shake/Business/ActivityHistory/UserEvents/UIGestureRecognizer+ignoreTouchForEventSwizzle.m
 __CGPointEqualToPoint
-/Applications/Xcode-12.5.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[UIView(Extension) extrudedLabel]
 -[UIView(Extension) createDictionaryWithPropertyType:property:]
 -[UIView(Extension) supposedUIKitComponentSuperview]
@@ -6008,7 +6024,6 @@ Shake/UI/ScreenshotScreen/UIImage+StackBlur.m
 zeroClearInt
 CFRangeMake
 /Applications/Xcode-12.5.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
-__CGSizeEqualToSize
 -[SHKChatSyncData initWithLastSyncTimestamp:]
 +[SHKChatSyncData tableKeys]
 +[SHKChatSyncData tableName]
@@ -10957,12 +10972,12 @@ ___30-[SHKURLProtocol startLoading]_block_invoke
 -[SHKURLProtocol URLSession:task:didFinishCollectingMetrics:]
 -[SHKURLProtocol dataTask]
 -[SHKURLProtocol setDataTask:]
--[SHKURLProtocol startTime]
--[SHKURLProtocol setStartTime:]
+-[SHKURLProtocol taskMetrics]
+-[SHKURLProtocol setTaskMetrics:]
 -[SHKURLProtocol .cxx_destruct]
-_OBJC_IVAR_$_SHKURLProtocol._startTime
 ___block_descriptor_40_e8_32w_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
 _OBJC_IVAR_$_SHKURLProtocol._dataTask
+_OBJC_IVAR_$_SHKURLProtocol._taskMetrics
 __OBJC_$_CLASS_METHODS_SHKURLProtocol
 __OBJC_$_PROTOCOL_REFS_NSURLSessionDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSURLSessionDelegate
@@ -11488,8 +11503,6 @@ __30+[SHKCustomLogReporter shared]_block_invoke
 -[SHKDialogTableVC initWithItemClass:andCellClass:]
 -[SHKDialogTableVC setMainTitle:]
 -[SHKDialogTableVC viewDidLoad]
--[SHKDialogTableVC observeValueForKeyPath:ofObject:change:context:]
--[SHKDialogTableVC configureTableForContentSize:]
 -[SHKDialogTableVC viewWillTransitionToSize:withTransitionCoordinator:]
 -[SHKDialogTableVC injectData:]
 -[SHKDialogTableVC tableView:numberOfRowsInSection:]
@@ -11508,7 +11521,6 @@ __30+[SHKCustomLogReporter shared]_block_invoke
 -[SHKDialogTableVC cellClass]
 -[SHKDialogTableVC setCellClass:]
 -[SHKDialogTableVC .cxx_destruct]
-_SHKDialogTableKVOContext
 _OBJC_IVAR_$_SHKDialogTableVC._tableView
 _OBJC_IVAR_$_SHKDialogTableVC._titleLabel
 _OBJC_IVAR_$_SHKDialogTableVC._items
