@@ -11,7 +11,6 @@
 #import "SHKNotificationEventEditor.h"
 #import "SHKNetworkRequestEditor.h"
 #import "SHKSessionAuthenticationProtocol.h"
-#import "SHKFeedbackEntry.h"
 #import "SHKConstants.h"
 #import <UserNotifications/UserNotifications.h>
 
@@ -129,12 +128,6 @@ NS_SWIFT_NAME(log(_:));
 + (void)removePrivateViewController:(nullable id)viewController;
 
 + (void)clearPrivateViews;
-
-// MARK: - Feedback type
-
-+ (nonnull NSArray<SHKFeedbackEntry *> *)getFeedbackTypes;
-
-+ (void)setFeedbackTypes:(nonnull NSArray<SHKFeedbackEntry *> *)types;
 
 // MARK: - User
 

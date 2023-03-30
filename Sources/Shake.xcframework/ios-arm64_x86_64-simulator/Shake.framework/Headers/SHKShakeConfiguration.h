@@ -3,6 +3,8 @@
 // Copyright © 2020 Shake Technologies, Inc. All rights reserved.
 //
 
+#import "SHKForm.h"
+
 typedef NS_ENUM(NSUInteger, SHKShowOption);
 
 /// Used to enable or disable specific features or invocation methods
@@ -36,12 +38,6 @@ NS_SWIFT_NAME(ShakeConfiguration)
 ///If enabled, a one-off intro message will be shown to a user as soon as they open up your app for the first time.
 @property (nonatomic) BOOL setShowIntroMessage;
 
-/// There will be a button on Shake report window leading to the "Inspect Report" screen
-@property (nonatomic, assign) BOOL isInspectScreenEnabled;
-
-/// The user can choose the feedback type.
-@property (nonatomic, assign) BOOL isFeedbackTypeEnabled;
-
 /// to capture console log or not
 @property (nonatomic, assign) BOOL isConsoleLogsEnabled;
 
@@ -63,17 +59,16 @@ NS_SWIFT_NAME(ShakeConfiguration)
 /// Pick the default Shake show option (new or home) upon invocation
 @property (nonatomic, assign) enum SHKShowOption defaultShowOption;
 
-/// Should email text field appear on Wrap-up screen?
-@property (nonatomic, assign) BOOL isEmailFieldEnabled;
-
-/// Default email to appear on Wrap-up screen, if needef
-@property (nonatomic, strong) NSString* emailField;
-
 /**
 If disabled, your app users won't be able to invoke Shake and generate reports.
  Default is true.
  */
 @property (nonatomic, assign) BOOL isUserFeedbackEnabled;
+
+/**
+Use this property to customize your form items.
+ */
+@property (nonatomic, strong) SHKForm* form;
 
 - (instancetype)init
 __attribute__((unavailable("Access 'Shake.configuration' directly instead.")));
