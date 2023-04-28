@@ -4,6 +4,7 @@
 //
 
 #import "SHKForm.h"
+#import "SHKTheme.h"
 
 typedef NS_ENUM(NSUInteger, SHKShowOption);
 
@@ -69,6 +70,17 @@ If disabled, your app users won't be able to invoke Shake and generate reports.
 Use this property to customize your form items.
  */
 @property (nonatomic, strong) SHKForm* form;
+
+/**
+Use this property to customize the look of the Shake user interface and match it with your product.
+ */
+@property (nonatomic, strong) SHKTheme* theme;
+
+/**
+Change the subtitle text displayed on the home screen.
+ */
+@property (nonatomic, strong, nullable) NSString* homeSubtitle;
+
 
 - (instancetype)init
 __attribute__((unavailable("Access 'Shake.configuration' directly instead.")));
