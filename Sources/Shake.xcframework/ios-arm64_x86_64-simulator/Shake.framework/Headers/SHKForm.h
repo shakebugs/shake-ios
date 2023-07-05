@@ -24,7 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithItems:(NSArray<id<SHKFormItemProtocol>> *)items;
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)init
+__attribute__((unavailable("Use provided initializer")));
+
 
 + (SHKForm *)defaultForm;
 

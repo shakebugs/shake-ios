@@ -61,8 +61,7 @@ NS_SWIFT_NAME(start(clientId:clientSecret:));
 
 typedef NS_ENUM(NSUInteger, SHKShowOption) {
     SHKShowOptionHome = 1,
-    SHKShowOptionNew,
-    SHKShowOptionNewChat
+    SHKShowOptionNew
 };
 
 /**
@@ -222,17 +221,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)reportNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler;
 
-/**
- Returns true if the passed in notification originated from Shake SDK or server.
- */
-+ (BOOL)isShakeNotification:(UNNotification *)notification;
-
-/**
- Report the device APNS token to Shake. This enables Shake originated push notifications.
- Although tokens rarely change, its recommended to call `registerForRemoteNotifications` method
- even if already registered to ensure that up to date token is always forwarded to Shake.
- */
-+ (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 
 NS_ASSUME_NONNULL_END
 

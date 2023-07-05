@@ -15,15 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @property (readonly, strong) NSString * label;
-@property (readonly, strong) NSString * key;
-
+@property (readonly, strong, nullable) NSString * labelRes;
 @property (readonly, strong, nullable) NSString * initialValue;
 
 @property (readonly) BOOL required;
 
-- (instancetype)initWithKey:(NSString *)key label:(NSString *)label required:(BOOL)required initialValue:(nullable NSString *)initialValue;
+- (instancetype)initWithLabel:(NSString *)label required:(BOOL)required labelRes:(nullable NSString *)labelRes initialValue:(nullable NSString *)initialValue;
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)init
+__attribute__((unavailable("Use provided initializer")));
 
 @end
 

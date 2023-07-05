@@ -6,8 +6,6 @@
 #import "SHKForm.h"
 #import "SHKTheme.h"
 
-#import "SHKHomeActions.h"
-
 typedef NS_ENUM(NSUInteger, SHKShowOption);
 
 /// Used to enable or disable specific features or invocation methods
@@ -83,10 +81,6 @@ Change the subtitle text displayed on the home screen.
  */
 @property (nonatomic, strong, nullable) NSString* homeSubtitle;
 
-/**
-Use this property to customize action items on the Shake home screen.
- */
-@property (nonatomic, strong) NSArray<id<SHKHomeActionProtocol>> *homeActions;
 
 - (instancetype)init
 __attribute__((unavailable("Access 'Shake.configuration' directly instead.")));
