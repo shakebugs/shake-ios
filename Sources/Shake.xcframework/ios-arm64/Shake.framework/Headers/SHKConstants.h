@@ -12,6 +12,6 @@
 
 @interface SHKConstants: NSObject
 
-extern NSString * const SHKNotificationCategoryIdentifierDomain;
+// Expose eventual public constants
 
 @end

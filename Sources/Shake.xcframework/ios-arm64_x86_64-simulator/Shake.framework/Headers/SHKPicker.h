@@ -14,14 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SHKPicker : NSObject<SHKFormItemProtocol>
 
-@property (readonly, strong) NSString * label;
+@property (readonly, strong) NSString *label;
+@property (readonly, strong) NSString *key;
 @property (readonly, strong) NSArray<SHKPickerItem *> * items;
-@property (readonly, strong, nullable) NSString * labelRes;
 
-- (instancetype)initWithLabel:(NSString *)label items:(NSArray<SHKPickerItem *> *)items labelRes:(nullable NSString *)labelRes;
+- (instancetype)initWithKey:(NSString *)key label:(NSString *)label items:(NSArray<SHKPickerItem *> *)items;
 
-- (instancetype)init
-__attribute__((unavailable("Use provided initializer")));
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

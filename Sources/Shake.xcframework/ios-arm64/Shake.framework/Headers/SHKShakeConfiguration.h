@@ -6,6 +6,8 @@
 #import "SHKForm.h"
 #import "SHKTheme.h"
 
+#import "SHKHomeActions.h"
+
 typedef NS_ENUM(NSUInteger, SHKShowOption);
 
 /// Used to enable or disable specific features or invocation methods
@@ -81,6 +83,25 @@ Change the subtitle text displayed on the home screen.
  */
 @property (nonatomic, strong, nullable) NSString* homeSubtitle;
 
+/**
+Use this property to customize action items on the Shake home screen.
+ */
+@property (nonatomic, strong) NSArray<id<SHKHomeActionProtocol>> *homeActions;
+
+/**
+ Shake open listener. When set, it reports an event when Shake screen is opened.
+ */
+@property (nonatomic, strong, nullable) void (^shakeOpenListener)(void);
+
+/**
+ Shake dismiss listener. When set, it reports an event when Shake screen is dismissed.
+ */
+@property (nonatomic, strong, nullable) void (^shakeDismissListener)(void);
+
+/**
+ Shake submit listener. When set, it reports an event when Submit button is pressed on Shake new ticket screen..
+ */
+@property (nonatomic, strong, nullable) void (^shakeSubmitListener)(NSString*_Nonnull, NSDictionary*_Nonnull);
 
 - (instancetype)init
 __attribute__((unavailable("Access 'Shake.configuration' directly instead.")));

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		dpMb4sdCqNWgmm9tYa1vlzhqvtQ=
+		ZryauMU1Grewm+XK0NZzSJaygfQ=
 		</data>
 		<key>DemangleNodes.def</key>
 		<data>
@@ -18,19 +18,39 @@
 		</data>
 		<key>Headers/SHKConstants.h</key>
 		<data>
-		SijkglTNvmrWcQK26eNiWk31j7c=
+		MRl76XXCQ0kspM81WCaOoXhRXDg=
 		</data>
 		<key>Headers/SHKEmail.h</key>
 		<data>
-		OgiFfYfy1Xh3psqQcQs2BaQlCkI=
+		rwzC2dB7JB/1Mtx5hgWyt3vSzB4=
 		</data>
 		<key>Headers/SHKForm.h</key>
 		<data>
-		F5On0EVDu3AYpA4Vi59ScurtU0U=
+		nTPoiMayxuCtNqrWAW6W4lradi8=
 		</data>
 		<key>Headers/SHKFormItemProtocol.h</key>
 		<data>
 		zHd15iOpMEtRvrpaL4u8Op31TII=
+		</data>
+		<key>Headers/SHKHomeAction.h</key>
+		<data>
+		q8zquW7n43TdWqqvuEswEfAyu6g=
+		</data>
+		<key>Headers/SHKHomeActionProtocol.h</key>
+		<data>
+		6s6d0sLyCHisUBvHKQQFH+eG4Ig=
+		</data>
+		<key>Headers/SHKHomeActions.h</key>
+		<data>
+		4RNxA5TOcblx+iheS/w7RXitGyQ=
+		</data>
+		<key>Headers/SHKHomeChatAction.h</key>
+		<data>
+		j8ZfRet37S9T7lOH2m09XB6P3mA=
+		</data>
+		<key>Headers/SHKHomeSubmitAction.h</key>
+		<data>
+		kiqDEHNYbk67AFzHVaG8AssauTY=
 		</data>
 		<key>Headers/SHKInspectButton.h</key>
 		<data>
@@ -46,11 +66,11 @@
 		</data>
 		<key>Headers/SHKPicker.h</key>
 		<data>
-		edD+4BZi1qCo3PQcXulNlFI3o/c=
+		XtczARxe0Pl+qsNktfsdyTY7Ius=
 		</data>
 		<key>Headers/SHKPickerItem.h</key>
 		<data>
-		2VDgbu2lFhyY2Y7vcQyioSG3IcM=
+		MnZoRMR3HyaOnEfHbQL83/2wUYM=
 		</data>
 		<key>Headers/SHKSessionAuthenticationProtocol.h</key>
 		<data>
@@ -62,7 +82,7 @@
 		</data>
 		<key>Headers/SHKShakeConfiguration.h</key>
 		<data>
-		KUDDAFAg9b+2yFZyGafZr2sLpYo=
+		leU5VadMa0i0z6PELKQq8Wt6vic=
 		</data>
 		<key>Headers/SHKShakeFile.h</key>
 		<data>
@@ -74,7 +94,7 @@
 		</data>
 		<key>Headers/SHKTextInput.h</key>
 		<data>
-		k+HegIE3cclh0Cj/N2itBl45F9w=
+		wJLkheDKZLRiL0iiR2LuZXTZC9g=
 		</data>
 		<key>Headers/SHKTheme.h</key>
 		<data>
@@ -82,7 +102,7 @@
 		</data>
 		<key>Headers/SHKTitle.h</key>
 		<data>
-		GhgaC8+MPvWTTXUNnV5BmzxQ9Fs=
+		jYskYWgYCZVeYzKzwxj6vr2prhQ=
 		</data>
 		<key>Headers/Shake-Swift.h</key>
 		<data>
@@ -90,11 +110,11 @@
 		</data>
 		<key>Headers/Shake.h</key>
 		<data>
-		LuRTJ5e7AE6LXLYwxFq2sZFDUto=
+		FLb59k5OVLVDCP6KLpAHsD8tyE8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pbPuL7HneHWtQ83+LIdz7wgUTME=
+		hxEV7Kx3z9i+tFaF7uc3kfhh/fk=
 		</data>
 		<key>LICENSE.TXT</key>
 		<data>
@@ -188,7 +208,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RAf2rR6D4Ef2CyRi+PL8JbcPQ14=
+			y2RZQJ6F3Izf5UI99JRwzOHP9Tk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -197,7 +217,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XMaPtuT0xKN1LwjpxhmZjHj9Eos=
+			zMgz23tz9kN/2xEHYvgxA//X1tE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -206,7 +226,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rp4r2J4xfDZY0RU6KXH30At9xm0=
+			y+501i3YmgKuQ/pXC/fxaiBX/+4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,7 +235,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qEojmAxakqMdMLG9FpPYMO/4MaI=
+			ldoJJzrGNNKTCdAGsOWw9/ej2CI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -224,7 +244,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IYVq08F01EyyAwaIRcc7TqMW8HY=
+			1TVSgDyeXz9rnX61sLiPuXM21Os=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -233,7 +253,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J1Bq872BF0qCNZs0JDHOjzN5GOM=
+			Lx4nUBmxaHwGHfi+V2kfZZiDjkk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -242,7 +262,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wjeI/+KUwVXCseJq49DBMGRKwlM=
+			UQ+XX+YdbUL07x8wFnk2sVPYZ/A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -251,7 +271,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M1WmSQMCNw6YelIzbiMtzF7PyV8=
+			1HIZRv2Ft7nFYDlOgXovSlLpolE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -260,7 +280,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9xzrsGkvZHh1LyzEMtWXoAdMeiA=
+			5Xcqk5Np7nEiiXINfKJXJgNorA4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mBc1NlZHlpz16KuijKWPtXJL+4M=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -269,7 +298,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0f7ZvPAftASwKa2TF5HtYFya5Hs=
+			QRTDxEyxWA8fgF/yswp7/jfawcs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Uw50Yo4RrxzT+aHfEfl//aGdWEg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -278,7 +316,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q1xXnWQrOSHgNSo1xutZQYLBdPE=
+			/dzjkHmzP6JniFbxDBj74UpYBKE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -287,7 +325,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KWCSLbnVut1vKinCFSm5OLVgNGg=
+			JyUtuKqQ/TqIkTIfRdMBcrgnovc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -296,7 +334,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KWCSLbnVut1vKinCFSm5OLVgNGg=
+			JyUtuKqQ/TqIkTIfRdMBcrgnovc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -305,7 +343,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5WzMfq2ufwxq+wCQkWFaOtBl2rA=
+			LH4fFbNGH2KTNsZnK3P+sCLo3d0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -314,7 +352,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			seoaeQNxSgYX1DlpeSuF7U7uFik=
+			XVjZd7BptsSWkfjBhLGM60vt6dM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bE6Ne3ar5RppVj1O1Gyo0YQ7/cE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -327,7 +374,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TEGHh7p1IQPgcgHHUimAFXspHrA=
+			e5ok2D0z5GfFpDN6ojJjiMs7htw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -336,7 +383,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SmwFv7IWh+FF8H/YY67lluTx0a4=
+			2sn87a3GRKJexeJw2M8he+Q+zD4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -348,7 +395,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fVgmOfy6rquIt4IXdKc1Sv6259qSwkatMYGc5g5Lwqc=
+			yvxH1qmQ1evkQtRO5GF6ZfXRsVEv0ZmRSQuL0AFMr0A=
 			</data>
 		</dict>
 		<key>DemangleNodes.def</key>
@@ -369,21 +416,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mD5Mbc092Lu6VynlsQ/P5R2RJOssyv0Psoz21ne8elU=
+			biaQnyJri8z5s9wtAAmBvN5eg5ttkdALi3ASFiWBwaw=
 			</data>
 		</dict>
 		<key>Headers/SHKEmail.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FO2AmamynGThpJXSSzxhpDVHsZTXGlfm3DW4xWnFIZM=
+			Ll7ET61kkd/r6lPqcAKFsapALeWfQXRonYUr7pl6MSA=
 			</data>
 		</dict>
 		<key>Headers/SHKForm.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hxVi2stBu9f0Ef9REdsbelpI9AYVhqx1ijODIhUoal4=
+			bELsZ2ERPmnBBkF9kuL7oeG+Sz0VpJqxIx2uqymnt9Y=
 			</data>
 		</dict>
 		<key>Headers/SHKFormItemProtocol.h</key>
@@ -391,6 +438,41 @@
 			<key>hash2</key>
 			<data>
 			Y9AT6HHAbGQI8U6Pecwihm9VoNFE8AyJcmDIdixeWWM=
+			</data>
+		</dict>
+		<key>Headers/SHKHomeAction.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WF46Bsfp3hGtMyXde8iIS+tMKeR2PsWkYO9+bHIOBoc=
+			</data>
+		</dict>
+		<key>Headers/SHKHomeActionProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a0BlpsKc1oFf/9VJ2atuDtsMzq5ciwEaRtRuG/Wrupo=
+			</data>
+		</dict>
+		<key>Headers/SHKHomeActions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			weok4FCN5TjYe2dajS/F+VRdUX7FNFVQwlbjfXu7rzE=
+			</data>
+		</dict>
+		<key>Headers/SHKHomeChatAction.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+03lTvz0dT727FkRIIsgPCHzjQzYizEXIT2pyrn4rvg=
+			</data>
+		</dict>
+		<key>Headers/SHKHomeSubmitAction.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UYN3cIMRj6dsUE5G8rGD4GPHY/i6KfpvKpt3uwjGjVg=
 			</data>
 		</dict>
 		<key>Headers/SHKInspectButton.h</key>
@@ -418,14 +500,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WRf70G1Hinl4yLx/j0ciGp5NrYe8/3qhQLIShUciKQk=
+			w3CdlY6cvt+OHrUFwQdR/RZI0Ku80brz8cnx31hmBtk=
 			</data>
 		</dict>
 		<key>Headers/SHKPickerItem.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rF+WJmFr6yzJqKMaz8ibXcQ4ZboKMK6fIw9kX1S1oRU=
+			SBauMOx+QNrqJbhejk7N1B6TDgVT1EziWBDy1q06Xyo=
 			</data>
 		</dict>
 		<key>Headers/SHKSessionAuthenticationProtocol.h</key>
@@ -446,7 +528,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ytzrDLrQIRr99QB7EKxFqCXZam1/7yYYqmA5YyEmqcU=
+			WVBnISYInhTCNQm/3YiEEY7CP/rSlDczzrdYTSz5n9o=
 			</data>
 		</dict>
 		<key>Headers/SHKShakeFile.h</key>
@@ -467,7 +549,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4sYQoQy5hu3s5Hbi8pLUdtNogfsk1nFC7PvaQ3lxAIs=
+			LJvB2jO8FS1P4un3E5hCHhwwctYAdwMR857lU4E7dP8=
 			</data>
 		</dict>
 		<key>Headers/SHKTheme.h</key>
@@ -481,7 +563,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P3jA4ImWVGgDIfmqDWH0/RF64Y82v7C0b2QsY0ZNUwk=
+			dstLzYJVJXI1/e9X8/yjmsvPy7CmrgW9FzfpkvYhpbM=
 			</data>
 		</dict>
 		<key>Headers/Shake-Swift.h</key>
@@ -495,7 +577,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jEccrFkl3K8vF81JR0qtwKvlHwTgEvuTqKOl0TubQP8=
+			dFQRfFY+CCUwnBmOByG4m2q8BQmoXGMRhHClr08nCsU=
 			</data>
 		</dict>
 		<key>LICENSE.TXT</key>
@@ -656,7 +738,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wuoFewwdWjLc6fKU56a+DJw6ANqJRUrw6w1RrweBKgk=
+			eobu12nWrZ3yrLfhVQEK26QQVG/SQemd+0/myMhyDP8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -665,7 +747,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RFCHlaYOE8DOlNX+chN6jTpwPF67fcCp3a8stvieLz4=
+			epS3+9lDPuNBTCK6Ucr51hnjmtlO+HPEJP85ojYe904=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -674,7 +756,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c5rK8OW+gORcTrxYCoIRFccOuVBys9yFlIj0jXzc5lc=
+			E+Kz9itZ1d7pfb78I4HMXyuu91jObKm2djxWboWq7VI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -683,7 +765,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0uaPFi+xorp9gaaTAUFQtmXjSkxiSnxQp90pFpcyhkQ=
+			xFxY361ogIg2Oi6Ioq8+ar2Cqvkg2jObS4UCedtQ+jg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -692,7 +774,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hlsOqqEMIx5DrvIgXA0SEgcv0qmmaY75v94G+INjX90=
+			mMSvjeU7dcdv9ugSc/XsITntkWvSSUazCgf+fmTi6A4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -701,7 +783,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m76snz7hX0O9EIv3HmEwcME1uPfJiggHqlmlimHCJnM=
+			bTFALNLgmkTjuwQFvoU6PdjuMlqrcR+/7tadzF4s2sU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -710,7 +792,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tqCb9YLuJGqIZJfoXr/RmSUq6UxF9uz7i3yb4Una3Jg=
+			I8Wh//MCb1l7IqBygluqAgX5eyHNc42OgAidmINmGhk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -719,7 +801,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rPwqp+K/QPG1lvEFTU2n1fZiAZZtGEaGjl+c1qdxmaQ=
+			KhU8r5xpZZ0K8v9Ke7lV+ncCKP5yywvcAlhGyBgsOUk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -728,7 +810,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q0ZwXJk1CbBo787ZHWgGz6ZlzAbRd0yrHesHO2029gI=
+			loGKs2MtOIUyEfwcoejFAWooevZUCemqN8LuUvD2xW8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ko.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gjcvOzNc/WEJeCYnPRE92bLA5q7xpYQ1pGIIguVol7U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -737,7 +828,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kz6DAl+FtXXsnCl5rhDVkoaW+tTpzHeP+drOmoxR1/k=
+			hwn1h/p5DUP4ZHIf5/covTZ+FF0lYzX/luna3ZBAFOA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>nl.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			X19Y9AX2i0mWJCNn1IcDKXxGrXClv0/sCkp/KtVNRTk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -746,7 +846,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WZFbRfMbH2XhBZ9j92p+VGZEemuVu1xwSkg88yUPSqk=
+			k+n2/Pg9OXDiYKlUzLc7fpSx6t9Ekw3rYbGyhWPpylc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -755,7 +855,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Keo8LvxqLlycE9jiQJ9aF634+NC3Irao3uHN+Ah7qDY=
+			6LHngpfLTjjJT+o0I/WpmadO6UtjmVcBmdt87/qi/io=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -764,7 +864,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Keo8LvxqLlycE9jiQJ9aF634+NC3Irao3uHN+Ah7qDY=
+			6LHngpfLTjjJT+o0I/WpmadO6UtjmVcBmdt87/qi/io=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -773,7 +873,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+6XjsDZ1m/17Tq0D61Bbk5E6GLDZcQMJA1yvpXBcHOs=
+			AznLoPujgj8X6rygIosGxzelEMW071jlTlFi1fk2ISk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -782,7 +882,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AMxGWbUmw/4cKnjL5dERTAzeFT2wjvHorWZxlkr3ma0=
+			TYYf72RK+ZttAXbfgkITDpbuTVFky+Hu7ob23QDb20k=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>tr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bscJBgxh16D1IABz8RLvhfaDI78urQFAepm/xPtKVo4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -798,7 +907,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4R0pzlSz4lBfuGxAea1gzfYifveku/gEZq6LqhVDm4M=
+			5+IRaBFrdJ6KHh1wkgQjL2V+hQGQ7BP6vJTIg7/0vw4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -807,7 +916,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OiSSHU146iPzI8euF7buq2eqMnc0pVkRgCFn6chyE6A=
+			nCPmAOcqHjHwYlMwKUBFNDb5+wf9IACD5GkFpAVPJFM=
 			</data>
 			<key>optional</key>
 			<true/>
