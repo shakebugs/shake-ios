@@ -103,6 +103,11 @@ Use this property to customize action items on the Shake home screen.
  */
 @property (nonatomic, strong, nullable) void (^shakeSubmitListener)(NSString*_Nonnull, NSDictionary*_Nonnull);
 
+/**
+Use this property to set custom tags to the tickets.
+ */
+@property (nonatomic, strong, nullable) NSArray* tags;
+
 - (instancetype)init
 __attribute__((unavailable("Access 'Shake.configuration' directly instead.")));
 

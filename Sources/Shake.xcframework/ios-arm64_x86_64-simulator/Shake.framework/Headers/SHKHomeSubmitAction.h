@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SHKHomeSubmitAction : NSObject <SHKHomeActionProtocol>
 
-- (instancetype)initWithTitle:(NSString *)title subtitle:(nullable NSString *)subtitle icon:(nullable UIImage *)icon;
+- (instancetype)initWithTitle:(nullable NSString *)title subtitle:(nullable NSString *)subtitle icon:(nullable UIImage *)icon;
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)init;
 
 @end
 
