@@ -2249,7 +2249,6 @@ ___19-[SHKBlackBox init]_block_invoke.29
 -[SHKBlackBox cpuUsage]
 -[SHKBlackBox memoryUsedByApplication]
 -[SHKBlackBox memoryUsedByDevice]
--[SHKBlackBox storageUsage]
 -[SHKBlackBox battery]
 -[SHKBlackBox network]
 -[SHKBlackBox orientation]
@@ -2268,8 +2267,7 @@ ___19-[SHKBlackBox init]_block_invoke.29
 -[SHKBlackBox dispatchSourceTwoSecondTimer]
 -[SHKBlackBox setDispatchSourceTwoSecondTimer:]
 -[SHKBlackBox .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.93
-_OBJC_CLASSLIST_REFERENCES_$_.108
+_OBJC_CLASSLIST_REFERENCES_$_.97
 __OBJC_$_CLASS_METHODS_SHKBlackBox
 __OBJC_CLASS_PROTOCOLS_$_SHKBlackBox
 __OBJC_METACLASS_RO_$_SHKBlackBox
@@ -5179,7 +5177,6 @@ ___62-[SHKNetworkRequestReporter reportRequestCompletedWithRNDict:]_block_invoke
 -[SHKNetworkRequestReporter .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.59
 _OBJC_CLASSLIST_REFERENCES_$_.76
-_OBJC_CLASSLIST_REFERENCES_$_.97
 _OBJC_CLASSLIST_REFERENCES_$_.139
 _OBJC_CLASSLIST_REFERENCES_$_.157
 __OBJC_$_CLASS_METHODS_SHKNetworkRequestReporter
@@ -6159,6 +6156,7 @@ ___35+[SHKViewControllerReporter shared]_block_invoke
 -[SHKViewControllerReporter isEnabled]
 -[SHKViewControllerReporter setIsEnabled:]
 ___SHK_original_viewDidAppear
+_OBJC_CLASSLIST_REFERENCES_$_.93
 _OBJC_CLASSLIST_REFERENCES_$_.98
 __OBJC_$_CLASS_METHODS_SHKViewControllerReporter
 __OBJC_CLASS_PROTOCOLS_$_SHKViewControllerReporter
@@ -9354,6 +9352,7 @@ __OBJC_$_INSTANCE_VARIABLES_SHKCrashInstReportField
 __OBJC_$_PROP_LIST_SHKCrashInstReportField
 __OBJC_CLASS_RO_$_SHKCrashInstReportField
 _g_crashHandlerData
+_OBJC_CLASSLIST_REFERENCES_$_.108
 __OBJC_METACLASS_RO_$_SHKCrashInstallation
 __OBJC_$_INSTANCE_METHODS_SHKCrashInstallation
 _OBJC_IVAR_$_SHKCrashInstallation._nextFieldIndex
