@@ -20,7 +20,7 @@ extension SwiftUI.View {
 @objc public class SHKSocketService : ObjectiveC.NSObject {
   @objc public var delegate: Swift.AnyObject?
   @objc public init(endpointURL: Foundation.URL)
-  @objc public func userDidRegisterWithIdentifier(identifier: Swift.String, token: Swift.String)
+  @objc public func userDidRegisterWithIdentifier(identifier: Swift.String, apiKey: Swift.String)
   @objc public func userDidUnregister()
   @objc deinit
 }

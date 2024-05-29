@@ -247,8 +247,8 @@ ___44-[SHKShake handleError:clusterID:callstack:]_block_invoke
 -[SHKShake fileManager]
 +[SHKShake setOnPrepareReportData:]
 +[SHKShake onPrepareReportData]
-+[SHKShake startWithClientId:clientSecret:]
--[SHKShake configureAPIWithClientId:clientSecret:]
++[SHKShake startWithApiKey:]
+-[SHKShake configureAPIWithApiKey:]
 +[SHKShake shouldReturnBecauseNotInitializedIn:]
 -[SHKShake init]
 -[SHKShake reapplyConfiguration]
@@ -369,8 +369,8 @@ ___47-[SHKShake determinedApplicationArchivedStatus]_block_invoke
 -[SHKShake isTrackingResumed]
 -[SHKShake configuration]
 -[SHKShake setConfiguration:]
--[SHKShake clientID]
--[SHKShake setClientID:]
+-[SHKShake apiKey]
+-[SHKShake setApiKey:]
 -[SHKShake onPrepareReportData]
 -[SHKShake setOnPrepareReportData:]
 -[SHKShake setShakeUIDisplayed:]
@@ -393,8 +393,7 @@ _OBJC_SELECTOR_REFERENCES_.20
 _OBJC_CLASSLIST_REFERENCES_$_.21
 _OBJC_CLASSLIST_REFERENCES_$_.22
 _OBJC_SELECTOR_REFERENCES_.45
-_OBJC_SELECTOR_REFERENCES_.47
-_OBJC_CLASSLIST_REFERENCES_$_.50
+_OBJC_CLASSLIST_REFERENCES_$_.48
 _OBJC_SELECTOR_REFERENCES_.54
 _OBJC_SELECTOR_REFERENCES_.56
 _OBJC_SELECTOR_REFERENCES_.58
@@ -764,7 +763,7 @@ _OBJC_IVAR_$_SHKShake._userService
 _OBJC_IVAR_$_SHKShake._chatService
 _OBJC_IVAR_$_SHKShake._logReporter
 _OBJC_IVAR_$_SHKShake._configuration
-_OBJC_IVAR_$_SHKShake._clientID
+_OBJC_IVAR_$_SHKShake._apiKey
 _OBJC_IVAR_$_SHKShake._onPrepareReportData
 _OBJC_IVAR_$_SHKShake._floatingContext
 _OBJC_IVAR_$_SHKShake._apnsToken
@@ -879,7 +878,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.36
 _OBJC_CLASSLIST_REFERENCES_$_.37
 _OBJC_CLASSLIST_REFERENCES_$_.42
 _OBJC_SELECTOR_REFERENCES_.43
-_OBJC_CLASSLIST_REFERENCES_$_.48
+_OBJC_SELECTOR_REFERENCES_.47
 _OBJC_SELECTOR_REFERENCES_.59
 _OBJC_SELECTOR_REFERENCES_.61
 _OBJC_CLASSLIST_REFERENCES_$_.62
@@ -1326,16 +1325,15 @@ Shake/Business/BlackBox/Models/GenericRecords/SHKStorageRecord.m
 +[SHKRouter apiBaseURL]
 +[SHKRouter setApiBaseURL:]
 +[SHKRouter bodyDataFromDictionary:]
-+[SHKRouter authorizationWithClientID:clientSecret:]
 +[SHKRouter branding]
-+[SHKRouter registerApplication:os:platform:]
-+[SHKRouter applicationArchived:os:platform:]
++[SHKRouter registerApplication]
++[SHKRouter applicationArchived]
 +[SHKRouter uploadFile:fileName:]
 +[SHKRouter uploadInternalLogFile:fileName:]
-+[SHKRouter sendFeedbackReport:bundleID:]
-+[SHKRouter sendCrashReport:bundleID:]
-+[SHKRouter registerUser:metadata:apnsToken:bundleID:OS:platform:]
-+[SHKRouter updateUser:userID:metadata:apnsToken:bundleID:OS:platform:]
++[SHKRouter sendFeedbackReport:]
++[SHKRouter sendCrashReport:]
++[SHKRouter registerUser:metadata:apnsToken:]
++[SHKRouter updateUser:userID:metadata:apnsToken:]
 +[SHKRouter unregisterUser:apnsToken:]
 +[SHKRouter getUserTickets:withLimit:andOffset:]
 +[SHKRouter getAllUserTickets:lastSyncDate:]
@@ -1345,11 +1343,8 @@ _baseURL
 _OBJC_CLASSLIST_REFERENCES_$_.1
 _OBJC_SELECTOR_REFERENCES_.3
 _OBJC_CLASSLIST_REFERENCES_$_.10
-_OBJC_CLASSLIST_REFERENCES_$_.52
-_OBJC_CLASSLIST_REFERENCES_$_.55
-_OBJC_CLASSLIST_REFERENCES_$_.60
-_OBJC_SELECTOR_REFERENCES_.102
-_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_CLASSLIST_REFERENCES_$_.44
+_OBJC_CLASSLIST_REFERENCES_$_.59
 __OBJC_$_CLASS_METHODS_SHKRouter
 __OBJC_$_CLASS_PROP_LIST_SHKRouter
 __OBJC_METACLASS_RO_$_SHKRouter
@@ -1412,7 +1407,9 @@ _OBJC_CLASSLIST_REFERENCES_$_.41
 _OBJC_CLASSLIST_REFERENCES_$_.64
 _OBJC_SELECTOR_REFERENCES_.96
 _OBJC_SELECTOR_REFERENCES_.100
+_OBJC_SELECTOR_REFERENCES_.102
 _OBJC_SELECTOR_REFERENCES_.104
+_OBJC_SELECTOR_REFERENCES_.106
 _OBJC_SELECTOR_REFERENCES_.108
 _OBJC_SELECTOR_REFERENCES_.110
 _OBJC_SELECTOR_REFERENCES_.112
@@ -1541,6 +1538,7 @@ __59-[SHKLogger logWithLevel:message:prettyFunction:line:date:]_block_invoke
 -[SHKHomePendingTicketCell ticketImageView]
 -[SHKHomePendingTicketCell setTicketImageView:]
 -[SHKHomePendingTicketCell .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.50
 _OBJC_CLASSLIST_REFERENCES_$_.65
 _OBJC_CLASSLIST_REFERENCES_$_.74
 _OBJC_CLASSLIST_REFERENCES_$_.117
@@ -2041,21 +2039,13 @@ Shake/UI/NavigationController/SHKNavigationController.m
 __42-[SHKNavigationController viewWillAppear:]_block_invoke
 -[SHKAuthTransport initWithTransport:clientCredentials:]
 -[SHKAuthTransport transportTask:completion:]
-___45-[SHKAuthTransport transportTask:completion:]_block_invoke
--[SHKAuthTransport authorizeShake:]
-___35-[SHKAuthTransport authorizeShake:]_block_invoke
--[SHKAuthTransport adaptRequest:withSHKAccessToken:]
--[SHKAuthTransport performAuthorizedRequest:withSHKAccessToken:completion:]
--[SHKAuthTransport setAccessToken:]
--[SHKAuthTransport accessToken]
+-[SHKAuthTransport adaptRequest:withApiKey:]
+-[SHKAuthTransport performAuthorizedRequest:withApiKey:completion:]
 -[SHKAuthTransport baseTransport]
 -[SHKAuthTransport setBaseTransport:]
 -[SHKAuthTransport clientCredentials]
 -[SHKAuthTransport setClientCredentials:]
 -[SHKAuthTransport .cxx_destruct]
-___block_descriptor_56_e8_32s40bs48w_e58_v32?0"SHKAccessToken"8"NSHTTPURLResponse"16"NSError"24l
-___block_descriptor_48_e8_32bs40w_e50_v32?0"NSData"8"NSHTTPURLResponse"16"NSError"24l
-_OBJC_CLASSLIST_REFERENCES_$_.63
 __OBJC_CLASS_PROTOCOLS_$_SHKAuthTransport
 __OBJC_METACLASS_RO_$_SHKAuthTransport
 __OBJC_$_INSTANCE_METHODS_SHKAuthTransport
@@ -2066,8 +2056,6 @@ __OBJC_$_PROP_LIST_SHKAuthTransport
 __OBJC_CLASS_RO_$_SHKAuthTransport
 /Users/vagrant/git/Shake/Shake/Internal/ShakeNetworkLayer/Transports/SHKAuthTransport.m
 Shake/Internal/ShakeNetworkLayer/Transports/SHKAuthTransport.m
-__35-[SHKAuthTransport authorizeShake:]_block_invoke
-__45-[SHKAuthTransport transportTask:completion:]_block_invoke
 +[UIImage(shk_image) shk_image:]
 -[UIImage(shk_image) shk_original]
 -[UIImage(shk_image) shk_resizedToSize:]
@@ -3677,6 +3665,7 @@ __20+[SHKPrivacy shared]_block_invoke
 -[SHKDialogCell buttonAction]
 -[SHKDialogCell setButtonAction:]
 -[SHKDialogCell .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.52
 _OBJC_CLASSLIST_REFERENCES_$_.80
 _OBJC_IVAR_$_SHKDialogCell._titleLabel
 _OBJC_IVAR_$_SHKDialogCell._titleImageView
@@ -3721,7 +3710,6 @@ ___copy_helper_block_e8_32s40s48s56b
 -[SHKCrashReportSinkEMail filenameFmt]
 -[SHKCrashReportSinkEMail setFilenameFmt:]
 -[SHKCrashReportSinkEMail .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.44
 __OBJC_$_CLASS_METHODS_SHKCrashMailProcess
 __OBJC_$_PROTOCOL_REFS_MFMailComposeViewControllerDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_MFMailComposeViewControllerDelegate
@@ -3885,6 +3873,7 @@ ___copy_helper_block_e8_32b
 -[SHKCrash .cxx_destruct]
 _getBundleName
 _OBJC_CLASSLIST_REFERENCES_$_.43
+_OBJC_CLASSLIST_REFERENCES_$_.55
 ___block_descriptor_48_e8_32s40bs_e32_v28?0"NSArray"8B16"NSError"20l
 _OBJC_CLASSLIST_REFERENCES_$_.150
 ___block_descriptor_40_e8_32bs_e32_v28?0"NSArray"8B16"NSError"20l
@@ -4753,6 +4742,8 @@ ___33+[SHKNotificationReporter shared]_block_invoke
 -[SHKNotificationReporter setNotificationProxyDelegate:]
 -[SHKNotificationReporter .cxx_destruct]
 ___SHK_original_setDelegate
+_OBJC_CLASSLIST_REFERENCES_$_.60
+_OBJC_CLASSLIST_REFERENCES_$_.63
 __OBJC_$_CLASS_METHODS_SHKNotificationReporter
 __OBJC_CLASS_PROTOCOLS_$_SHKNotificationReporter
 __OBJC_METACLASS_RO_$_SHKNotificationReporter
@@ -5175,7 +5166,6 @@ ___62-[SHKNetworkRequestReporter reportRequestCompletedWithRNDict:]_block_invoke
 -[SHKNetworkRequestReporter authDelegate]
 -[SHKNetworkRequestReporter setAuthDelegate:]
 -[SHKNetworkRequestReporter .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.59
 _OBJC_CLASSLIST_REFERENCES_$_.76
 _OBJC_CLASSLIST_REFERENCES_$_.139
 _OBJC_CLASSLIST_REFERENCES_$_.157
@@ -8226,10 +8216,6 @@ ___33-[SHKChatService userDidRegister]_block_invoke
 ___56-[SHKChatService constructSyncedReadForReceivedTickets:]_block_invoke
 -[SHKChatService streamDidReceiveEvent:]
 -[SHKChatService streamDidConnect]
--[SHKChatService obtainAuthorizationToken]
-___Block_byref_object_copy_.436
-___Block_byref_object_dispose_.437
-___42-[SHKChatService obtainAuthorizationToken]_block_invoke
 -[SHKChatService setHostAppUnreadMessagesListener:]
 -[SHKChatService hostAppUnreadMessagesListener]
 -[SHKChatService socketService]
@@ -8298,7 +8284,6 @@ _OBJC_SELECTOR_REFERENCES_.411
 _OBJC_SELECTOR_REFERENCES_.413
 _OBJC_SELECTOR_REFERENCES_.415
 _OBJC_SELECTOR_REFERENCES_.429
-___block_descriptor_48_e8_32s40r_e18_v16?0"NSString"8l
 __OBJC_$_PROTOCOL_REFS_UNUserNotificationCenterDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UNUserNotificationCenterDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_UNUserNotificationCenterDelegate
@@ -8326,9 +8311,6 @@ __OBJC_CLASS_RO_$_SHKChatService
 /Users/vagrant/git/Shake/Shake/Business/ChatService/SHKChatService.m
 Shake/Business/ChatService/SHKChatService.m
 Shake/Business/ChatService/SHKChatService.h
-__42-[SHKChatService obtainAuthorizationToken]_block_invoke
-__Block_byref_object_dispose_.437
-__Block_byref_object_copy_.436
 __56-[SHKChatService constructSyncedReadForReceivedTickets:]_block_invoke
 __33-[SHKChatService userDidRegister]_block_invoke
 __35-[SHKChatService userDidUnregister]_block_invoke
@@ -9552,14 +9534,12 @@ __OBJC_$_PROP_LIST_ViewControllerViewPair
 __OBJC_CLASS_RO_$_ViewControllerViewPair
 /Users/vagrant/git/Shake/Shake/Categories/ViewControllerViewPair.m
 Shake/Categories/ViewControllerViewPair.m
--[SHKClientCredentials initWithClientID:clientSecret:]
--[SHKClientCredentials clientID]
--[SHKClientCredentials clientSecret]
+-[SHKClientCredentials initWithApiKey:]
+-[SHKClientCredentials apiKey]
 -[SHKClientCredentials .cxx_destruct]
 __OBJC_METACLASS_RO_$_SHKClientCredentials
 __OBJC_$_INSTANCE_METHODS_SHKClientCredentials
-_OBJC_IVAR_$_SHKClientCredentials._clientID
-_OBJC_IVAR_$_SHKClientCredentials._clientSecret
+_OBJC_IVAR_$_SHKClientCredentials._apiKey
 __OBJC_$_INSTANCE_VARIABLES_SHKClientCredentials
 __OBJC_$_PROP_LIST_SHKClientCredentials
 __OBJC_CLASS_RO_$_SHKClientCredentials
@@ -9897,27 +9877,6 @@ __OBJC_$_CATEGORY_INSTANCE_METHODS_NSPointerArray_$_compact
 __OBJC_$_CATEGORY_NSPointerArray_$_compact
 /Users/vagrant/git/Shake/Shake/Internal/ShakeUtilityClasses/NSPointerArray+compact.m
 Shake/Internal/ShakeUtilityClasses/NSPointerArray+compact.m
-+[SHKAccessToken decodeFromJSONDictionary:]
--[SHKAccessToken isExpired]
--[SHKAccessToken encodeWithCoder:]
--[SHKAccessToken initWithCoder:]
--[SHKAccessToken token]
--[SHKAccessToken setToken:]
--[SHKAccessToken expirationDate]
--[SHKAccessToken setExpirationDate:]
--[SHKAccessToken .cxx_destruct]
-__OBJC_$_CLASS_METHODS_SHKAccessToken
-__OBJC_CLASS_PROTOCOLS_$_SHKAccessToken
-__OBJC_METACLASS_RO_$_SHKAccessToken
-__OBJC_$_INSTANCE_METHODS_SHKAccessToken
-_OBJC_IVAR_$_SHKAccessToken._token
-_OBJC_IVAR_$_SHKAccessToken._expirationDate
-__OBJC_$_INSTANCE_VARIABLES_SHKAccessToken
-__OBJC_$_PROP_LIST_SHKAccessToken
-__OBJC_CLASS_RO_$_SHKAccessToken
-/Users/vagrant/git/Shake/Shake/Internal/ShakeNetworkLayer/Models/SHKAccessToken.m
-Shake/Internal/ShakeNetworkLayer/Models/SHKAccessToken.m
-Shake/Internal/ShakeNetworkLayer/Models/SHKAccessToken.h
 /Users/vagrant/git/Shake/Shake/ThirdPartyTools/KSCrashReporter/Source/KSCrash/Recording/Tools/SHKCPU_x86_32.c
 +[SHKCrashReportFilterJSONEncode filterWithOptions:]
 -[SHKCrashReportFilterJSONEncode initWithOptions:]
@@ -11159,21 +11118,6 @@ __36-[SHKActivityVM initWithReportData:]_block_invoke
 /Users/vagrant/git/Shake/Shake/ThirdPartyTools/KSCrashReporter/Source/KSCrash/Recording/Tools/SHKDemangle_CPP.cpp
 ksdm_demangleCPP
 Shake/ThirdPartyTools/KSCrashReporter/Source/KSCrash/Recording/Tools/SHKDemangle_CPP.cpp
--[SHKTokenTransport initWithTransport:]
--[SHKTokenTransport transportTask:completion:]
--[SHKTokenTransport accessTokenData]
--[SHKTokenTransport baseTransport]
--[SHKTokenTransport setBaseTransport:]
--[SHKTokenTransport .cxx_destruct]
-__OBJC_CLASS_PROTOCOLS_$_SHKTokenTransport
-__OBJC_METACLASS_RO_$_SHKTokenTransport
-__OBJC_$_INSTANCE_METHODS_SHKTokenTransport
-_OBJC_IVAR_$_SHKTokenTransport._baseTransport
-__OBJC_$_INSTANCE_VARIABLES_SHKTokenTransport
-__OBJC_$_PROP_LIST_SHKTokenTransport
-__OBJC_CLASS_RO_$_SHKTokenTransport
-/Users/vagrant/git/Shake/Shake/Internal/ShakeNetworkLayer/Transports/SHKTokenTransport.m
-Shake/Internal/ShakeNetworkLayer/Transports/SHKTokenTransport.m
 -[SHKRoundedView initWithFrame:]
 -[SHKRoundedView initWithCornerMask:cornerRadius:]
 +[SHKRoundedView normalizeRadiusForSize:desiredRadius:]
@@ -11297,7 +11241,6 @@ __OBJC_CLASS_RO_$_SHKHomeSubtitleCell
 Shake/UI/HomeScreen/Cells/SHKHomeSubtitleCell.m
 -[ShakeAPI initWithSHKClientCredentials:appCredentials:baseURL:brandingAdapter:]
 -[ShakeAPI createMainTransport]
--[ShakeAPI createTokenTransport]
 -[ShakeAPI getBrandingForClass:completion:]
 ___43-[ShakeAPI getBrandingForClass:completion:]_block_invoke
 -[ShakeAPI applicationArchived:]
@@ -11320,22 +11263,18 @@ ___48-[ShakeAPI unregisterUser:apnsToken:completion:]_block_invoke
 ___118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke
 ___118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke_2
 ___118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke_3
-___118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke.107
-___118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke.112
+___118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke.96
+___118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke.101
 -[ShakeAPI sendMessageForTicket:ticketType:body:internalUserID:responseClass:onCompletion:]
 ___91-[ShakeAPI sendMessageForTicket:ticketType:body:internalUserID:responseClass:onCompletion:]_block_invoke
 -[ShakeAPI markMessagesReadForTicketID:ticketType:internalUserID:completion:]
 ___77-[ShakeAPI markMessagesReadForTicketID:ticketType:internalUserID:completion:]_block_invoke
--[ShakeAPI obtainAuthorizationToken:]
-___37-[ShakeAPI obtainAuthorizationToken:]_block_invoke
 -[ShakeAPI clientCredentials]
 -[ShakeAPI setClientCredentials:]
 -[ShakeAPI appCredentials]
 -[ShakeAPI setAppCredentials:]
 -[ShakeAPI mainTransport]
 -[ShakeAPI setMainTransport:]
--[ShakeAPI tokenTransport]
--[ShakeAPI setTokenTransport:]
 -[ShakeAPI brandingAdapter]
 -[ShakeAPI setBrandingAdapter:]
 -[ShakeAPI .cxx_destruct]
@@ -11350,18 +11289,16 @@ __OBJC_$_INSTANCE_METHODS_ShakeAPI
 _OBJC_IVAR_$_ShakeAPI._clientCredentials
 _OBJC_IVAR_$_ShakeAPI._appCredentials
 _OBJC_IVAR_$_ShakeAPI._mainTransport
-_OBJC_IVAR_$_ShakeAPI._tokenTransport
 _OBJC_IVAR_$_ShakeAPI._brandingAdapter
 __OBJC_$_INSTANCE_VARIABLES_ShakeAPI
 __OBJC_$_PROP_LIST_ShakeAPI
 __OBJC_CLASS_RO_$_ShakeAPI
 /Users/vagrant/git/Shake/Shake/Internal/ShakeNetworkLayer/ShakeAPI.m
 Shake/Internal/ShakeNetworkLayer/ShakeAPI.m
-__37-[ShakeAPI obtainAuthorizationToken:]_block_invoke
 __77-[ShakeAPI markMessagesReadForTicketID:ticketType:internalUserID:completion:]_block_invoke
 __91-[ShakeAPI sendMessageForTicket:ticketType:body:internalUserID:responseClass:onCompletion:]_block_invoke
-__118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke.112
-__118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke.107
+__118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke.101
+__118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke.96
 __118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke_3
 __118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke_2
 __118-[ShakeAPI fetchUserTicketsWithInternalUserID:ticketClass:messageClass:participantClass:syncDateTimestamp:completion:]_block_invoke
@@ -12284,8 +12221,8 @@ onReachabilityChanged
 -[SHKAPIReport valuesForLogging]
 -[SHKAPIReport populateWith:]
 ___29-[SHKAPIReport populateWith:]_block_invoke
-___29-[SHKAPIReport populateWith:]_block_invoke.501
-___29-[SHKAPIReport populateWith:]_block_invoke.507
+___29-[SHKAPIReport populateWith:]_block_invoke.493
+___29-[SHKAPIReport populateWith:]_block_invoke.499
 ___29-[SHKAPIReport populateWith:]_block_invoke_2
 -[SHKAPIReport active]
 -[SHKAPIReport setActive:]
@@ -12404,23 +12341,22 @@ ___29-[SHKAPIReport populateWith:]_block_invoke_2
 -[SHKAPIReport .cxx_destruct]
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSMutableArray_$_SHKAPIReport
 __OBJC_$_CATEGORY_NSMutableArray_$_SHKAPIReport
-_OBJC_SELECTOR_REFERENCES_.288
-_OBJC_CLASSLIST_REFERENCES_$_.361
+_OBJC_CLASSLIST_REFERENCES_$_.260
+_OBJC_CLASSLIST_REFERENCES_$_.353
 _OBJC_SELECTOR_REFERENCES_.459
 _OBJC_SELECTOR_REFERENCES_.461
 _OBJC_SELECTOR_REFERENCES_.463
 _OBJC_SELECTOR_REFERENCES_.465
-_OBJC_SELECTOR_REFERENCES_.493
-_OBJC_SELECTOR_REFERENCES_.495
-_OBJC_SELECTOR_REFERENCES_.497
 ___block_descriptor_48_e8_32r40r_e32_v32?0"SHKUploadedFile"8Q16^B24l
-_OBJC_SELECTOR_REFERENCES_.503
+_OBJC_SELECTOR_REFERENCES_.492
+_OBJC_SELECTOR_REFERENCES_.495
 ___block_descriptor_48_e8_32r40r_e18_B16?0"NSObject"8l
 ___block_descriptor_32_e39_"NSDictionary"16?0"SHKUploadedFile"8l
+_OBJC_SELECTOR_REFERENCES_.508
 ___block_descriptor_32_e39_q24?0"NSDictionary"8"NSDictionary"16l
-___block_literal_global.534
-_OBJC_SELECTOR_REFERENCES_.542
-_OBJC_SELECTOR_REFERENCES_.544
+___block_literal_global.526
+_OBJC_SELECTOR_REFERENCES_.545
+_OBJC_SELECTOR_REFERENCES_.547
 __OBJC_$_PROTOCOL_REFS_SHKAPIReportProtocol
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_SHKAPIReportProtocol
 __OBJC_$_PROP_LIST_SHKAPIReportProtocol
@@ -12493,8 +12429,8 @@ __OBJC_CLASS_RO_$_SHKAPIReport
 /Users/vagrant/git/Shake/Shake/Internal/ShakeReportDataFiles/SHKAPIReport.m
 Shake/Internal/ShakeReportDataFiles/SHKAPIReport.m
 __29-[SHKAPIReport populateWith:]_block_invoke_2
-__29-[SHKAPIReport populateWith:]_block_invoke.507
-__29-[SHKAPIReport populateWith:]_block_invoke.501
+__29-[SHKAPIReport populateWith:]_block_invoke.499
+__29-[SHKAPIReport populateWith:]_block_invoke.493
 __29-[SHKAPIReport populateWith:]_block_invoke
 -[SHKFloatingContext initWithRepository:]
 -[SHKFloatingContext updateFloatingFrame:andRelativePosition:]
@@ -12655,9 +12591,6 @@ Shake/ThirdPartyTools/KSCrashReporter/Source/KSCrash/Reporting/Tools/NSMutableDa
 -[SHKRegisterAppTransport initWithTransport:appCredentials:brandingAdapter:]
 -[SHKRegisterAppTransport transportTask:completion:]
 ___52-[SHKRegisterAppTransport transportTask:completion:]_block_invoke
-___52-[SHKRegisterAppTransport transportTask:completion:]_block_invoke_2
--[SHKRegisterAppTransport performInitialFetchBranding:]
-___55-[SHKRegisterAppTransport performInitialFetchBranding:]_block_invoke
 -[SHKRegisterAppTransport performApplicationRegister:]
 -[SHKRegisterAppTransport applicationRegistered]
 -[SHKRegisterAppTransport setApplicationRegistered:]
@@ -12680,8 +12613,6 @@ __OBJC_$_PROP_LIST_SHKRegisterAppTransport
 __OBJC_CLASS_RO_$_SHKRegisterAppTransport
 /Users/vagrant/git/Shake/Shake/Internal/ShakeNetworkLayer/Transports/SHKRegisterAppTransport.m
 Shake/Internal/ShakeNetworkLayer/Transports/SHKRegisterAppTransport.m
-__55-[SHKRegisterAppTransport performInitialFetchBranding:]_block_invoke
-__52-[SHKRegisterAppTransport transportTask:completion:]_block_invoke_2
 __52-[SHKRegisterAppTransport transportTask:completion:]_block_invoke
 _handleExceptions
 _restoreExceptionPorts
@@ -16369,9 +16300,9 @@ _$s5Shake16SHKSocketServiceC19observeReachabilityyyF
 _$s5Shake16SHKSocketServiceC19observeReachabilityyyFyAA04SHK_E0CcfU_
 _$s5Shake16SHKSocketServiceC19observeReachabilityyyFyAA04SHK_E0CcfU0_
 _$s5Shake16SHK_ReachabilityC13startNotifieryyKF
-_$s5Shake16SHKSocketServiceC29userDidRegisterWithIdentifier10identifier5tokenySS_SStF
+_$s5Shake16SHKSocketServiceC29userDidRegisterWithIdentifier10identifier6apiKeyySS_SStF
 _$s5Shake7shk_log7message4line8function4date4fileySS_SiSS10Foundation4DateVSStF
-_$s5Shake16SHKSocketServiceC29userDidRegisterWithIdentifier10identifier5tokenySS_SStFTo
+_$s5Shake16SHKSocketServiceC29userDidRegisterWithIdentifier10identifier6apiKeyySS_SStFTo
 _$s5Shake16SHKSocketServiceC17userDidUnregisteryyF
 _$s5Shake16SHKSocketServiceC17userDidUnregisteryyFTo
 _$s5Shake16SHKSocketServiceC27configureListenersForSocket6socketyAA04SHK_G8IOClientC_tF
