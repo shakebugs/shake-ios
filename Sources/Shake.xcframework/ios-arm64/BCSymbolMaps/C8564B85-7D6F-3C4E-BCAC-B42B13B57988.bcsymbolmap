@@ -4608,6 +4608,10 @@ ___39-[SHKMotionListener startMotionUpdates]_block_invoke_2
 -[SHKMotionListener setXInPositiveDirection:]
 -[SHKMotionListener xInNegativeDirection]
 -[SHKMotionListener setXInNegativeDirection:]
+-[SHKMotionListener zInPositiveDirection]
+-[SHKMotionListener setZInPositiveDirection:]
+-[SHKMotionListener zInNegativeDirection]
+-[SHKMotionListener setZInNegativeDirection:]
 -[SHKMotionListener shakeCount]
 -[SHKMotionListener setShakeCount:]
 -[SHKMotionListener .cxx_destruct]
@@ -4619,6 +4623,8 @@ _OBJC_IVAR_$_SHKMotionListener._shakeCount
 _OBJC_IVAR_$_SHKMotionListener._motionManager
 _OBJC_IVAR_$_SHKMotionListener._xInPositiveDirection
 _OBJC_IVAR_$_SHKMotionListener._xInNegativeDirection
+_OBJC_IVAR_$_SHKMotionListener._zInPositiveDirection
+_OBJC_IVAR_$_SHKMotionListener._zInNegativeDirection
 __OBJC_$_INSTANCE_VARIABLES_SHKMotionListener
 __OBJC_$_PROP_LIST_SHKMotionListener
 __OBJC_CLASS_RO_$_SHKMotionListener
