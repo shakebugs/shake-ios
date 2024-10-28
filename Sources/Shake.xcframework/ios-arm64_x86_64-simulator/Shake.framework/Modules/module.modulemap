@@ -1,11 +1,11 @@
 framework module Shake {
   umbrella header "Shake.h"
-
   export *
+
   module * { export * }
 }
 
 module Shake.Swift {
-    header "Shake-Swift.h"
-    requires objc
+  header "Shake-Swift.h"
+  requires objc
 }
