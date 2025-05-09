@@ -1,13 +1,22 @@
 #  upload-symbols.sh
 #  Shake
 #
-#  Created by Filip Belakon on 09.04.2021..
-#  Copyright © 2021 Shake Technologies Inc. All rights reserved.
+#  Copyright © 2025 Shake. All rights reserved.
+set -e
 
 api_key="" endpoint_url="https://api.shakebugs.com"
 
-BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c "print CFBundleVersion" "${SRCROOT}/${INFOPLIST_FILE}")
-BUNDLE_VERSION_STRING=$(/usr/libexec/PlistBuddy -c "print CFBundleShortVersionString" "${SRCROOT}/${INFOPLIST_FILE}")
+BUNDLE_VERSION=$CURRENT_PROJECT_VERSION
+if [ -z "$BUNDLE_VERSION" ]
+    then
+        BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c "print CFBundleVersion" "${SRCROOT}/${INFOPLIST_FILE}")
+fi
+
+BUNDLE_VERSION_STRING=$MARKETING_VERSION
+if [ -z "$BUNDLE_VERSION_STRING" ]
+    then
+        BUNDLE_VERSION_STRING=$(/usr/libexec/PlistBuddy -c "print CFBundleShortVersionString" "${SRCROOT}/${INFOPLIST_FILE}")
+fi
 
 POSITIONAL=()
 while [[ $# -gt 0 ]]
@@ -45,7 +54,7 @@ done
 if [ -z "$api_key" ]
     then
         echo "SHAKE_SCRIPT: err: please enter api_key"
-        exit 0
+        exit 1
 fi
 
 echo "CFBundleVersion: ${BUNDLE_VERSION}"
@@ -66,7 +75,7 @@ uploading_dsym_file() {
         echo "Something went wrong during Shake dSYM upload. Status code is $STATUS"
         echo "SHAKE_SCRIPT: deleting temporary dSYM archive..."
         rm -f "${FILE}"
-        exit 0
+        exit 1
     fi
 }
 
