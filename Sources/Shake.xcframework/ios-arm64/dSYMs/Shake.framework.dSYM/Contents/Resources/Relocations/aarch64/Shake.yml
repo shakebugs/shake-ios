@@ -6402,8 +6402,8 @@ relocations:
   - { offsetInCU: 0x27, offset: 0x20B880, size: 0x8, addend: 0x0, symName: '+[SHKCustomLogReporter shared]', symObjAddr: 0x0, symBinAddr: 0xD92CC, symSize: 0x74 }
   - { offsetInCU: 0x41, offset: 0x20B89A, size: 0x8, addend: 0x0, symName: _kCustomLogReportKey, symObjAddr: 0x2D0, symBinAddr: 0x199800, symSize: 0x0 }
   - { offsetInCU: 0x55, offset: 0x20B8AE, size: 0x8, addend: 0x0, symName: '+[SHKCustomLogReporter shared]', symObjAddr: 0x0, symBinAddr: 0xD92CC, symSize: 0x74 }
-  - { offsetInCU: 0x7F, offset: 0x20B8D8, size: 0x8, addend: 0x0, symName: _shared.sharedInstance, symObjAddr: 0xAB58, symBinAddr: 0x204AD8, symSize: 0x0 }
-  - { offsetInCU: 0x95, offset: 0x20B8EE, size: 0x8, addend: 0x0, symName: _shared.onceToken, symObjAddr: 0xAB60, symBinAddr: 0x204AE0, symSize: 0x0 }
+  - { offsetInCU: 0x7F, offset: 0x20B8D8, size: 0x8, addend: 0x0, symName: _shared.sharedInstance, symObjAddr: 0xAB60, symBinAddr: 0x204AD8, symSize: 0x0 }
+  - { offsetInCU: 0x95, offset: 0x20B8EE, size: 0x8, addend: 0x0, symName: _shared.onceToken, symObjAddr: 0xAB68, symBinAddr: 0x204AE0, symSize: 0x0 }
   - { offsetInCU: 0x255, offset: 0x20BAAE, size: 0x8, addend: 0x0, symName: '___30+[SHKCustomLogReporter shared]_block_invoke', symObjAddr: 0x74, symBinAddr: 0xD9340, symSize: 0x2C }
   - { offsetInCU: 0x294, offset: 0x20BAED, size: 0x8, addend: 0x0, symName: '-[SHKCustomLogReporter init]', symObjAddr: 0xA0, symBinAddr: 0xD936C, symSize: 0x34 }
   - { offsetInCU: 0x2CB, offset: 0x20BB24, size: 0x8, addend: 0x0, symName: '-[SHKCustomLogReporter reportCustomLogWithLevel:message:]', symObjAddr: 0xD4, symBinAddr: 0xD93A0, symSize: 0xD0 }

@@ -23,7 +23,7 @@ FOUNDATION_EXPORT const unsigned char ShakeVersionString[];
 NS_SWIFT_NAME(Shake)
 @interface SHKShake : NSObject
 
-typedef NS_ENUM(NSUInteger, LogLevel) {
+typedef NS_ENUM(NSUInteger, ShakeLogLevel) {
     LogLevelVerbose,
     LogLevelDebug,
     LogLevelInfo,
@@ -111,7 +111,7 @@ NS_SWIFT_NAME(silentReport(description:fileAttachBlock:reportConfiguration:));
 /**
  Adds a custom log entry to Activity History
  */
-+ (void)logWithLevel:(LogLevel)level message:(NSString * __nonnull)message
++ (void)logWithLevel:(ShakeLogLevel)level message:(NSString * __nonnull)message
 NS_SWIFT_NAME(log(_:_:));
 
 /** Adds a custom log entry to Activity History with debug level
