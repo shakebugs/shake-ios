@@ -71,7 +71,7 @@ If disabled, your app users won't be able to invoke Shake and generate reports.
 /**
 Use this property to customize your form items.
  */
-@property (nonatomic, strong) SHKForm* form;
+@property (nonatomic, strong, nonnull) SHKForm* form;
 
 /**
 Use this property to customize the look of the Shake user interface and match it with your product.
@@ -86,7 +86,7 @@ Change the subtitle text displayed on the home screen.
 /**
 Use this property to customize action items on the Shake home screen.
  */
-@property (nonatomic, strong) NSArray<id<SHKHomeActionProtocol>> *homeActions;
+@property (nonatomic, strong, nonnull) NSArray<id<SHKHomeActionProtocol>> *homeActions;
 
 /**
  Shake open listener. When set, it reports an event when Shake screen is opened.
@@ -108,7 +108,7 @@ Use this property to set custom tags to the tickets.
  */
 @property (nonatomic, strong, nullable) NSArray* tags;
 
-- (instancetype)init
+- (instancetype _Nonnull)init
 __attribute__((unavailable("Access 'Shake.configuration' directly instead.")));
 
 @end
