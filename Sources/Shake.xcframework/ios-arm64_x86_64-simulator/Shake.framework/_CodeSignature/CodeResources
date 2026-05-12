@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		/UPBm7OFZFW+uQadL9kAmm37ECM=
+		mgYqZ1WDMoY4QFy3Rd2vHcG9dlM=
 		</data>
 		<key>DemangleNodes.def</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/Shake-Swift.h</key>
 		<data>
-		Zk93yDF5tOAwu/p55FflOyM0x04=
+		XsBDBKBOnNn70csYxZX5MbPckZs=
 		</data>
 		<key>Headers/Shake.h</key>
 		<data>
@@ -114,55 +114,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cwgw7pQ2d/Sc23t8/vzvKyuqu9Y=
+		Jnif0Q6fI6vI1NPsNiE4DYP9C9Y=
 		</data>
-		<key>LICENSE.TXT</key>
+		<key>LICENSE.txt</key>
 		<data>
-		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
+		SuYitqYPMq09CjLis663lpu2TN4=
 		</data>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		F7zQJEDzCejnoX9D3aMxdm9aEiQ=
+		vXPMMgvmkIIt4K0Tk1nYEay+rSY=
 		</data>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XsokVh1IWMt16JrQPg7dXhFRn58=
+		uFISLBhaQlx1SCNnidMCkmQtq54=
 		</data>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mHlEHxSDIuKR2n4NIm6CMUX0sfA=
+		cLbYpMl8qY6tqy+0WRwKQMxZj8c=
 		</data>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XsokVh1IWMt16JrQPg7dXhFRn58=
+		uFISLBhaQlx1SCNnidMCkmQtq54=
 		</data>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wVr79fFTVUI29zZ3jvkzJ6rHccI=
+		yAASTWTBczNIOjnSL9s2wvP9WM4=
 		</data>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		F7zQJEDzCejnoX9D3aMxdm9aEiQ=
+		vXPMMgvmkIIt4K0Tk1nYEay+rSY=
 		</data>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HPBiTk0w89tq1C0LY5Y4wR4cQaA=
+		MGkFMSD0CV9EYAA+iapl1Gm87JU=
 		</data>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QAEP2yt7kspzI/RvD+VboATsXeU=
+		ywejIG+pLBuPFjgTuJWoZM4y+4Y=
 		</data>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HPBiTk0w89tq1C0LY5Y4wR4cQaA=
+		MGkFMSD0CV9EYAA+iapl1Gm87JU=
 		</data>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8oG2Di5QfTyBKiByYlNIXxAnUNA=
+		C7d9GQS0RMbFbXvUqvdkHLvhVG8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		UyFKQBh1gCQRr0XCSKsFTs1O/x8=
+		2z+8pv+APapktpNPu3oR2A1Zhh8=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -400,7 +400,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			84SDpc5kQRA9PobghHxRau4EpdWIU2PvyFpHVnbSqjk=
+			qSE0jp8D3ziBp/gcTDj5GchBfJLVRbL/iINuD+2OVZ8=
 			</data>
 		</dict>
 		<key>DemangleNodes.def</key>
@@ -575,7 +575,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4kkig8XQ27liIZrWnRqvNyvaV/SOeKTUWXFNpaxgxic=
+			NBq48H7YlpVAz0BBnb8sbsIaXZePGHQysOZlRwBE+Qs=
 			</data>
 		</dict>
 		<key>Headers/Shake.h</key>
@@ -585,88 +585,88 @@
 			73by5ZS0Fc9TJAd7srSjXzCyFR/UGkTO3Bc7b4vJ0rw=
 			</data>
 		</dict>
-		<key>LICENSE.TXT</key>
+		<key>LICENSE.txt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
+			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SEeukvhfms+6op7BVvxLxe3nm7VHFXLGB7gZgmZNg/s=
+			llCNhE6lTD1dnIgT7wpMTYOjQ0dKsdJQQ1AF6WJ/1+A=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3vbm6E93WfBmIpMf9gaWXZlcBcj1Dn5SjALG4/16fHE=
+			kvJ/vrscmGYq/ibGjfbQKOkOgglVBmzg9ItWhu6SUzw=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RQOt6iGTOkJGGXp6auk9hnI6eCQBUOw7xYnr0WOZojk=
+			xIL2sTC4bIpOItFdjiUMyPYVwLaRysgJ0IolZLpN9wg=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3vbm6E93WfBmIpMf9gaWXZlcBcj1Dn5SjALG4/16fHE=
+			kvJ/vrscmGYq/ibGjfbQKOkOgglVBmzg9ItWhu6SUzw=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96cHOvFn9FkB9RXyEn1PlQE4tFtHYAEzXjI/OoZRuAM=
+			qYfQYcV6YcrQ2oD2bS7g7tZkmBMBlxkzJDLUE/cTyd0=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SEeukvhfms+6op7BVvxLxe3nm7VHFXLGB7gZgmZNg/s=
+			llCNhE6lTD1dnIgT7wpMTYOjQ0dKsdJQQ1AF6WJ/1+A=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kpsd/g0hFsoS9rYltLN81jT3pKSL3xjNj1y2n9N3cyY=
+			somIeyviWHTHv46eAhOWK7zkwbIP6hZ370XE2Pki8qw=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dHDufoPRHwCeUW0j2ur79JWkh1OaPnh2byR3434QQW8=
+			zpe9pT3BJHlAjoYyrpdlrtaD2zJv1qpOZGAA62+0zeY=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kpsd/g0hFsoS9rYltLN81jT3pKSL3xjNj1y2n9N3cyY=
+			somIeyviWHTHv46eAhOWK7zkwbIP6hZ370XE2Pki8qw=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ukQ4ZDR/IRkbEFhbWHALE7koi2o3oXA8C0ihqvVkEKQ=
+			Z9HfP6GSZRHQGnGL965L+NnKkz53a/jXYF5TD+h6lS4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aekDoDIkSTOxHxG9dePvk+3a/5d0d+HKuBtJtzhlIYY=
+			CVMk6g//fgz6m2VFgm/xDuynLWr1FkqII7BdGCdo3wo=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
