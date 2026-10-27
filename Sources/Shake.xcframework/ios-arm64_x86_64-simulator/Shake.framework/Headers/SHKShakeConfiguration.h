@@ -54,6 +54,24 @@ NS_SWIFT_NAME(ShakeConfiguration)
 @property (nonatomic, assign) BOOL isAskForCrashDescriptionEnabled;
 
 /**
+ Shake will detect and report an unresponsive main thread (ANR).
+
+ Unlike a crash, an ANR does not terminate the app: the event is reported and the
+ app keeps running. Independent of "isCrashReportingEnabled".
+ Detection is automatically suppressed while a debugger is attached.
+ Default value is "true".
+ */
+@property (nonatomic, assign) BOOL isAnrDetectionEnabled;
+
+/**
+ How long the main thread must stay unresponsive before it is reported as an ANR,
+ in seconds. Values below 1 second are clamped, since a shorter threshold reports
+ ordinary UI jank as an ANR.
+ Default value is 5 seconds.
+ */
+@property (nonatomic, assign) NSTimeInterval anrThreshold;
+
+/**
  Setting this flag to "false" disables automatic screenshot when invoking Shake.
  Default value is "true".
  */

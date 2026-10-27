@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/SHKShakeConfiguration.h</key>
 		<data>
-		1b4Q2VPI5VCex5T8yeAIdRs6GDc=
+		doVMVBhUk99OkDM15jNgy6lGRJE=
 		</data>
 		<key>Headers/SHKShakeFile.h</key>
 		<data>
@@ -114,11 +114,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7eOBh848pWiJY80nq8mwIIDH1RM=
+		y1rfSL2WMa/zye8UrjebSKxVwYo=
 		</data>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<data>
-		SuYitqYPMq09CjLis663lpu2TN4=
+		n7rSP+Ex/MKT2ZssUXuZDaovCm4=
 		</data>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -533,7 +533,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OGpJyXhLwm0mdnpjxA5E3BtV7dAqvvmTyV4JOqGnQno=
+			NPtU6kxc6pSHnlT9b1Y8/DyumDCwZpghKG1zqbNPBrg=
 			</data>
 		</dict>
 		<key>Headers/SHKShakeFile.h</key>
@@ -585,11 +585,11 @@
 			73by5ZS0Fc9TJAd7srSjXzCyFR/UGkTO3Bc7b4vJ0rw=
 			</data>
 		</dict>
-		<key>LICENSE.txt</key>
+		<key>LICENSE.TXT</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			chyxHeYY/Pm7t9JaOJIHvyInNX5mlLwyarMqZpn5uVE=
+			GGxfAZKnVHFKflQiM92qrSh0VibgrTLjWNP1rwCvuEo=
 			</data>
 		</dict>
 		<key>Modules/Shake.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
